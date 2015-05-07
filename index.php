@@ -6,14 +6,14 @@
 
 	$_SESSION['ss_media'] = $media;
 
-	BB_InsertTrackingInfo($media, $gubun);
+	VK_InsertTrackingInfo($media, $gubun);
 
 	if($gubun == "MOBILE")
 	{
-		Header("Location:http://www.belifbomb.com/MOBILE/index.php");
+		Header("Location:http://www.mnv.kr/MOBILE/index.php");
 		exit;
 	}else{
-		Header("Location:http://www.belifbomb.com/PC/index.php");
+		Header("Location:http://www.mnv.kr/PC/index.php");
 		exit;
 	}
 

@@ -16,8 +16,26 @@ switch ($_REQUEST['exec'])
 		//	$flag = "Y";
 		//else
 		//	$flag = "N";
+		$_SESSION['ss_idx'] = $ins_idx;
 
 		echo $ins_idx;
+	break;
+
+	case "insert_message2" :
+		$mb_name		= $_REQUEST['mb_name'];
+		$mb_phone		= $_REQUEST['mb_phone'];
+		$mb_idx			= $_SESSION['ss_idx'];
+
+		//$query 		= "INSERT INTO ".$_gl['member_info_table']."(mb_ipaddr, mb_send, mb_message, mb_receive, mb_gubun, mb_regdate) values('".$_SERVER['REMOTE_ADDR']."','".$mb_send."','".$mb_message."','".$mb_receive."','".$gubun."','".date("Y-m-d H:i:s")."')";
+		$query 		= "UPDATE ".$_gl['member_info_table']." SET mb_name='".$mb_name."', mb_phone='".$mb_phone."' WHERE idx='".$mb_idx."'";
+		$result 	= mysqli_query($my_db, $query);
+
+		if ($result)
+			$flag = "Y";
+		else
+			$flag = "N";
+
+		echo $query;
 	break;
 
 	case "insert_share_info" :

@@ -40,4 +40,7 @@
 	else
 		$gubun = "PC";
 
+	if (!$_SESSION['ss_media'])
+		$_SESSION['ss_media'] = $media;
+
 ?>

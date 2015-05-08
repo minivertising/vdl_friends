@@ -173,7 +173,7 @@ function input_message()
 			url: "../main_exec.php",
 			success: function(response){
 				//alert(response);
-				$("#mb_idx").val(response);
+				//$("#mb_idx").val(response);
 				setTimeout("ins2_data(" + response + ");",500);
 			}
 		});
@@ -187,7 +187,7 @@ function input_message2()
 		chk_ins = 1;
 		var mb_name		= $("#mb_name").val();
 		var mb_phone		= $("#mb_phone").val();
-
+		//var mb_idx			= $("#mb_idx").val();
 		if (mb_name == "")
 		{
 
@@ -219,7 +219,7 @@ function input_message2()
 			success: function(response){
 				alert(response);
 				//$("#mb_idx").val(response);
-				setTimeout("ins2_data(" + response + ");",500);
+				//setTimeout("ins2_data(" + response + ");",500);
 			}
 		});
 	}

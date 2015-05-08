@@ -1,4 +1,6 @@
 <?php
+	include_once "../config.php";
+
 	$key = "713869efeadb5730c00cd6e0141afea9"; // 사용자가 발급받은 단축 URL KEY를 입력 하세요
 
 	for ($i=1 ; $i < 20000 ; $i++)

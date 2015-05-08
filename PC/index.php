@@ -4,6 +4,7 @@
 	include_once   "./popup_div.php";
 ?>
     <div id="contents_wrap">
+      <input type="hidden" name="mb_idx" id="mb_idx" value="">
       <div class="section" data-anchor="slide1" style="background:red">
         <h1>Funnier Than Ever!</h1>
         <h2>VDL MEET KAKAO FRIENDS</h2>
@@ -32,6 +33,8 @@
   </body>
 </html>
 <script type="text/javascript">
+var chk_ins	= 0;
+var chk_ins2	= 0;
 $(document).ready(function() {
 	$('#contents_wrap').fullpage({
 		menu: '#navi_menu',
@@ -67,9 +70,12 @@ $(document).ready(function() {
 			open: function() {
 			},
 			close: function() {
+				chk_ins = 0;
+				$("#mb_receive").val("");
+				$("#mb_send").val("");
+				$("#mb_message").val("");
 			}
 		}
 	});
-
 });
 </script>

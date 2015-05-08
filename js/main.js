@@ -120,9 +120,117 @@ function tog_col(param)
 
 function show_event()
 {
+	popup_desc('pop_event_main');
+}
+
+function input_message()
+{
+	if (chk_ins == 0)
+	{
+		chk_ins = 1;
+		var mb_receive		= $("#mb_receive").val();
+		var mb_message	= $("#mb_message").val();
+		var mb_send			= $("#mb_send").val();
+
+		if (mb_receive == "")
+		{
+
+			alert('개인정보 입력을 안 하셨습니다');
+			//setTimeout("ins_data();",500);
+
+			$("#mb_receive").focus();
+			return false;
+		}
+
+		if (mb_message == "")
+		{
+
+			alert('개인정보 입력을 안 하셨습니다');
+			//setTimeout("ins_data();",500);
+
+			$("#mb_message").focus();
+			return false;
+		}
+
+		if (mb_send == "")
+		{
+
+			alert('개인정보 입력을 안 하셨습니다');
+			//setTimeout("ins_data();",500);
+
+			$("#mb_send").focus();
+			return false;
+		}
+
+		$.ajax({
+			type:"POST",
+			data:{
+				"exec"					: "insert_message",
+				"mb_receive"		: mb_receive,
+				"mb_message"		: mb_message,
+				"mb_send"			: mb_send
+			},
+			url: "../main_exec.php",
+			success: function(response){
+				//alert(response);
+				$("#mb_idx").val(response);
+				setTimeout("ins2_data(" + response + ");",500);
+			}
+		});
+	}
+}
+
+function input_message2()
+{
+	if (chk_ins2 == 0)
+	{
+		chk_ins = 1;
+		var mb_name		= $("#mb_name").val();
+		var mb_phone		= $("#mb_phone").val();
+
+		if (mb_name == "")
+		{
+
+			alert('개인정보 입력을 안 하셨습니다');
+			//setTimeout("ins_data();",500);
+
+			$("#mb_name").focus();
+			return false;
+		}
+
+		if (mb_phone == "")
+		{
+
+			alert('개인정보 입력을 안 하셨습니다');
+			//setTimeout("ins_data();",500);
+
+			$("#mb_phone").focus();
+			return false;
+		}
+
+		$.ajax({
+			type:"POST",
+			data:{
+				"exec"					: "insert_message2",
+				"mb_name"		: mb_name,
+				"mb_phone"		: mb_phone
+			},
+			url: "../main_exec.php",
+			success: function(response){
+				alert(response);
+				//$("#mb_idx").val(response);
+				setTimeout("ins2_data(" + response + ");",500);
+			}
+		});
+	}
+
+}
+
+function popup_desc(param)
+{
 	$.magnificPopup.open({
 		items: {
-			src: '#qrcode_pop'
+			src: '#' + param+ ''
 		},
 		type: 'inline',
 		fixedContentPos: true,
@@ -137,13 +245,20 @@ function show_event()
 		closeOnBgClick: true,
 		callbacks: {
 			open: function() {
-				$('#qrcode_pop').css('top','-890px');
-				// 이동위치값 지정
-				var position = 0;
-				$('#qrcode_pop').show().animate({top:position},{duration:1000,easing:'easeOutBounce'});
-				//window.scrollTo(0,0);
+			},
+			close: function() {
+				chk_ins = 0;
+				chk_ins2 = 0;
+				$("#mb_receive").val("");
+				$("#mb_send").val("");
+				$("#mb_message").val("");
 			}
 		}
 	}, 0);
-
 }
+
+function ins2_data(idx)
+{
+	popup_desc('pop_event_input2');
+}
+

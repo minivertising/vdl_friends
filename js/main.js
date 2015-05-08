@@ -38,6 +38,17 @@ function sns_share(media)
 				"media" : media
 			}
 		});
+	}else if (media == "twitter"){
+		var newWindow = window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent("1. 서장훈, 촉촉하게 수지랑! 서장훈 구름탄 기분이랄까~촉촉한 선물 2. 서장훈 더페이스샵 CF모델? '아니아니 그게 아니고' 공개! 구름선물") + '&url='+ encodeURIComponent('http://bit.ly/1E9UlZ3'),'sharer','toolbar=0,status=0,width=600,height=325');
+		$.ajax({
+			type   : "POST",
+			async  : false,
+			url    : "../main_exec.php",
+			data:{
+				"exec" : "insert_share_info",
+				"media" : media
+			}
+		});
 	}else{
 		Kakao.init('6a8c92a8f02eab6bc90b28fb96e4a56a');
 		// 로그인 창을 띄웁니다.
@@ -174,7 +185,7 @@ function input_message()
 			success: function(response){
 				//alert(response);
 				//$("#mb_idx").val(response);
-				setTimeout("ins2_data(" + response + ");",500);
+				setTimeout("ins2_data('" + response + "');",500);
 			}
 		});
 	}
@@ -219,7 +230,7 @@ function input_message2()
 			success: function(response){
 				alert(response);
 				//$("#mb_idx").val(response);
-				//setTimeout("ins2_data(" + response + ");",500);
+				setTimeout("thanks_data('" + response + "');",500);
 			}
 		});
 	}
@@ -260,5 +271,10 @@ function popup_desc(param)
 function ins2_data(idx)
 {
 	popup_desc('pop_event_input2');
+}
+
+function thanks_data(url)
+{
+	popup_desc('pop_event_thank');
 }
 

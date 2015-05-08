@@ -29,17 +29,36 @@
 
 <!--------------------- 이벤트 메세지 입력(이름, 전화번호) 팝업 --------------------->
 <div id="pop_event_input2" class="zoom-anim-dialog mfp-hide" style="background:white;width:800px;height:500px;margin-left:-400px;margin-top:-250px;top:50%;left:50%;position:absolute">
-  <div style="position:absolute;width:100%;right:0">
+  <div style="position:absolute;width:100%;">
     <a href="#pop_close_confirm" class="popup-with-zoom-anim">닫기</a>
   </div>
   <h1>VDL FRIENDS KIT를 받으시려면</h1>
   <h1>고객님의 소중한 정보가 필요해요.</h1>
   <input type="text" name="mb_name" id="mb_name"><br />
   <input type="text" name="mb_phone" id="mb_phone"><br />
+  <input type="checkbox" name="use_agree" id="use_agree"> <a href="#pop_use_agree" class="popup-with-zoom-anim">개인정보 활용 약관</a><br />
+  <input type="checkbox" name="privacy_agree" id="privacy_agree"> <a href="#pop_privacy_agree" class="popup-with-zoom-anim">개인정보 취급위탁동의 약관</a><br />
+  <input type="checkbox" name="adver_agree" id="adver_agree"> <a href="#pop_adver_agree" class="popup-with-zoom-anim">광고성 정보 전송 동의 약관</a><br />
   <a href="#" onclick="input_message2();">입력 완료</a>
 
 </div>
 <!--------------------- 이벤트 메세지 입력 팝업 --------------------->
+
+<!--------------------- 이벤트 참여 완료 팝업 --------------------->
+<div id="pop_event_thank" class="zoom-anim-dialog mfp-hide" style="background:white;width:800px;height:500px;margin-left:-400px;margin-top:-250px;top:50%;left:50%;position:absolute">
+  <div style="position:absolute;width:100%;">
+    <a href="#" onclick="$.magnificPopup.close();">닫기</a>
+  </div>
+  <h1>참여해주셔서 감사합니다!</h1>
+  <h3>친구분이 메시지를 읽고</h3>
+  <h3>플러스 친구를 맺으면 이벤트에 응모가 완료됩니다.</h3>
+  <h3>추첨을 통해 00월 00일 입력하신 정보로</h3>
+  <h3>VDL FRIENDS KIT를 발송해 드립니다.</h3>
+  URL : ----------------------------------------------<br />
+  <a href="#" onclick="send_kakao();">카톡으로 보내기</a>
+  <a href="#" onclick="copy_url();">URL로 공유하기</a>
+</div>
+<!--------------------- 이벤트 참여 완료 팝업 --------------------->
 
 <!--------------------- 창 닫을때 선택 팝업 --------------------->
 <div id="pop_close_confirm" class="zoom-anim-dialog mfp-hide" style="background:white;width:300px;height:200px;margin-left:-150px;margin-top:-100px;top:50%;left:50%;position:absolute">
@@ -49,3 +68,30 @@
   <a href="#pop_event_input" class="popup-with-zoom-anim">계속하기</a>
 </div>
 <!--------------------- 창 닫을때 선택 팝업 --------------------->
+
+<!--------------------- 개인정보 활용 약관 팝업 --------------------->
+<div id="pop_use_agree" class="zoom-anim-dialog mfp-hide" style="background:white;width:400px;height:600px;margin-left:-200px;margin-top:-300px;top:50%;left:50%;position:absolute">
+  <div style="position:absolute;width:100%;">
+    <a href="#pop_event_input2" class="popup-with-zoom-anim">닫기</a>
+  </div>
+  <h2>개인정보 활용 약관 내용</h2>
+</div>
+<!--------------------- 개인정보 활용 약관 팝업 --------------------->
+
+<!--------------------- 개인정보 취급위탁동의 약관 팝업 --------------------->
+<div id="pop_privacy_agree" class="zoom-anim-dialog mfp-hide" style="background:white;width:400px;height:600px;margin-left:-200px;margin-top:-300px;top:50%;left:50%;position:absolute">
+  <div style="position:absolute;width:100%;">
+    <a href="#pop_event_input2" class="popup-with-zoom-anim">닫기</a>
+  </div>
+  <h2>개인정보 취급위탁동의 내용</h2>
+</div>
+<!--------------------- 개인정보 취급위탁동의 약관 팝업 --------------------->
+
+<!--------------------- 광고성 정보 전송 동의 약관 팝업 --------------------->
+<div id="pop_adver_agree" class="zoom-anim-dialog mfp-hide" style="background:white;width:400px;height:600px;margin-left:-200px;margin-top:-300px;top:50%;left:50%;position:absolute">
+  <div style="position:absolute;width:100%;">
+    <a href="#pop_event_input2" class="popup-with-zoom-anim">닫기</a>
+  </div>
+  <h2>광고성 정보 전송동의 내용</h2>
+</div>
+<!--------------------- 광고성 정보 전송 동의 약관 팝업 --------------------->

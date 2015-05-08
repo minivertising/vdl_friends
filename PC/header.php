@@ -5,11 +5,13 @@
     <link rel="stylesheet" type="text/css" href="../lib/fullpage/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="../lib/Magnific-Popup/magnific-popup.css"> 
     <link rel="stylesheet" type="text/css" href="./css/style.css"> 
+    <link rel="stylesheet" href="../lib/iCheck/skins/all.css">
     <script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="../js/main.js"></script>
     <script type="text/javascript" src="../lib/fullpage/jquery.fullPage.js"></script>
     <script type="text/javascript" src="../lib/Magnific-Popup/jquery.magnific-popup.js"></script>
+    <script type='text/javascript' src='../lib/iCheck/icheck.js'></script>
   </head>
   <body style="margin:0px">
     <!------------------------ 헤더 타이틀 영역 ------------------------>

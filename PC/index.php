@@ -36,6 +36,16 @@
 var chk_ins	= 0;
 var chk_ins2	= 0;
 $(document).ready(function() {
+
+	// 체크박스 스타일 설정
+	$('.zoom-anim-dialog input').on('ifChecked ifUnchecked', function(event){
+		//alert(this.id);
+	}).iCheck({
+		checkboxClass: 'icheckbox_flat-yellow',
+		radioClass: 'iradio_square-yellow',
+		increaseArea: '0%'
+	});
+
 	$('#contents_wrap').fullpage({
 		menu: '#navi_menu',
 		anchors:['slide1','slide2','slide3','slide4','slide5'],

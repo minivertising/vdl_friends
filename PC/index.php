@@ -26,48 +26,74 @@
 </style>
     <div id="contents_wrap" class="contents_wrap">
       <input type="hidden" name="mb_idx" id="mb_idx" value="">
-      <div style="height:1000px;background:red">
-        <h1>VDL MEET KAKAO FRIENDS</h1>
-        <h3>재기발랄한 카카오 프렌즈와</h3>
-        <h3>감각적인 브이디엘이 만나 선보이는</h3>
-        <h3>키치 꾸뛰르 감성의 써머 컬렉션</h3>
-      </div>
-      <div style="height:1000px;background:gray">
-        <div id="youtube_div" style="width:700px;height:400px;position:absolute;left:50%;margin-left:-350px;top:100px">
-          <iframe allowfullscreen="1" src="<?=$_gl['youtube_url']?>" frameborder="0" id="ytplayer" class="ytplayer" style="width:100%;height:100%;"></iframe>
-        </div>
-        <div>
-          <a href="#" data-mfp-src="#muzi_div" class="popup-with-zoom-anim" style="background:none;outline: none;">단무지의 VDL</a>
-          <a href="#" data-mfp-src="#apeach_div" class="popup-with-zoom-anim" style="background:none;outline: none;">어피치의 VDL</a>
-          <a href="#" data-mfp-src="#neo_div" class="popup-with-zoom-anim" style="background:none;outline: none;">네오의 VDL</a>
-        </div>
-      </div>
-      <div style="height:1000px;background:orange">
-        <h1>Funnier Than Ever!</h1>
-        <h2>VDL 플러스 친구 5천원 할인 쿠폰!</h2>
-        <h3>VDL 플러스 친구들에게만 드리는 특별한 가격할인!</h3>
-        <h3>지금 VDL과 플러스 친구를 맺으시면 5천원 할ㄹ인 쿠폰을 드려요.</h3>
-        <h3>플친 맺고 지속적으로 플친들에게만 드리는 더 많은 혜택을 받아 보세요!</h3>
-        <a href="#" onclick="show_event()">플친 맺고 5천원 할인쿠폰 받기</a>
+      
+      <div class="sec_summer">
+        <div class="title"><img src="images/title.png" alt=""/></div>
       </div>
       
-      <div class="footer section">
-        <div><img src="images/footer.jpg" width="997" height="106" alt=""/></div>
+      
+            
+      <div class="sec_movie">
+        <div id="youtube_div">
+          <iframe allowfullscreen="1" src="<?=$_gl['youtube_url']?>" frameborder="0" id="ytplayer" class="ytplayer" style="width:100%;height:100%;"></iframe>
+        </div>
+        <div class="charc clearfix">
+          <div class="c_one">
+              <a href="#" data-mfp-src="#muzi_div" class="popup-with-zoom-anim" style="background:none;outline: none;">
+              	<img src="images/chra_1_1.png" alt="" id="muzi_cha" onmouseover="stop_cha('1')" onmouseout="move_cha('1')"/>
+              </a>
+          </div>
+          
+          <div class="c_one">
+          	<a href="#" data-mfp-src="#apeach_div" class="popup-with-zoom-anim" style="background:none;outline: none;">
+          		<img src="images/chra_2_1.png" alt="" id="peach_cha" onmouseover="stop_cha('2')" onmouseout="move_cha('2')"/>
+            </a>
+          </div>
+          <div class="c_one">
+	          <a href="#" data-mfp-src="#neo_div" class="popup-with-zoom-anim" style="background:none;outline: none;">
+              	<img src="images/chra_3_1.png" alt="" id="neo_cha" onmouseover="stop_cha('3')" onmouseout="move_cha('3')"/>
+              </a>
+          </div>
+        </div>
       </div>
-
+      
+      
+      <div class="sec_message">
+      	<div class="title"><img src="images/title_vdl_kit.png" alt=""/></div>
+        <div class="event">
+        	<div class="inner">
+        		<div class="btn_block"><a href="#" data-mfp-src="#pop_event_main" class="popup-with-zoom-anim" ><img src="images/btn_m_send.png" alt=""/></a></div>
+            </div>
+        </div>
+       	<div class="howto"><img src="images/img_howto.png" alt=""/></div>
+      </div>
+      
+      
+      <div class="sec_plus">
+        <img src="images/img_plus.png" alt=""/>
+      </div>
+      
+      <div class="footer">
+        <img src="images/footer.jpg" alt=""/>
+      </div>
+      
 <!--quickmenu-->
       <div class="quickmenu">
         <a href="#"><img src="images/btn_top.png" width="45" height="45" alt=""/></a>
       </div>
 <!--quickmenu-->
-
     </div>
   </body>
 </html>
 <script type="text/javascript">
 var chk_ins	= 0;
 var chk_ins2	= 0;
-
+var cha_gubun1 = 0;
+var cha_gubun2 = 0;
+var cha_gubun3 = 0;
+var interval_id1;
+var interval_id2;
+var interval_id3;
 // quick menu
 var quickTop;
 $(window).scroll(function() {
@@ -134,6 +160,38 @@ $(document).ready(function() {
 	var quick_height	= $(window).height()/2;
 	$('.quickmenu').css("top",quick_height);
 
-});
+	interval_id1	= setInterval(function(){
+		if (cha_gubun1 == 0)
+		{
+			$('#muzi_cha').attr("src","images/chra_1_2.png");
+			cha_gubun1 = 1;
+		}else{
+			$('#muzi_cha').attr("src","images/chra_1_1.png");
+			cha_gubun1 = 0;
+		}
+	},800);
 
+	interval_id2	= setInterval(function(){
+		if (cha_gubun2 == 0)
+		{
+			$('#peach_cha').attr("src","images/chra_2_2.png");
+			cha_gubun2 = 1;
+		}else{
+			$('#peach_cha').attr("src","images/chra_2_1.png");
+			cha_gubun2 = 0;
+		}
+	},800);
+
+	interval_id3	= setInterval(function(){
+		if (cha_gubun3 == 0)
+		{
+			$('#neo_cha').attr("src","images/chra_3_2.png");
+			cha_gubun3 = 1;
+		}else{
+			$('#neo_cha').attr("src","images/chra_3_1.png");
+			cha_gubun3 = 0;
+		}
+	},800);
+
+});
 </script>

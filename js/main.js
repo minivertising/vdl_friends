@@ -277,11 +277,11 @@ function popup_desc(param)
 
 function move_area(area)
 {
-	if (param == "kit")
+	if (area == "kit")
 	{
-		$( 'html, body' ).animate({ scrollTop: 0},500);
-	}else if (param == "collection"){
-		$( 'html, body' ).animate({ scrollTop: $(".area1").height()},500);
+		$( 'html, body' ).animate({ scrollTop: $(".sec_summer").height()-10},500);
+	}else if (area == "collection"){
+		$( 'html, body' ).animate({ scrollTop: $(".sec_summer").height() + $(".sec_movie").height() + 200},500);
 	}
 }
 
@@ -299,4 +299,60 @@ function copy_url()
 {
 	window.clipboardData.setData('Text',"11<?=$_SESSION['ss_url']?>");
     alert("클립보드에 복사되었습니다.");
+}
+
+function stop_cha(param)
+{
+	if (param == "1")
+	{
+		clearInterval(interval_id1);
+		$("#muzi_cha").attr("src","images/chra_1_1.png");
+	}else if (param == "2"){
+		clearInterval(interval_id2);
+		$("#peach_cha").attr("src","images/chra_2_1.png");
+	}else{
+		clearInterval(interval_id3);
+		$("#neo_cha").attr("src","images/chra_3_1.png");
+	}
+}
+
+function move_cha(param)
+{
+	if (param == "1")
+	{
+		interval_id1	= setInterval(function(){
+			if (cha_gubun1 == 0)
+			{
+				$('#muzi_cha').attr("src","images/chra_1_2.png");
+				cha_gubun1 = 1;
+			}else{
+				$('#muzi_cha').attr("src","images/chra_1_1.png");
+				cha_gubun1 = 0;
+			}
+		},800);
+	}else if (param == "2"){
+		interval_id2	= setInterval(function(){
+			if (cha_gubun2 == 0)
+			{
+				$('#peach_cha').attr("src","images/chra_2_2.png");
+				cha_gubun2 = 1;
+			}else{
+				$('#peach_cha').attr("src","images/chra_2_1.png");
+				cha_gubun2 = 0;
+			}
+		},800);
+
+	}else{
+		interval_id3	= setInterval(function(){
+			if (cha_gubun3 == 0)
+			{
+				$('#neo_cha').attr("src","images/chra_3_2.png");
+				cha_gubun3 = 1;
+			}else{
+				$('#neo_cha').attr("src","images/chra_3_1.png");
+				cha_gubun3 = 0;
+			}
+		},800);
+	}
+
 }

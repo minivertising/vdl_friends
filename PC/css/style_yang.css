@@ -158,17 +158,116 @@ body{
 
 
 
+.navi{
+	position:fixed;height:50px;width:100%;top:0;left:0;z-index:70;
+	border-bottom:7px solid #ffe600;
+	background:#fff;
+	padding-top:15px;
+}
+.navi .left{
+	float:left;
+	width:350px;
+	padding-left:100px;
+}
+.navi .right{
+	float:right;
+	width:500px;
+	padding-right:100px;
+}
+.navi .right .right_wrap{
+	width:500px;
+}
+.navi .right .menu{
+	float:left;
+	padding-top:10px;
+}
+.navi .right .menu .inner a{
+	display:block;
+	float:left;
+	padding-right:15px;
+}
+.navi .right .sns{
+	float:right;
+	padding-top:3px;
+}
+.sec_summer{
+	background:#ffd503;
+	height:900px;
+	position:relative;
+}
+.sec_summer .title{
+	position:absolute;
+	text-align:center;
+	top:50%;
+	margin-top:-140px;
+	left:50%;
+	margin-left:-250px;
+}
+.sec_movie{
+	background:#fff;
+	height:740px;
+	padding:70px 0;
+	position:relative;
+	width:100%;
+}
+.sec_movie #youtube_div{
+	width:800px;
+	margin:0 auto;
+	height:450px;
+}
+.sec_movie .charc{
+	position:absolute;
+	bottom:-2px;
+	width:843px;
+	left:50%;
+	margin-left:-421px;
+}
+.sec_movie .charc div.c_one{
+	float:left;
+	width:280px;
+	text-align:right;
+}
+.sec_movie .charc div.c_one a{
+	display:block;
+}
 
+.sec_message{
+	background:#ffd503;
+	height:1240px;
+}
+.sec_message .title{
+	background:#000;
+	text-align:center;
+	padding:30px 0 40px;
+}
+.sec_message .event{
+	height:560px;
+	background:url(../images/bg_event.png) no-repeat center;
+}
+.sec_message .event .inner{
+	width:1000px;
+	margin:0 auto;
+}
+.sec_message .event .inner .btn_block{
+	padding-top:400px;
+}
+.sec_message .howto{
+	text-align:center;
+	padding:0 0 40px;
+}
 
-
-
+.sec_plus{
+	background:#fac9cc;
+	height:450px;
+	text-align:center;
+	padding-top:80px;
+}
 
 
 .footer{
 	background:#f8f8f8;
-	padding:30px 0;
+	padding:30px 0 50px;
 	text-align:center;
-	margin-top:-10px;
 }
 
 /*popup*/
@@ -676,58 +775,6 @@ body{
 	position:absolute;width:100%	;
 }
 
-.wrap_menu{
-	width:100%;
-	/*background: rgba(255, 255, 255, 1); */
-	background: white; 
-	height:70px;
-	border-bottom:1px solid #cae7f3;
-	
-}
-.menu{
-	width:1000px;
-	height:70px;
-	z-index:5;
-	/*margin:0 auto;*/
-	position:absolute;
-	left:50%;
-	margin-left:-500px;
-}
-.menu .block_logo{
-	float:left;
-	padding-top:15px;
-}
-.menu .block_menu{
-	padding-top:15px;
-	float:right;
-	width:823px;
-}
-.menu .block_menu a,
-.menu .block_menu span{
-	display:block;
-	float:left;
-	padding-top:13px;
-}
-
-.menu .block_menu a.btn_view_pro,
-.menu .block_menu a.btn_fb,
-.menu .block_menu a.btn_kt{
-	padding-top:3px;
-	padding-left:5px;
-	
-}
-.menu .block_menu a.btn_kt{
-	float:right;
-}
-.menu .block_menu a.btn_view_pro{
-	padding-left:25px;
-}
-.menu .block_menu a.btn_fb{
-	padding-left:100px;
-}
-.menu .block_menu span{
-	padding:15px 25px 0;
-}
 
 
 .contents_wrap .area1{

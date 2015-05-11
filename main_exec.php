@@ -25,15 +25,29 @@ switch ($_REQUEST['exec'])
 		$mb_name		= $_REQUEST['mb_name'];
 		$mb_phone		= $_REQUEST['mb_phone'];
 		$mb_idx			= $_SESSION['ss_idx'];
+		$key = "713869efeadb5730c00cd6e0141afea9"; // 사용자가 발급받은 단축 URL KEY를 입력 하세요
 
 		$query 		= "UPDATE ".$_gl['member_info_table']." SET mb_name='".$mb_name."', mb_phone='".$mb_phone."' WHERE idx='".$mb_idx."'";
 		$result 	= mysqli_query($my_db, $query);
+		
+		if ($result){
+			$longurl				= "http://www.mnv.kr/PC/?idx=".$mb_idx;
+			$url = sprintf("%s?url=%s&key=%s", "http://openapi.naver.com/shorturl.xml", $longurl, $key);
+			$data =file_get_contents($url);
+			$xml = simplexml_load_string($data, 'SimpleXMLElement', LIBXML_NOCDATA);
 
-		if ($result)
-			$flag = "Y";
-		else
+			if($xml->code == 200){
+				$transUrl = $xml->result->url;
+				$orgUrl = $xml->result->orgUrl;
+				$qr = $xml->result->url.".qr";
+				$flag = $transUrl;
+			}else{
+				//$message = "단축 URL 생성에 문제가 있습니다 code. ".$xml->code;
+				$flag = "E";
+			}
+		}else{
 			$flag = "N";
-
+		}
 		echo $flag;
 	break;
 

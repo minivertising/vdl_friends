@@ -60,6 +60,30 @@
 </div>
 <!--------------------- 이벤트 참여 완료 팝업 --------------------->
 
+<!--------------------- 무지 안내 팝업 --------------------->
+<div id="muzi_div" class="zoom-anim-dialog mfp-hide" style="background:white;width:600px;height:800px;margin-left:-300px;margin-top:-400px;top:50%;left:50%;position:absolute">
+  <div style="position:absolute;width:300px;height:500px;left:50%;margin-left:-150px">
+  <ul class="bxslider">
+    <li><img src="./images/muzi.png" /></li>
+    <li><img src="./images/apeach.png" /></li>
+    <li><img src="./images/neo.png" /></li>
+</ul>
+</div>
+</div>
+<!--------------------- 무지 안내 팝업 --------------------->
+
+<!--------------------- 피치 안내 팝업 --------------------->
+<div id="apeach_div" class="zoom-anim-dialog mfp-hide" style="background:white;width:600px;height:800px;margin-left:-300px;margin-top:-400px;top:50%;left:50%;position:absolute">
+  222
+</div>
+<!--------------------- 피치 안내 팝업 --------------------->
+
+<!--------------------- 네오 안내 팝업 --------------------->
+<div id="neo_div" class="zoom-anim-dialog mfp-hide" style="background:white;width:600px;height:800px;margin-left:-300px;margin-top:-400px;top:50%;left:50%;position:absolute">
+  333
+</div>
+<!--------------------- 네오 안내 팝업 --------------------->
+
 <!--------------------- 창 닫을때 선택 팝업 --------------------->
 <div id="pop_close_confirm" class="zoom-anim-dialog mfp-hide" style="background:white;width:300px;height:200px;margin-left:-150px;margin-top:-100px;top:50%;left:50%;position:absolute">
   <h2>정말 닫으시려구요?</h2>

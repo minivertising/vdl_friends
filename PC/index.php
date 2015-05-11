@@ -3,16 +3,46 @@
 
 	include_once   "./popup_div.php";
 ?>
+<style type="text/css">
+  .bx-wrapper .bx-pager {
+    bottom: -95px;
+  }
+  
+  .bx-wrapper .bx-pager a {
+    border: solid #ccc 1px;
+    display: block;
+    margin: 0 5px;
+    padding: 3px;
+  }
+  
+  .bx-wrapper .bx-pager a:hover,
+  .bx-wrapper .bx-pager a.active {
+    border: solid #5280DD 1px;
+  }
+  
+  .bx-wrapper {
+    margin-bottom: 120px;
+  }
+</style>
     <div id="contents_wrap">
       <input type="hidden" name="mb_idx" id="mb_idx" value="">
       <div class="section" data-anchor="slide1" style="background:red">
-        <h1>Funnier Than Ever!</h1>
-        <h2>VDL MEET KAKAO FRIENDS</h2>
-        <h3>귀엽고 깜찍한 카카오 프렌즈와 감각적인 VDL과의 만남!</h3>
-        <h3>더욱 유쾌해진 VDL x 카카오프렌즈 Summer Collection으로</h3>
-        <h3>여러분의 기분도 스타일도 살려보세요!</h3>
+        <h1>VDL MEET KAKAO FRIENDS</h1>
+        <h3>재기발랄한 카카오 프렌즈와</h3>
+        <h3>감각적인 브이디엘이 만나 선보이는</h3>
+        <h3>키치 꾸뛰르 감성의 써머 컬렉션</h3>
       </div>
       <div class="section" data-anchor="slide2" style="background:gray">
+        <div id="youtube_div" style="width:700px;height:400px;position:absolute;left:50%;margin-left:-350px;top:100px">
+          <iframe allowfullscreen="1" src="<?=$_gl['youtube_url']?>" frameborder="0" id="ytplayer" class="ytplayer" style="width:100%;height:100%;"></iframe>
+        </div>
+        <div>
+          <a href="#" data-mfp-src="#muzi_div" class="popup-with-zoom-anim" style="background:none;outline: none;">단무지의 VDL</a>
+          <a href="#" data-mfp-src="#apeach_div" class="popup-with-zoom-anim" style="background:none;outline: none;">어피치의 VDL</a>
+          <a href="#" data-mfp-src="#neo_div" class="popup-with-zoom-anim" style="background:none;outline: none;">네오의 VDL</a>
+        </div>
+      </div>
+      <div class="section" data-anchor="slide3" style="background:orange">
         <h1>Funnier Than Ever!</h1>
         <h2>VDL 플러스 친구 5천원 할인 쿠폰!</h2>
         <h3>VDL 플러스 친구들에게만 드리는 특별한 가격할인!</h3>
@@ -20,14 +50,10 @@
         <h3>플친 맺고 지속적으로 플친들에게만 드리는 더 많은 혜택을 받아 보세요!</h3>
         <a href="#" onclick="show_event()">플친 맺고 5천원 할인쿠폰 받기</a>
       </div>
-      <div class="section" data-anchor="slide3" style="background:orange">
-        <h1>네오의 VDL</h1>
-      </div>
-      <div class="section" data-anchor="slide4" style="background:blue">
-        <h1>어피치의 VDL</h1>
-      </div>
-      <div class="section" data-anchor="slide5" style="background:green">
-        <h1>단무지의 VDL</h1>
+      <div class="section" data-anchor="slide4" style="background:green">
+        <h1>VDL 플러스 친구 5천원 할인 쿠폰!</h1>
+        <div>하단 푸터 내용</div>
+
       </div>
     </div>
   </body>
@@ -78,6 +104,24 @@ $(document).ready(function() {
 		closeOnBgClick: true,
 		callbacks: {
 			open: function() {
+				$(".bx-pager").css("bottom","-95px");
+				$(".bx-pager > a").css("border","solid #ccc 1px");
+				$(".bx-pager > a").css("display","block");
+				$(".bx-pager > a").css("margin","0 5px");
+				$(".bx-pager > a").css("padding","3px");
+				$(".bx-wrapperr").css("margin-bottom","120px");
+				$('.bxslider').bxSlider({
+					buildPager: function(slideIndex){
+						switch(slideIndex){
+							case 0:
+								return '<img src="./images/thum_muzi.png">';
+							case 1:
+								return '<img src="./images/thum_apeach.png">';
+							case 2:
+								return '<img src="./images/thum_neo.png">';
+						}
+					}
+				});
 			},
 			close: function() {
 				chk_ins = 0;
@@ -87,5 +131,7 @@ $(document).ready(function() {
 			}
 		}
 	});
+
 });
+
 </script>

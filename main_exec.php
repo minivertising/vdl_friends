@@ -27,25 +27,22 @@ switch ($_REQUEST['exec'])
 		$mb_idx			= $_SESSION['ss_idx'];
 		$key = "f875ecbd21fa4214075c6645635c769c"; // 사용자가 발급받은 단축 URL KEY를 입력 하세요
 
-		$query 		= "UPDATE ".$_gl['member_info_table']." SET mb_name='".$mb_name."', mb_phone='".$mb_phone."' WHERE idx='".$mb_idx."'";
+		$longurl				= "http://www.mnv.kr/PC/?idx=".$mb_idx;
+		$url = sprintf("%s?url=%s&key=%s", "http://openapi.naver.com/shorturl.xml", $longurl, $key);
+		$data =file_get_contents($url);
+		$xml = simplexml_load_string($data, 'SimpleXMLElement', LIBXML_NOCDATA);
+
+		if($xml->code == 200){
+			$transUrl = $xml->result->url;
+			$orgUrl = $xml->result->orgUrl;
+			$qr = $xml->result->url.".qr";
+			$_SESSION['ss_url'] = $transUrl;
+		}
+		$query 		= "UPDATE ".$_gl['member_info_table']." SET mb_name='".$mb_name."', mb_phone='".$mb_phone."', mb_url='".$transUrl."' WHERE idx='".$mb_idx."'";
 		$result 	= mysqli_query($my_db, $query);
 		
 		if ($result){
-			$longurl				= "http://www.mnv.kr/PC/?idx=".$mb_idx;
-			$url = sprintf("%s?url=%s&key=%s", "http://openapi.naver.com/shorturl.xml", $longurl, $key);
-			$data =file_get_contents($url);
-			$xml = simplexml_load_string($data, 'SimpleXMLElement', LIBXML_NOCDATA);
-
-			if($xml->code == 200){
-				$transUrl = $xml->result->url;
-				$orgUrl = $xml->result->orgUrl;
-				$qr = $xml->result->url.".qr";
-				$flag = "Y";
-				$_SESSION['ss_url'] = $transUrl;
-			}else{
-				//$message = "단축 URL 생성에 문제가 있습니다 code. ".$xml->code;
-				$flag = "E";
-			}
+			$flag = "Y";
 		}else{
 			$flag = "N";
 		}

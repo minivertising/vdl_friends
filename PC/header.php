@@ -21,19 +21,24 @@
   </head>
   <body style="margin:0px">
     <!------------------------ 헤더 타이틀 영역 ------------------------>
-    <div style="position:fixed;height:50px;width:100%;top:0;left:0;background:skyblue;z-index:70;" id="navi_menu">
-      <a href="http://www.vdlcosmetics.com/" target="_blank">VDL</a>
-      <a href="#slide1">VDL FRIENDS KIT</a>
-      <a href="#" onmouseover="tog_col('1');" onmouseout="tog_col('2');" onclick="tog_col('3');">SUMMER COLLECTION</a>
-      <a href="#"onmouseover="tog_col('1');" onclick="sns_share('twitter');">트위터 공유</a>
-      <a href="#" onclick="sns_share('facebook');">페이스북 공유</a>
-      <a href="#" onclick="sns_share('story');">스토리 공유</a>
-      <div id="sub_menu" style="margin-left:160px;width:150px;display:none">
-        <ul>
-          <li><a href="#slide3">네오의 VDL</a></li>
-          <li><a href="#slide4">어피치의 VDL</a></li>
-          <li><a href="#slide5">단무지의 VDL</a></li>
-        </ul>
-      </div>
+    <div class="navi clearfix" id="navi_menu">
+    	<div class="left">
+	      	<a href="#" target="_blank"><img src="images/logo.png" alt=""/></a>
+        </div>
+        <div class="right">
+          <div class="right_wrap">
+	      	<div class="menu">
+            	<div class="inner clearfix">
+            	<a href="#slide1"><img src="images/btn_menu_summer.png" alt=""/></a>
+    	  		<a href="#" onmouseover="tog_col('1');" onmouseout="tog_col('2');" onclick="tog_col('3');"><img src="images/btn_menu_kit_off.png" alt=""/></a>
+                </div>
+      	  	</div>
+            <div class="sns">
+            	<a href="#"onmouseover="tog_col('1');" onclick="sns_share('twitter');"><img src="images/btn_tw.png" alt=""/></a>
+      	  		<a href="#" onclick="sns_share('facebook');"><img src="images/btn_fb.png" alt=""/></a>
+      	  		<a href="#" onclick="sns_share('story');"><img src="images/btn_ks.png" alt=""/></a>
+          	</div>
+          </div>
+        </div>
     </div>
     <!------------------------ 헤더 타이틀 영역 ------------------------>

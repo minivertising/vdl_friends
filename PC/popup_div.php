@@ -54,7 +54,7 @@
   <h3>플러스 친구를 맺으면 이벤트에 응모가 완료됩니다.</h3>
   <h3>추첨을 통해 00월 00일 입력하신 정보로</h3>
   <h3>VDL FRIENDS KIT를 발송해 드립니다.</h3>
-  URL : ----------------------------------------------<br />
+  URL : <p id="c_url"></p><br />
   <a href="#" onclick="send_kakao();">카톡으로 보내기</a>
   <a href="#" onclick="copy_url();">URL로 공유하기</a>
 </div>

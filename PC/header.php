@@ -23,9 +23,9 @@
     <!------------------------ 헤더 타이틀 영역 ------------------------>
     <div style="position:fixed;height:50px;width:100%;top:0;left:0;background:skyblue;z-index:70;" id="navi_menu">
       <a href="http://www.vdlcosmetics.com/" target="_blank">VDL</a>
-      <a href="#slide1">VDL FRIENDS KIT</a>
-      <a href="#" onmouseover="tog_col('1');" onmouseout="tog_col('2');" onclick="tog_col('3');">SUMMER COLLECTION</a>
-      <a href="#"onmouseover="tog_col('1');" onclick="sns_share('twitter');">트위터 공유</a>
+      <a href="#" onclick="move_area('kit')">VDL FRIENDS KIT</a>
+      <a href="#" onclick="move_area('collection')">SUMMER COLLECTION</a>
+      <a href="#" onclick="sns_share('twitter');">트위터 공유</a>
       <a href="#" onclick="sns_share('facebook');">페이스북 공유</a>
       <a href="#" onclick="sns_share('story');">스토리 공유</a>
       <div id="sub_menu" style="margin-left:160px;width:150px;display:none">

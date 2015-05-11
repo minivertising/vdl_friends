@@ -1,3 +1,9 @@
+.contents_wrap .quickmenu {
+  position: absolute;
+  right: 20px;
+  z-index: 50;
+}
+
 /**
  * Fade-zoom animation for first dialog
  */

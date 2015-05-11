@@ -275,6 +275,16 @@ function popup_desc(param)
 	}, 0);
 }
 
+function move_area(area)
+{
+	if (param == "kit")
+	{
+		$( 'html, body' ).animate({ scrollTop: 0},500);
+	}else if (param == "collection"){
+		$( 'html, body' ).animate({ scrollTop: $(".area1").height()},500);
+	}
+}
+
 function ins2_data(idx)
 {
 	popup_desc('pop_event_input2');

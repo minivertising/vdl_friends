@@ -24,7 +24,7 @@
     margin-bottom: 120px;
   }
 </style>
-    <div id="contents_wrap">
+    <div id="contents_wrap" class="contents_wrap">
       <input type="hidden" name="mb_idx" id="mb_idx" value="">
       <div style="height:1000px;background:red">
         <h1>VDL MEET KAKAO FRIENDS</h1>
@@ -53,14 +53,29 @@
       
       <div class="footer section">
         <div><img src="images/footer.jpg" width="997" height="106" alt=""/></div>
-
       </div>
+
+<!--quickmenu-->
+      <div class="quickmenu">
+        <a href="#"><img src="images/btn_top.png" width="45" height="45" alt=""/></a>
+      </div>
+<!--quickmenu-->
+
     </div>
   </body>
 </html>
 <script type="text/javascript">
 var chk_ins	= 0;
 var chk_ins2	= 0;
+
+// quick menu
+var quickTop;
+$(window).scroll(function() {
+	quickTop = ($(window).height()-$('.quickmenu').height()) /2;
+	$('.quickmenu').stop().animate({top:$(window).scrollTop()+quickTop},400,'easeOutExpo');
+	
+});
+
 $(document).ready(function() {
 
 	// 체크박스 스타일 설정
@@ -114,6 +129,10 @@ $(document).ready(function() {
 			}
 		}
 	});
+
+	// 퀵메뉴 기본 위치
+	var quick_height	= $(window).height()/2;
+	$('.quickmenu').css("top",quick_height);
 
 });
 

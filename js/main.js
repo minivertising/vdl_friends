@@ -228,9 +228,16 @@ function input_message2()
 			},
 			url: "../main_exec.php",
 			success: function(response){
-				alert(response);
-				//$("#mb_idx").val(response);
-				setTimeout("thanks_data('" + response + "');",500);
+				if (response == "E")
+				{
+					alert("사용자가 많습니다. 다시 참여해 주세요.");
+				}else if (response == "N"){
+					alert("사용자가 많습니다. 다시 참여해 주세요.");
+				}else{
+					//$("#mb_idx").val(response);
+					$("#c_url").html(response);
+					setTimeout("thanks_data('" + response + "');",500);
+				}
 			}
 		});
 	}

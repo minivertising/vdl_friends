@@ -285,3 +285,8 @@ function thanks_data(url)
 	popup_desc('pop_event_thank');
 }
 
+function copy_url()
+{
+	window.clipboardData.setData('Text',"11<?=$_SESSION['ss_url']?>");
+    alert("클립보드에 복사되었습니다.");
+}

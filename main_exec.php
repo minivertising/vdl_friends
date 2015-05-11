@@ -26,7 +26,6 @@ switch ($_REQUEST['exec'])
 		$mb_phone		= $_REQUEST['mb_phone'];
 		$mb_idx			= $_SESSION['ss_idx'];
 
-		//$query 		= "INSERT INTO ".$_gl['member_info_table']."(mb_ipaddr, mb_send, mb_message, mb_receive, mb_gubun, mb_regdate) values('".$_SERVER['REMOTE_ADDR']."','".$mb_send."','".$mb_message."','".$mb_receive."','".$gubun."','".date("Y-m-d H:i:s")."')";
 		$query 		= "UPDATE ".$_gl['member_info_table']." SET mb_name='".$mb_name."', mb_phone='".$mb_phone."' WHERE idx='".$mb_idx."'";
 		$result 	= mysqli_query($my_db, $query);
 

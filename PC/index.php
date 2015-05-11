@@ -26,13 +26,13 @@
 </style>
     <div id="contents_wrap">
       <input type="hidden" name="mb_idx" id="mb_idx" value="">
-      <div class="section" data-anchor="slide1" style="background:red">
+      <div style="height:1000px;background:red">
         <h1>VDL MEET KAKAO FRIENDS</h1>
         <h3>재기발랄한 카카오 프렌즈와</h3>
         <h3>감각적인 브이디엘이 만나 선보이는</h3>
         <h3>키치 꾸뛰르 감성의 써머 컬렉션</h3>
       </div>
-      <div class="section" data-anchor="slide2" style="background:gray">
+      <div style="height:1000px;background:gray">
         <div id="youtube_div" style="width:700px;height:400px;position:absolute;left:50%;margin-left:-350px;top:100px">
           <iframe allowfullscreen="1" src="<?=$_gl['youtube_url']?>" frameborder="0" id="ytplayer" class="ytplayer" style="width:100%;height:100%;"></iframe>
         </div>
@@ -42,7 +42,7 @@
           <a href="#" data-mfp-src="#neo_div" class="popup-with-zoom-anim" style="background:none;outline: none;">네오의 VDL</a>
         </div>
       </div>
-      <div class="section" data-anchor="slide3" style="background:orange">
+      <div style="height:1000px;background:orange">
         <h1>Funnier Than Ever!</h1>
         <h2>VDL 플러스 친구 5천원 할인 쿠폰!</h2>
         <h3>VDL 플러스 친구들에게만 드리는 특별한 가격할인!</h3>
@@ -50,7 +50,7 @@
         <h3>플친 맺고 지속적으로 플친들에게만 드리는 더 많은 혜택을 받아 보세요!</h3>
         <a href="#" onclick="show_event()">플친 맺고 5천원 할인쿠폰 받기</a>
       </div>
-      <div class="section" data-anchor="slide4" style="background:green">
+      <div style="height:1000px;background:green">
         <h1>VDL 플러스 친구 5천원 할인 쿠폰!</h1>
         <div>하단 푸터 내용</div>
 
@@ -70,23 +70,6 @@ $(document).ready(function() {
 		checkboxClass: 'icheckbox_flat-yellow',
 		radioClass: 'iradio_square-yellow',
 		increaseArea: '0%'
-	});
-
-	$('#contents_wrap').fullpage({
-		menu: '#navi_menu',
-		anchors:['slide1','slide2','slide3','slide4','slide5'],
-		navigation: true,
-		navigationPosition: 'right',
-		navigationTooltips: ['111', '222', '333', '444', '555'],
-		css3: true,
-		scrollingSpeed: 700,
-		autoScrolling: true,
-		fitToSection: true,
-		scrollBar: false,
-		easing: 'easeInOutCubic',
-		easingcss3: 'ease',
-		loopBottom: true,
-		loopTop: false,
 	});
 
 	// 팝업 jQuery 스타일

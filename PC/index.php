@@ -50,9 +50,9 @@
         <h3>플친 맺고 지속적으로 플친들에게만 드리는 더 많은 혜택을 받아 보세요!</h3>
         <a href="#" onclick="show_event()">플친 맺고 5천원 할인쿠폰 받기</a>
       </div>
-      <div class="section" data-anchor="slide4" style="background:green">
-        <h1>VDL 플러스 친구 5천원 할인 쿠폰!</h1>
-        <div>하단 푸터 내용</div>
+      
+      <div class="footer section">
+        <div><img src="images/footer.jpg" width="997" height="106" alt=""/></div>
 
       </div>
     </div>

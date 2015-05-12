@@ -167,8 +167,8 @@ function input_message()
 		if (mb_receive == "")
 		{
 
-			alert('개인정보 입력을 안 하셨습니다');
-			//setTimeout("ins_data();",500);
+			//alert('개인정보 입력을 안 하셨습니다');
+			setTimeout("ins_data();",500);
 
 			$("#mb_receive").focus();
 			chk_ins = 0;
@@ -178,8 +178,8 @@ function input_message()
 		if (mb_message == "")
 		{
 
-			alert('개인정보 입력을 안 하셨습니다');
-			//setTimeout("ins_data();",500);
+			//alert('개인정보 입력을 안 하셨습니다');
+			setTimeout("ins_data();",500);
 
 			$("#mb_message").focus();
 			chk_ins = 0;
@@ -189,8 +189,8 @@ function input_message()
 		if (mb_send == "")
 		{
 
-			alert('개인정보 입력을 안 하셨습니다');
-			//setTimeout("ins_data();",500);
+			//alert('개인정보 입력을 안 하셨습니다');
+			setTimeout("ins_data();",500);
 
 			$("#mb_send").focus();
 			chk_ins = 0;
@@ -229,8 +229,8 @@ function input_message2()
 		if (mb_name == "")
 		{
 
-			alert('개인정보 입력을 안 하셨습니다');
-			//setTimeout("ins_data();",500);
+			//alert('개인정보 입력을 안 하셨습니다');
+			setTimeout("ins_data2();",500);
 
 			$("#mb_name").focus();
 			return false;
@@ -239,8 +239,8 @@ function input_message2()
 		if (mb_phone1 == "")
 		{
 
-			alert('개인정보 입력을 안 하셨습니다');
-			//setTimeout("ins_data();",500);
+			//alert('개인정보 입력을 안 하셨습니다');
+			setTimeout("ins_data2();",500);
 
 			$("#mb_phone1").focus();
 			return false;
@@ -249,8 +249,8 @@ function input_message2()
 		if (mb_phone2 == "")
 		{
 
-			alert('개인정보 입력을 안 하셨습니다');
-			//setTimeout("ins_data();",500);
+			//alert('개인정보 입력을 안 하셨습니다');
+			setTimeout("ins_data2();",500);
 
 			$("#mb_phone2").focus();
 			return false;
@@ -259,10 +259,31 @@ function input_message2()
 		if (mb_phone3 == "")
 		{
 
-			alert('개인정보 입력을 안 하셨습니다');
-			//setTimeout("ins_data();",500);
+			//alert('개인정보 입력을 안 하셨습니다');
+			setTimeout("ins_data2();",500);
 
 			$("#mb_phone3").focus();
+			return false;
+		}
+
+		if ($('#use_agree').is(":checked") == false)
+		{
+			//alert("개인정보 활용 동의를 안 하셨습니다");
+			setTimeout("agree_use_data();",500);
+			return false;
+		}
+
+		if ($('#privacy_agree').is(":checked") == false)
+		{
+			//alert("개인정보 활용 동의를 안 하셨습니다");
+			setTimeout("agree_privacy_data();",500);
+			return false;
+		}
+
+		if ($('#adver_agree').is(":checked") == false)
+		{
+			//alert("개인정보 활용 동의를 안 하셨습니다");
+			setTimeout("agree_adver_data();",500);
 			return false;
 		}
 
@@ -341,6 +362,32 @@ function thanks_data(url)
 {
 	popup_desc('pop_event_thank');
 }
+
+function ins_data()
+{
+	popup_desc('pop_input1');
+}
+
+function ins_data2()
+{
+	popup_desc('pop_input2');
+}
+
+function agree_use_data()
+{
+	popup_desc('pop_use_agree_alert');
+}
+
+function agree_privacy_data()
+{
+	popup_desc('pop_privacy_agree_alert');
+}
+
+function agree_adver_data()
+{
+	popup_desc('pop_adver_agree_alert');
+}
+
 
 function copy_url(ss_url)
 {

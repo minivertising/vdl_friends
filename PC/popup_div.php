@@ -63,7 +63,7 @@
 <div id="pop_event_input2" class="popup_wrap zoom-anim-dialog mfp-hide" style="top:50%;left:50%;margin-left:-268px">
   <div class="p_mid_input p_position">
     <div class="block_close clearfix">
-      <a href="#pop_close_confirm" class="btn_close"><img src="images/popup/btn_close.png" /></a>
+      <a href="#pop_close_confirm" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>
     </div>
     <div class="block_content">
       <div class="inner">
@@ -144,18 +144,32 @@
 <!--------------------- 이벤트 메세지 입력 팝업 --------------------->
 
 <!--------------------- 이벤트 참여 완료 팝업 --------------------->
-<div id="pop_event_thank" class="zoom-anim-dialog mfp-hide" style="background:white;width:800px;height:500px;margin-left:-400px;margin-top:-250px;top:50%;left:50%;position:absolute">
-  <div style="position:absolute;width:100%;">
-    <a href="#" onclick="$.magnificPopup.close();">닫기</a>
+<div id="pop_event_thank" class="popup_wrap zoom-anim-dialog mfp-hide" style="margin-left:-268px;top:50%;left:50%;">
+  <div class="p_mid_comp p_position">
+    <div class="block_close clearfix">
+      <a href="#" onclick="$.magnificPopup.close();" class="btn_close"><img src="images/popup/btn_close.png" /></a>
+    </div>
+    <div class="block_content">
+      <div class="inner">
+        <div class="title">
+          <img src="images/popup/title_alert_comp.png" />
+        </div>
+        <div class="block_url" id="c_url"></div>
+        <div class="txt_notice">
+          <img src="images/popup/txt_url_notice_2.png" alt=""/>
+        </div>                    
+        <div class="btn_block">
+          <a href="#" onclick="copy_url();"><img src="images/popup/btn_url.png" alt=""/></a>
+        </div>
+        <div class="txt_notice">
+          <img src="images/popup/txt_url_notice.png" alt=""/>
+        </div>
+      </div><!--inner-->
+    </div>
+    <div class="bg_chrc">
+      <img src="images/popup/bg_chrc.png" alt=""/>
+    </div>
   </div>
-  <h1>참여해주셔서 감사합니다!</h1>
-  <h3>친구분이 메시지를 읽고</h3>
-  <h3>플러스 친구를 맺으면 이벤트에 응모가 완료됩니다.</h3>
-  <h3>추첨을 통해 00월 00일 입력하신 정보로</h3>
-  <h3>VDL FRIENDS KIT를 발송해 드립니다.</h3>
-  URL : <p id="c_url"></p><br />
-  <a href="#" onclick="send_kakao();">카톡으로 보내기</a>
-  <a href="#" onclick="copy_url();">URL로 공유하기</a>
 </div>
 <!--------------------- 이벤트 참여 완료 팝업 --------------------->
 
@@ -184,11 +198,26 @@
 <!--------------------- 네오 안내 팝업 --------------------->
 
 <!--------------------- 창 닫을때 선택 팝업 --------------------->
-<div id="pop_close_confirm" class="zoom-anim-dialog mfp-hide" style="background:white;width:300px;height:200px;margin-left:-150px;margin-top:-100px;top:50%;left:50%;position:absolute">
-  <h2>정말 닫으시려구요?</h2>
-  <h3>해당 창을 닫으면 작성 중이던 메시지가 사라집니다.</h3>
-  <a href="#" onclick="$.magnificPopup.close();">나가기</a>
-  <a href="#pop_event_input" class="popup-with-zoom-anim">계속하기</a>
+<div id="pop_close_confirm" class="popup_wrap zoom-anim-dialog mfp-hide" style="margin-left:-263px;top:50%;left:50%;">
+  <div class="p_alert_big p_position">
+    <div class="block_close clearfix">
+      <a href="#pop_event_input2" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>
+    </div>
+    <div class="block_content">
+      <div class="inner">
+        <div class="title">
+          <img src="images/popup/title_alert_close.png" />
+        </div>
+        <div class="btn_block">
+          <a href="#" onclick="$.magnificPopup.close();"><img src="images/popup/btn_out.png" alt=""/></a>
+          <a href="#pop_event_input2" class="popup-with-zoom-anim"><img src="images/popup/btn_keepgoing.png" alt=""/></a>
+        </div>
+      </div><!--inner-->
+    </div>
+    <div class="bg_chrc">
+      <img src="images/popup/bg_chrc.png" alt=""/>
+    </div>
+  </div>
 </div>
 <!--------------------- 창 닫을때 선택 팝업 --------------------->
 
@@ -311,3 +340,119 @@
   </div>
 </div>
 <!--------------------- 광고성 정보 전송 동의 약관 팝업 --------------------->
+
+<!--------------------- 개인정보 입력 팝업1 --------------------->
+<div id="pop_input1" class="popup_wrap zoom-anim-dialog mfp-hide" style="margin-left:-263px;top:50%;left:50%;">
+  <div class="p_alert p_position">
+    <div class="block_close clearfix">
+      <a href="#pop_event_input" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>
+    </div>
+    <div class="block_content">
+      <div class="inner">
+        <div class="title">
+          <img src="images/popup/title_alert_input_info.png" />
+        </div>
+        <div class="btn_block">
+          <a href="#pop_event_input" class="popup-with-zoom-anim"><img src="images/popup/btn_ok.png" alt=""/></a>
+        </div>
+      </div><!--inner-->
+    </div>
+    <div class="bg_chrc">
+      <img src="images/popup/bg_chrc.png" alt=""/>
+    </div>
+  </div>
+</div>
+<!--------------------- 개인정보 입력 팝업1 --------------------->
+
+<!--------------------- 개인정보 입력 팝업2 --------------------->
+<div id="pop_input2" class="popup_wrap zoom-anim-dialog mfp-hide" style="margin-left:-263px;top:50%;left:50%;">
+  <div class="p_alert p_position">
+    <div class="block_close clearfix">
+      <a href="#pop_event_input2" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>
+    </div>
+    <div class="block_content">
+      <div class="inner">
+        <div class="title">
+          <img src="images/popup/title_alert_input_info.png" />
+        </div>
+        <div class="btn_block">
+          <a href="#pop_event_input2" class="popup-with-zoom-anim"><img src="images/popup/btn_ok.png" alt=""/></a>
+        </div>
+      </div><!--inner-->
+    </div>
+    <div class="bg_chrc">
+      <img src="images/popup/bg_chrc.png" alt=""/>
+    </div>
+  </div>
+</div>
+<!--------------------- 개인정보 입력 팝업2 --------------------->
+
+<!--------------------- 개인정보 활용동의 팝업 --------------------->
+<div id="pop_use_agree_alert" class="popup_wrap zoom-anim-dialog mfp-hide" style="margin-left:-263px;top:50%;left:50%;">
+  <div class="p_alert p_position">
+    <div class="block_close clearfix">
+      <a href="#pop_event_input2" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>
+    </div>
+    <div class="block_content">
+      <div class="inner">
+        <div class="title">
+          <img src="images/popup/title_alert_agree_info.png" />
+        </div>
+        <div class="btn_block">
+          <a href="#pop_event_input2" class="popup-with-zoom-anim"><img src="images/popup/btn_ok.png" alt=""/></a>
+        </div>
+      </div><!--inner-->
+    </div>
+    <div class="bg_chrc">
+      <img src="images/popup/bg_chrc.png" alt=""/>
+    </div>
+  </div>
+</div>
+<!--------------------- 개인정보 활용동의 팝업 --------------------->
+
+<!--------------------- 광고성 정보 전송 동의 팝업 --------------------->
+<div id="pop_adver_agree_alert" class="popup_wrap zoom-anim-dialog mfp-hide" style="margin-left:-263px;top:50%;left:50%;">
+  <div class="p_alert p_position">
+    <div class="block_close clearfix">
+      <a href="#pop_event_input2" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>
+    </div>
+    <div class="block_content">
+      <div class="inner">
+        <div class="title">
+          <img src="images/popup/title_alert_agree_ad.png" />
+        </div>
+        <div class="btn_block">
+          <a href="#pop_event_input2" class="popup-with-zoom-anim"><img src="images/popup/btn_ok.png" alt=""/></a>
+        </div>
+      </div><!--inner-->
+    </div>
+    <div class="bg_chrc">
+      <img src="images/popup/bg_chrc.png" alt=""/>
+    </div>
+  </div>
+</div>
+<!--------------------- 광고성 정보 전송 동의 팝업 --------------------->
+
+<!--------------------- 개인정보 취급 위탁 동의 팝업 --------------------->
+<div id="pop_privacy_agree_alert" class="popup_wrap zoom-anim-dialog mfp-hide" style="margin-left:-263px;top:50%;left:50%;">
+  <div class="p_alert p_position">
+    <div class="block_close clearfix">
+      <a href="#pop_event_input2" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>
+    </div>
+    <div class="block_content">
+      <div class="inner">
+        <div class="title">
+          <img src="images/popup/title_alert_agree_agency.png" />
+        </div>
+        <div class="btn_block">
+          <a href="#pop_event_input2" class="popup-with-zoom-anim"><img src="images/popup/btn_ok.png" alt=""/></a>
+        </div>
+      </div><!--inner-->
+    </div>
+    <div class="bg_chrc">
+      <img src="images/popup/bg_chrc.png" alt=""/>
+    </div>
+  </div>
+</div>
+<!--------------------- 개인정보 취급 위탁 동의 팝업 --------------------->
+

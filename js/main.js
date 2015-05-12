@@ -98,6 +98,27 @@ function sns_share(media)
 	}
 }
 
+function send_kakao()
+{
+	var k_url = $("#c_url").text();
+	Kakao.init('b3ed5b7dca4e906387247f6a86d982e5');
+	// 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+	Kakao.Link.createTalkLinkButton({
+	  container: '#kakao-link-btn',
+	  label: "VDL 플러스 친구 맺고 카카오프렌즈 KIT 받자!!\r\n아래 링크 클릭해서 플러스 친구 가입\r\n" + k_url,
+	  image: {
+		src: 'http://www.belifbomb.com/MOBILE/img/sns_image.png',
+		width: '1200',
+		height: '630'
+	  },
+	  webButton: {
+		text: 'VDL x KAKAO',
+		url: 'http://www.belifbomb.com/?media=kakao' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
+	  }
+	});
+	alert("친구에게 메세지가 전송되었습니다.");
+}
+
 function chk_len(val)
 {
 	if (val.length == 4)

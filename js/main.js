@@ -150,6 +150,7 @@ function input_message()
 			//setTimeout("ins_data();",500);
 
 			$("#mb_receive").focus();
+			chk_ins = 0;
 			return false;
 		}
 
@@ -160,6 +161,7 @@ function input_message()
 			//setTimeout("ins_data();",500);
 
 			$("#mb_message").focus();
+			chk_ins = 0;
 			return false;
 		}
 
@@ -170,6 +172,7 @@ function input_message()
 			//setTimeout("ins_data();",500);
 
 			$("#mb_send").focus();
+			chk_ins = 0;
 			return false;
 		}
 

@@ -281,7 +281,18 @@ body{
 .popup_wrap .p_position.p_mid .block_content{
 	background:#fff;
 	width:600px;
-	height:700px;
+	height:570px;
+	
+}
+.popup_wrap .p_position.p_mid_comp{
+	position:relative;
+	width:530px;
+	height:580px;
+}
+.popup_wrap .p_position.p_mid_comp .block_content{
+	background:#fff;
+	width:530px;
+	height:500px;
 	
 }
 .popup_wrap .p_position.p_mid_agree{
@@ -307,7 +318,7 @@ body{
 .popup_wrap .p_position.p_alert{
 	position:relative;
 	width:521px;
-	height:320px;
+	height:330px;
 }
 .popup_wrap .p_position.p_alert .block_content{
 	position:relative;
@@ -317,7 +328,7 @@ body{
 .popup_wrap .p_position.p_alert_big{
 	position:relative;
 	width:521px;
-	height:395px;
+	height:400px;
 }
 .popup_wrap .p_position.p_alert_big .block_content{
 	position:relative;
@@ -333,6 +344,10 @@ body{
 }
 .popup_wrap .p_position.p_mid_input .block_content .title{
 	padding-top:50px;
+}
+.popup_wrap .p_position.p_mid_comp .block_content .title{
+	padding-top:50px;
+	padding-bottom:20px;
 }
 .popup_wrap .p_position.p_alert .block_content .title{
 	padding-top:70px;
@@ -356,11 +371,18 @@ body{
 	text-align:center;
 	padding-top:30px;
 }
-
+.popup_wrap .p_position.p_mid_comp .btn_block{
+	text-align:center;
+	padding-top:30px;
+}
 
 
 /*****팝업별 노티스 텍스트 위치 조정*****/
 .popup_wrap .p_position .txt_notice{
+	text-align:center;
+}
+.popup_wrap .p_position.p_mid_comp .block_content .block_url{
+	padding:30px 0;
 	text-align:center;
 }
 

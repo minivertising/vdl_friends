@@ -221,7 +221,10 @@ function input_message2()
 	{
 		chk_ins = 1;
 		var mb_name		= $("#mb_name").val();
-		var mb_phone		= $("#mb_phone").val();
+		var mb_phone1		= $("#mb_phone1").val();
+		var mb_phone2		= $("#mb_phone2").val();
+		var mb_phone3		= $("#mb_phone3").val();
+		var mb_phone		= mb_phone1 + "-" + mb_phone2 + "-" + mb_phone3;
 		//var mb_idx			= $("#mb_idx").val();
 		if (mb_name == "")
 		{
@@ -233,13 +236,33 @@ function input_message2()
 			return false;
 		}
 
-		if (mb_phone == "")
+		if (mb_phone1 == "")
 		{
 
 			alert('개인정보 입력을 안 하셨습니다');
 			//setTimeout("ins_data();",500);
 
-			$("#mb_phone").focus();
+			$("#mb_phone1").focus();
+			return false;
+		}
+
+		if (mb_phone2 == "")
+		{
+
+			alert('개인정보 입력을 안 하셨습니다');
+			//setTimeout("ins_data();",500);
+
+			$("#mb_phone2").focus();
+			return false;
+		}
+
+		if (mb_phone3 == "")
+		{
+
+			alert('개인정보 입력을 안 하셨습니다');
+			//setTimeout("ins_data();",500);
+
+			$("#mb_phone3").focus();
 			return false;
 		}
 

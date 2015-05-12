@@ -57,7 +57,7 @@
     <div class="title"><img src="images/title_vdl_kit.png" alt=""/></div>
     <div class="event">
       <div class="inner">
-        <div class="btn_block"><a href="#" data-mfp-src="#pop_event_main" class="popup-with-zoom-anim" ><img src="images/btn_m_send.png" alt=""/></a></div>
+        <div class="btn_block"><a href="#" data-mfp-src="#pop_event_input" class="popup-with-zoom-anim"  style="outline: none;"><img src="images/btn_m_send.png" alt=""/></a></div>
       </div>
     </div>
     <div class="howto"><img src="images/img_howto.png" alt=""/></div>

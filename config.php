@@ -43,4 +43,5 @@
 	if (!$_SESSION['ss_media'])
 		$_SESSION['ss_media'] = $media;
 
+print_r($_SESSION);
 ?>

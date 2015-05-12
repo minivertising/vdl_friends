@@ -150,6 +150,8 @@ body{
 }
 .sec_summer{
 	background:#ffd503;
+	background:url(../images/bg_page.jpg) no-repeat center;
+	background-size:cover;
 	height:900px;
 	position:relative;
 }

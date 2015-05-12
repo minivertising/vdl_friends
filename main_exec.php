@@ -38,7 +38,7 @@ switch ($_REQUEST['exec'])
 			$qr = $xml->result->url.".qr";
 			$_SESSION['ss_url'] = $transUrl;
 		}
-		$query 		= "UPDATE ".$_gl['member_info_table']." SET mb_name='".$mb_name."', mb_phone='".$mb_phone."', mb_url='".$transUrl."', mb_serial='".$serial."' WHERE idx='".$mb_idx."'";
+		$query 		= "UPDATE ".$_gl['member_info_table']." SET mb_name='".$mb_name."', mb_phone='".$mb_phone."', mb_url='".$transUrl."', mb_qr='".$qr."', mb_serial='".$serial."' WHERE idx='".$mb_idx."'";
 		$result 	= mysqli_query($my_db, $query);
 		
 		if ($result){

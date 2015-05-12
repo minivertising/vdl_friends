@@ -42,7 +42,7 @@ switch ($_REQUEST['exec'])
 		$result 	= mysqli_query($my_db, $query);
 		
 		if ($result){
-			$flag = "Y";
+			$flag = $_SESSION['ss_url'];
 		}else{
 			$flag = "N";
 		}

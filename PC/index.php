@@ -73,7 +73,7 @@
 
 <!--quickmenu-->
   <div class="quickmenu">
-    <a href="#"><img src="images/btn_top.png" width="45" height="45" alt=""/></a>
+    <a href="#"><img src="images/btn_top.png" alt=""/></a>
   </div>
 <!--quickmenu-->
 </div>

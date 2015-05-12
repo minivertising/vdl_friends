@@ -24,65 +24,59 @@
     margin-bottom: 120px;
   }
 </style>
-    <div id="contents_wrap" class="contents_wrap">
-      <input type="hidden" name="mb_idx" id="mb_idx" value="">
-      
-      <div class="sec_summer">
-        <div class="title"><img src="images/title.png" alt=""/></div>
-      </div>
-      
-      
-            
-      <div class="sec_movie">
-        <div id="youtube_div">
-          <iframe allowfullscreen="1" src="<?=$_gl['youtube_url']?>" frameborder="0" id="ytplayer" class="ytplayer" style="width:100%;height:100%;"></iframe>
-        </div>
-        <div class="charc clearfix">
-          <div class="c_one">
-              <a href="#" data-mfp-src="#muzi_div" class="popup-with-zoom-anim" style="background:none;outline: none;">
-              	<img src="images/chra_1_1.png" alt="" id="muzi_cha" onmouseover="stop_cha('1')" onmouseout="move_cha('1')"/>
-              </a>
-          </div>
-          
-          <div class="c_one">
-          	<a href="#" data-mfp-src="#apeach_div" class="popup-with-zoom-anim" style="background:none;outline: none;">
-          		<img src="images/chra_2_1.png" alt="" id="peach_cha" onmouseover="stop_cha('2')" onmouseout="move_cha('2')"/>
-            </a>
-          </div>
-          <div class="c_one">
-	          <a href="#" data-mfp-src="#neo_div" class="popup-with-zoom-anim" style="background:none;outline: none;">
-              	<img src="images/chra_3_1.png" alt="" id="neo_cha" onmouseover="stop_cha('3')" onmouseout="move_cha('3')"/>
-              </a>
-          </div>
-        </div>
-      </div>
-      
-      
-      <div class="sec_message">
-      	<div class="title"><img src="images/title_vdl_kit.png" alt=""/></div>
-        <div class="event">
-        	<div class="inner">
-        		<div class="btn_block"><a href="#" data-mfp-src="#pop_event_main" class="popup-with-zoom-anim" ><img src="images/btn_m_send.png" alt=""/></a></div>
-            </div>
-        </div>
-       	<div class="howto"><img src="images/img_howto.png" alt=""/></div>
-      </div>
-      
-      
-      <div class="sec_plus">
-        <img src="images/img_plus.png" alt=""/>
-      </div>
-      
-      <div class="footer">
-        <img src="images/footer.jpg" alt=""/>
-      </div>
-      
-<!--quickmenu-->
-      <div class="quickmenu">
-        <a href="#"><img src="images/btn_top.png" width="45" height="45" alt=""/></a>
-      </div>
-<!--quickmenu-->
+<div id="contents_wrap" class="contents_wrap">
+  <input type="hidden" name="mb_idx" id="mb_idx" value="">
+  <div class="sec_summer">
+    <div class="title"><img src="images/title.png" alt=""/></div>
+  </div>
+
+  <div class="sec_movie">
+    <div id="youtube_div">
+      <iframe allowfullscreen="1" src="<?=$_gl['youtube_url']?>" frameborder="0" id="ytplayer" class="ytplayer" style="width:100%;height:100%;"></iframe>
     </div>
+    <div class="charc clearfix">
+      <div class="c_one">
+        <a href="#" data-mfp-src="#muzi_div" class="popup-with-zoom-anim" style="background:none;outline: none;">
+          <img src="images/chra_1_1.png" alt="" id="muzi_cha" onmouseover="stop_cha('1')" onmouseout="move_cha('1')"/>
+        </a>
+      </div>
+      <div class="c_one">
+        <a href="#" data-mfp-src="#apeach_div" class="popup-with-zoom-anim" style="background:none;outline: none;">
+          <img src="images/chra_2_1.png" alt="" id="peach_cha" onmouseover="stop_cha('2')" onmouseout="move_cha('2')"/>
+        </a>
+      </div>
+      <div class="c_one">
+        <a href="#" data-mfp-src="#neo_div" class="popup-with-zoom-anim" style="background:none;outline: none;">
+          <img src="images/chra_3_1.png" alt="" id="neo_cha" onmouseover="stop_cha('3')" onmouseout="move_cha('3')"/>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec_message">
+    <div class="title"><img src="images/title_vdl_kit.png" alt=""/></div>
+    <div class="event">
+      <div class="inner">
+        <div class="btn_block"><a href="#" data-mfp-src="#pop_event_main" class="popup-with-zoom-anim" ><img src="images/btn_m_send.png" alt=""/></a></div>
+      </div>
+    </div>
+    <div class="howto"><img src="images/img_howto.png" alt=""/></div>
+  </div>
+
+  <div class="sec_plus">
+    <img src="images/img_plus.png" alt=""/>
+  </div>
+
+  <div class="footer">
+    <img src="images/footer.jpg" alt=""/>
+  </div>
+
+<!--quickmenu-->
+  <div class="quickmenu">
+    <a href="#"><img src="images/btn_top.png" width="45" height="45" alt=""/></a>
+  </div>
+<!--quickmenu-->
+</div>
   </body>
 </html>
 <script type="text/javascript">

@@ -23,23 +23,23 @@
   <body style="margin:0px">
     <!------------------------ 헤더 타이틀 영역 ------------------------>
     <div class="navi clearfix" id="navi_menu">
-    	<div class="left">
-	      	<a href="http://www.vdlcosmetics.com/index.jsp" target="_blank"><img src="images/logo.png" alt=""/></a>
-        </div>
-        <div class="right">
-          <div class="right_wrap">
-	      	<div class="menu">
-            	<div class="inner clearfix">
-            	<a href="#" onclick="move_area('collection')"><img src="images/btn_menu_summer_off.png" alt="" onmouseover="$(this).attr('src','images/btn_menu_summer.png')" onmouseout="$(this).attr('src','images/btn_menu_summer_off.png')"/></a>
-    	  		<a href="#" onclick="move_area('kit')"><img src="images/btn_menu_kit_off.png" alt="" onmouseover="$(this).attr('src','images/btn_menu_kit.png')" onmouseout="$(this).attr('src','images/btn_menu_kit_off.png')"/></a>
-                </div>
-      	  	</div>
-            <div class="sns">
-            	<a href="#" onclick="sns_share('twitter');"><img src="images/btn_tw.png" alt=""/></a>
-      	  		<a href="#" onclick="sns_share('facebook');"><img src="images/btn_fb.png" alt=""/></a>
-      	  		<a href="#" onclick="sns_share('story');"><img src="images/btn_ks.png" alt=""/></a>
-          	</div>
+      <div class="left">
+        <a href="http://www.vdlcosmetics.com/index.jsp" target="_blank"><img src="images/logo.png" alt=""/></a>
+      </div>
+      <div class="right">
+        <div class="right_wrap">
+          <div class="menu">
+            <div class="inner clearfix">
+              <a href="#" onclick="move_area('collection')"><img src="images/btn_menu_summer_off.png" alt="" onmouseover="$(this).attr('src','images/btn_menu_summer.png')" onmouseout="$(this).attr('src','images/btn_menu_summer_off.png')"/></a>
+              <a href="#" onclick="move_area('kit')"><img src="images/btn_menu_kit_off.png" alt="" onmouseover="$(this).attr('src','images/btn_menu_kit.png')" onmouseout="$(this).attr('src','images/btn_menu_kit_off.png')"/></a>
+            </div>
+          </div>
+          <div class="sns">
+            <a href="#" onclick="sns_share('twitter');"><img src="images/btn_tw.png" alt=""/></a>
+            <a href="#" onclick="sns_share('facebook');"><img src="images/btn_fb.png" alt=""/></a>
+            <a href="#" onclick="sns_share('story');"><img src="images/btn_ks.png" alt=""/></a>
           </div>
         </div>
+      </div>
     </div>
     <!------------------------ 헤더 타이틀 영역 ------------------------>

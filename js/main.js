@@ -14,7 +14,7 @@ function sns_share(media)
 			}
 		});
 	}else if (media == "kakao"){
-		Kakao.init('6a8c92a8f02eab6bc90b28fb96e4a56a');
+		Kakao.init('b3ed5b7dca4e906387247f6a86d982e5');
 		// 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
 		Kakao.Link.createTalkLinkButton({
 		  container: '#kakao-link-btn',
@@ -50,7 +50,7 @@ function sns_share(media)
 			}
 		});
 	}else{
-		Kakao.init('6a8c92a8f02eab6bc90b28fb96e4a56a');
+		Kakao.init('b3ed5b7dca4e906387247f6a86d982e5');
 		// 로그인 창을 띄웁니다.
 		Kakao.Auth.login({
 			success: function() {

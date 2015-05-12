@@ -18,6 +18,7 @@
     <script type="text/javascript" src="../lib/Magnific-Popup/jquery.magnific-popup.js"></script>
     <script type='text/javascript' src='../lib/iCheck/icheck.js'></script>
     <script type='text/javascript' src='../lib/bxslider/jquery.bxslider.min.js'></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
   </head>
   <body style="margin:0px">
     <!------------------------ 헤더 타이틀 영역 ------------------------>

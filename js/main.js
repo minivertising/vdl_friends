@@ -339,54 +339,37 @@ function stop_cha(param)
 {
 	if (param == "1")
 	{
-		clearInterval(interval_id1);
+		clearInterval(interval_id);
 		$("#muzi_cha").attr("src","images/chra_1_1.png");
+		$("#peach_cha").attr("src","images/chra_2_2.png");
+		$("#neo_cha").attr("src","images/chra_3_2.png");
 	}else if (param == "2"){
-		clearInterval(interval_id2);
+		clearInterval(interval_id);
+		$("#muzi_cha").attr("src","images/chra_1_2.png");
 		$("#peach_cha").attr("src","images/chra_2_1.png");
+		$("#neo_cha").attr("src","images/chra_3_2.png");
 	}else{
-		clearInterval(interval_id3);
+		clearInterval(interval_id);
+		$("#muzi_cha").attr("src","images/chra_1_2.png");
+		$("#peach_cha").attr("src","images/chra_2_2.png");
 		$("#neo_cha").attr("src","images/chra_3_1.png");
 	}
 }
 
 function move_cha(param)
 {
-	if (param == "1")
-	{
-		interval_id1	= setInterval(function(){
-			if (cha_gubun1 == 0)
-			{
-				$('#muzi_cha').attr("src","images/chra_1_2.png");
-				cha_gubun1 = 1;
-			}else{
-				$('#muzi_cha').attr("src","images/chra_1_1.png");
-				cha_gubun1 = 0;
-			}
-		},800);
-	}else if (param == "2"){
-		interval_id2	= setInterval(function(){
-			if (cha_gubun2 == 0)
-			{
-				$('#peach_cha').attr("src","images/chra_2_2.png");
-				cha_gubun2 = 1;
-			}else{
-				$('#peach_cha').attr("src","images/chra_2_1.png");
-				cha_gubun2 = 0;
-			}
-		},800);
-
-	}else{
-		interval_id3	= setInterval(function(){
-			if (cha_gubun3 == 0)
-			{
-				$('#neo_cha').attr("src","images/chra_3_2.png");
-				cha_gubun3 = 1;
-			}else{
-				$('#neo_cha').attr("src","images/chra_3_1.png");
-				cha_gubun3 = 0;
-			}
-		},800);
-	}
-
+	interval_id	= setInterval(function(){
+		if (cha_gubun == 0)
+		{
+			$('#muzi_cha').attr("src","images/chra_1_2.png");
+			$('#peach_cha').attr("src","images/chra_2_2.png");
+			$('#neo_cha').attr("src","images/chra_3_2.png");
+			cha_gubun = 1;
+		}else{
+			$('#muzi_cha').attr("src","images/chra_1_1.png");
+			$('#peach_cha').attr("src","images/chra_2_1.png");
+			$('#neo_cha').attr("src","images/chra_3_1.png");
+			cha_gubun = 0;
+		}
+	},800);
 }

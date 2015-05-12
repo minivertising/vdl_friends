@@ -82,6 +82,7 @@
 <script type="text/javascript">
 var chk_ins	= 0;
 var chk_ins2	= 0;
+var cha_gubun = 0;
 var cha_gubun1 = 0;
 var cha_gubun2 = 0;
 var cha_gubun3 = 0;
@@ -158,6 +159,21 @@ $(document).ready(function() {
 	var quick_height	= $(window).height()/2;
 	$('.quickmenu').css("top",quick_height);
 
+	interval_id	= setInterval(function(){
+		if (cha_gubun == 0)
+		{
+			$('#muzi_cha').attr("src","images/chra_1_2.png");
+			$('#peach_cha').attr("src","images/chra_2_2.png");
+			$('#neo_cha').attr("src","images/chra_3_2.png");
+			cha_gubun = 1;
+		}else{
+			$('#muzi_cha').attr("src","images/chra_1_1.png");
+			$('#peach_cha').attr("src","images/chra_2_1.png");
+			$('#neo_cha').attr("src","images/chra_3_1.png");
+			cha_gubun = 0;
+		}
+	},800);
+/*
 	interval_id1	= setInterval(function(){
 		if (cha_gubun1 == 0)
 		{
@@ -190,6 +206,6 @@ $(document).ready(function() {
 			cha_gubun3 = 0;
 		}
 	},800);
-
+*/
 });
 </script>

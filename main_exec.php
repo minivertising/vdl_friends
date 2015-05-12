@@ -27,7 +27,7 @@ switch ($_REQUEST['exec'])
 		$mb_idx			= $_SESSION['ss_idx'];
 		$key				= "f875ecbd21fa4214075c6645635c769c"; // 사용자가 발급받은 단축 URL KEY를 입력 하세요
 		$serial				= VK_SerialNumber();
-		$longurl				= "http://www.mnv.kr/PC/redirect.php?serial=".$serial;
+		$longurl				= "http://www.mnv.kr/PC/message.php?serial=".$serial;
 		$url = sprintf("%s?url=%s&key=%s", "http://openapi.naver.com/shorturl.xml", $longurl, $key);
 		$data =file_get_contents($url);
 		$xml = simplexml_load_string($data, 'SimpleXMLElement', LIBXML_NOCDATA);

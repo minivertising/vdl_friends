@@ -297,6 +297,7 @@ function thanks_data(url)
 
 function copy_url()
 {
+	alert("<?=$_SESSION['ss_url']?>");
 	window.clipboardData.setData('Text',"11<?=$_SESSION['ss_url']?>");
     alert("클립보드에 복사되었습니다.");
 }

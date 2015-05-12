@@ -156,6 +156,10 @@ $(document).ready(function() {
 		}
 	});
 
+	$( '.quickmenu' ).click( function() {
+		$( 'html, body' ).animate( { scrollTop : 0 }, 800 );
+			return false;
+	} );
 	// 퀵메뉴 기본 위치
 	var quick_height	= $(window).height()/2;
 	$('.quickmenu').css("top",quick_height);

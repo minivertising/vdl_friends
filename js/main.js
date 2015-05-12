@@ -305,7 +305,7 @@ function move_area(area)
 	{
 		$( 'html, body' ).animate({ scrollTop: $(".sec_summer").height()-10},500);
 	}else if (area == "collection"){
-		$( 'html, body' ).animate({ scrollTop: $(".sec_summer").height() + $(".sec_movie").height() + 200},500);
+		$( 'html, body' ).animate({ scrollTop: 0},500);
 	}
 }
 

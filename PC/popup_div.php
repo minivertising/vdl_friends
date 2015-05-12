@@ -174,26 +174,125 @@
 <!--------------------- 이벤트 참여 완료 팝업 --------------------->
 
 <!--------------------- 무지 안내 팝업 --------------------->
-<div id="muzi_div" class="zoom-anim-dialog mfp-hide" style="background:white;width:600px;height:800px;margin-left:-300px;margin-top:-400px;top:50%;left:50%;position:absolute">
-  <div style="position:absolute;width:300px;height:500px;left:50%;margin-left:-150px">
-  <ul class="bxslider">
-    <li><img src="./images/muzi.png" /></li>
-    <li><img src="./images/apeach.png" /></li>
-    <li><img src="./images/neo.png" /></li>
-</ul>
-</div>
+<div id="muzi_div" class="popup_wrap zoom-anim-dialog mfp-hide" style="margin-left:-328px;top:50%;left:50%;">
+  <div class="p_mid_col p_position">
+    <div class="block_close clearfix">
+      <a href="#" onclick="$.magnificPopup.close();" class="btn_close"><img src="images/popup/btn_close.png" /></a>
+    </div>
+    <div class="block_content">
+      <div class="inner">
+        <div class="title">
+          <img src="images/popup/title_muji.png" />
+        </div>
+        <div class="content clearfix">
+          <div class="arrow_left">
+            <a href="#"><img src="images/popup/btn_arrow_left.png" alt=""/></a>
+          </div>
+          <div class="img_block">
+            <img src="images/popup/col_img_muji_1.png" alt=""/>
+          </div>
+          <div class="arrow_right">
+            <a href="#"><img src="images/popup/btn_arrow_right.png" alt=""/></a>
+          </div>
+        </div>
+        <div class="block_thumb muji">
+          <ul class="clearfix">
+            <li><a href="#" class="selected"><img src="images/popup/thumb_muji_1.png" alt=""/></a></li>
+            <li><a href="#"><img src="images/popup/thumb_muji_1.png" alt=""/></a></li>
+            <li><a href="#"><img src="images/popup/thumb_muji_1.png" alt=""/></a></li>
+          </ul>
+        </div>
+        <div class="txt_col">
+          <img src="images/popup/col_img_muji_1_txt.png" alt=""/>
+        </div>
+      </div><!--inner-->
+    </div>
+    <div class="bg_chrc">
+      <img src="images/popup/bg_col_chrc_muji.png" alt=""/>
+    </div>
+  </div>
 </div>
 <!--------------------- 무지 안내 팝업 --------------------->
 
 <!--------------------- 피치 안내 팝업 --------------------->
-<div id="apeach_div" class="zoom-anim-dialog mfp-hide" style="background:white;width:600px;height:800px;margin-left:-300px;margin-top:-400px;top:50%;left:50%;position:absolute">
-  222
+<div id="apeach_div" class="popup_wrap zoom-anim-dialog mfp-hide" style="margin-left:-328px;top:50%;left:50%;">
+  <div class="p_mid_col p_position">
+    <div class="block_close clearfix">
+      <a href="#" onclick="$.magnificPopup.close();" class="btn_close"><img src="images/popup/btn_close.png" /></a>
+    </div>
+    <div class="block_content">
+      <div class="inner">
+        <div class="title">
+          <img src="images/popup/title_peach.png" />
+        </div>
+        <div class="content clearfix">
+          <div class="arrow_left">
+            <a href="#"><img src="images/popup/btn_arrow_left.png" alt=""/></a>
+          </div>
+          <div class="img_block">
+            <img src="images/popup/col_img_muji_1.png" alt=""/>
+          </div>
+          <div class="arrow_right">
+            <a href="#"><img src="images/popup/btn_arrow_right.png" alt=""/></a>
+          </div>
+        </div>
+        <div class="block_thumb muji">
+          <ul class="clearfix">
+            <li><a href="#" class="selected"><img src="images/popup/thumb_peach_1.png" alt=""/></a></li>
+            <li><a href="#"><img src="images/popup/thumb_peach_1.png" alt=""/></a></li>
+            <li><a href="#"><img src="images/popup/thumb_peach_1.png" alt=""/></a></li>
+          </ul>
+        </div>
+        <div class="txt_col">
+          <img src="images/popup/col_img_muji_1_txt.png" alt=""/>
+        </div>
+      </div><!--inner-->
+    </div>
+    <div class="bg_chrc">
+      <img src="images/popup/bg_col_chrc_peach.png" alt=""/>
+    </div>
+  </div>
 </div>
 <!--------------------- 피치 안내 팝업 --------------------->
 
 <!--------------------- 네오 안내 팝업 --------------------->
-<div id="neo_div" class="zoom-anim-dialog mfp-hide" style="background:white;width:600px;height:800px;margin-left:-300px;margin-top:-400px;top:50%;left:50%;position:absolute">
-  333
+<div id="neo_div" class="popup_wrap zoom-anim-dialog mfp-hide" style="margin-left:-328px;top:50%;left:50%;">
+  <div class="p_mid_col p_position">
+    <div class="block_close clearfix">
+      <a href="#" onclick="$.magnificPopup.close();" class="btn_close"><img src="images/popup/btn_close.png" /></a>
+    </div>
+    <div class="block_content">
+      <div class="inner">
+        <div class="title">
+          <img src="images/popup/title_neo.png" />
+        </div>
+        <div class="content clearfix">
+          <div class="arrow_left">
+            <a href="#"><img src="images/popup/btn_arrow_left.png" alt=""/></a>
+          </div>
+          <div class="img_block">
+            <img src="images/popup/col_img_muji_1.png" alt=""/>
+          </div>
+          <div class="arrow_right">
+            <a href="#"><img src="images/popup/btn_arrow_right.png" alt=""/></a>
+          </div>
+        </div>
+        <div class="block_thumb muji">
+          <ul class="clearfix">
+            <li><a href="#" class="selected"><img src="images/popup/thumb_neo_1.png" alt=""/></a></li>
+            <li><a href="#"><img src="images/popup/thumb_neo_1.png" alt=""/></a></li>
+            <li><a href="#"><img src="images/popup/thumb_neo_1.png" alt=""/></a></li>
+          </ul>
+        </div>
+        <div class="txt_col">
+          <img src="images/popup/col_img_muji_1_txt.png" alt=""/>
+        </div>
+      </div><!--inner-->
+    </div>
+    <div class="bg_chrc">
+      <img src="images/popup/bg_col_chrc_neo.png" alt=""/>
+    </div>
+  </div>
 </div>
 <!--------------------- 네오 안내 팝업 --------------------->
 

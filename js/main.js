@@ -298,10 +298,20 @@ function thanks_data(url)
 	popup_desc('pop_event_thank');
 }
 
-function copy_url()
+function copy_url(ss_url)
 {
-	window.clipboardData.setData('text',"11<?=$_SESSION['ss_url']?>");
-    alert("클립보드에 복사되었습니다.");
+	//window.clipboardData.setData('text',"11<?=$_SESSION['ss_url']?>");
+    //alert("클립보드에 복사되었습니다.");
+
+	var text = ss_url;
+	if(window.clipboardData){
+		// IE처리
+		// 클립보드에 문자열 복사
+		window.clipboardData.setData('text', text);
+	} else {
+		// 비IE 처리    
+		window.prompt ("Ctrl+C 를 눌러 텍스트를 복사하세요.", text);  
+	}
 }
 
 function stop_cha(param)

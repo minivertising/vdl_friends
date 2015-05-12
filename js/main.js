@@ -303,7 +303,7 @@ function move_area(area)
 {
 	if (area == "kit")
 	{
-		$( 'html, body' ).animate({ scrollTop: $(".sec_summer").height()-10},500);
+		$( 'html, body' ).animate({ scrollTop: $(".sec_summer").height() + $(".sec_movie").height() + 75},500);
 	}else if (area == "collection"){
 		$( 'html, body' ).animate({ scrollTop: 0},500);
 	}

@@ -56,7 +56,7 @@
   <h3>VDL FRIENDS KIT를 발송해 드립니다.</h3>
   URL : <p id="c_url"></p><br />
   <a href="#" onclick="send_kakao();">카톡으로 보내기</a>
-  <a href="#" onclick="copy_url();">URL로 공유하기</a>
+  <a href="#" onclick="copy_url('<?=$_SESSION['ss_url']?>');">URL로 공유하기</a>
 </div>
 <!--------------------- 이벤트 참여 완료 팝업 --------------------->
 

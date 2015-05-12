@@ -373,3 +373,22 @@ function move_cha(param)
 		}
 	},800);
 }
+
+function go_friends(serial)
+{
+	$.ajax({
+		type:"POST",
+		data:{
+			"exec"			: "join_friends",
+			"serial"		: serial
+		},
+		url: "../main_exec.php",
+		success: function(response){
+			if (response == "N"){
+				alert("사용자가 많습니다. 다시 참여해 주세요.");
+			}else{
+				location.href = "http://plus.kakao.com/home/@vdl";
+			}
+		}
+	});
+}

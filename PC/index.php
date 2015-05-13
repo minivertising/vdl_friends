@@ -1,7 +1,5 @@
 <?
 	include_once   "./header.php";
-
-	include_once   "./popup_div.php";
 ?>
 <style type="text/css">
   .bx-wrapper .bx-pager {
@@ -77,6 +75,9 @@
   </div>
 <!--quickmenu-->
 </div>
+<?
+	include_once   "./popup_div.php";
+?>
   </body>
 </html>
 <script type="text/javascript">
@@ -123,24 +124,6 @@ $(document).ready(function() {
 		closeOnBgClick: true,
 		callbacks: {
 			open: function() {
-				$(".bx-pager").css("bottom","-95px");
-				$(".bx-pager > a").css("border","solid #ccc 1px");
-				$(".bx-pager > a").css("display","block");
-				$(".bx-pager > a").css("margin","0 5px");
-				$(".bx-pager > a").css("padding","3px");
-				$(".bx-wrapperr").css("margin-bottom","120px");
-				$('.bxslider').bxSlider({
-					buildPager: function(slideIndex){
-						switch(slideIndex){
-							case 0:
-								return '<img src="./images/thum_muzi.png">';
-							case 1:
-								return '<img src="./images/thum_apeach.png">';
-							case 2:
-								return '<img src="./images/thum_neo.png">';
-						}
-					}
-				});
 			},
 			close: function() {
 				chk_ins = 0;
@@ -150,6 +133,7 @@ $(document).ready(function() {
 			}
 		}
 	});
+
 
 	$( '.quickmenu' ).click( function() {
 		$( 'html, body' ).animate( { scrollTop : 0 }, 800 );
@@ -173,39 +157,9 @@ $(document).ready(function() {
 			cha_gubun = 0;
 		}
 	},800);
-/*
-	interval_id1	= setInterval(function(){
-		if (cha_gubun1 == 0)
-		{
-			$('#muzi_cha').attr("src","images/chra_1_2.png");
-			cha_gubun1 = 1;
-		}else{
-			$('#muzi_cha').attr("src","images/chra_1_1.png");
-			cha_gubun1 = 0;
-		}
-	},800);
 
-	interval_id2	= setInterval(function(){
-		if (cha_gubun2 == 0)
-		{
-			$('#peach_cha').attr("src","images/chra_2_2.png");
-			cha_gubun2 = 1;
-		}else{
-			$('#peach_cha').attr("src","images/chra_2_1.png");
-			cha_gubun2 = 0;
-		}
-	},800);
-
-	interval_id3	= setInterval(function(){
-		if (cha_gubun3 == 0)
-		{
-			$('#neo_cha').attr("src","images/chra_3_2.png");
-			cha_gubun3 = 1;
-		}else{
-			$('#neo_cha').attr("src","images/chra_3_1.png");
-			cha_gubun3 = 0;
-		}
-	},800);
-*/
 });
+
+
+
 </script>

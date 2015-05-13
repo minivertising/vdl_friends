@@ -186,20 +186,26 @@
         </div>
         <div class="content clearfix">
           <div class="arrow_left">
-            <a href="#"><img src="images/popup/btn_arrow_left.png" alt=""/></a>
+            <a href="#" onclick="prev_collection('muzi');"><img src="images/popup/btn_arrow_left.png" alt=""/></a>
           </div>
-          <div class="img_block">
+          <div class="img_block" id="muzi_block1">
+            <img src="images/popup/col_img_muji_1.png" alt=""/>
+          </div>
+          <div class="img_block" id="muzi_block2" style="display:none">
+            <img src="images/popup/col_img_muji_1.png" alt=""/>
+          </div>
+          <div class="img_block" id="muzi_block3" style="display:none">
             <img src="images/popup/col_img_muji_1.png" alt=""/>
           </div>
           <div class="arrow_right">
-            <a href="#"><img src="images/popup/btn_arrow_right.png" alt=""/></a>
+            <a href="#" onclick="next_collection('muzi');"><img src="images/popup/btn_arrow_right.png" alt=""/></a>
           </div>
         </div>
         <div class="block_thumb muji">
           <ul class="clearfix">
-            <li><a href="#" class="selected"><img src="images/popup/thumb_muji_1.png" alt=""/></a></li>
-            <li><a href="#"><img src="images/popup/thumb_muji_1.png" alt=""/></a></li>
-            <li><a href="#"><img src="images/popup/thumb_muji_1.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_muzi1" class="selected"><img src="images/popup/thumb_muji_1.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_muzi2"><img src="images/popup/thumb_muji_1.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_muzi3"><img src="images/popup/thumb_muji_1.png" alt=""/></a></li>
           </ul>
         </div>
         <div class="txt_col">
@@ -227,20 +233,26 @@
         </div>
         <div class="content clearfix">
           <div class="arrow_left">
-            <a href="#"><img src="images/popup/btn_arrow_left.png" alt=""/></a>
+            <a href="#" onclick="prev_collection('apeach');"><img src="images/popup/btn_arrow_left.png" alt=""/></a>
           </div>
-          <div class="img_block">
+          <div class="img_block" id="apeach_block1">
+            <img src="images/popup/col_img_muji_1.png" alt=""/>
+          </div>
+          <div class="img_block" id="apeach_block2" style="display:none">
+            <img src="images/popup/col_img_muji_1.png" alt=""/>
+          </div>
+          <div class="img_block" id="apeach_block3" style="display:none">
             <img src="images/popup/col_img_muji_1.png" alt=""/>
           </div>
           <div class="arrow_right">
-            <a href="#"><img src="images/popup/btn_arrow_right.png" alt=""/></a>
+            <a href="#" onclick="next_collection('apeach');"><img src="images/popup/btn_arrow_right.png" alt=""/></a>
           </div>
         </div>
         <div class="block_thumb muji">
           <ul class="clearfix">
-            <li><a href="#" class="selected"><img src="images/popup/thumb_peach_1.png" alt=""/></a></li>
-            <li><a href="#"><img src="images/popup/thumb_peach_1.png" alt=""/></a></li>
-            <li><a href="#"><img src="images/popup/thumb_peach_1.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_apeach1" class="selected"><img src="images/popup/thumb_peach_1.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_apeach2"><img src="images/popup/thumb_peach_1.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_apeach3"><img src="images/popup/thumb_peach_1.png" alt=""/></a></li>
           </ul>
         </div>
         <div class="txt_col">
@@ -268,20 +280,26 @@
         </div>
         <div class="content clearfix">
           <div class="arrow_left">
-            <a href="#"><img src="images/popup/btn_arrow_left.png" alt=""/></a>
+            <a href="#" onclick="prev_collection('neo');"><img src="images/popup/btn_arrow_left.png" alt=""/></a>
           </div>
-          <div class="img_block">
+          <div class="img_block" id="neo_block1">
+            <img src="images/popup/col_img_muji_1.png" alt=""/>
+          </div>
+          <div class="img_block" id="neo_block2" style="display:none">
+            <img src="images/popup/col_img_muji_1.png" alt=""/>
+          </div>
+          <div class="img_block" id="neo_block3" style="display:none">
             <img src="images/popup/col_img_muji_1.png" alt=""/>
           </div>
           <div class="arrow_right">
-            <a href="#"><img src="images/popup/btn_arrow_right.png" alt=""/></a>
+            <a href="#" onclick="next_collection('neo');"><img src="images/popup/btn_arrow_right.png" alt=""/></a>
           </div>
         </div>
         <div class="block_thumb muji">
           <ul class="clearfix">
-            <li><a href="#" class="selected"><img src="images/popup/thumb_neo_1.png" alt=""/></a></li>
-            <li><a href="#"><img src="images/popup/thumb_neo_1.png" alt=""/></a></li>
-            <li><a href="#"><img src="images/popup/thumb_neo_1.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_neo1" class="selected"><img src="images/popup/thumb_neo_1.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_neo2"><img src="images/popup/thumb_neo_1.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_neo3"><img src="images/popup/thumb_neo_1.png" alt=""/></a></li>
           </ul>
         </div>
         <div class="txt_col">

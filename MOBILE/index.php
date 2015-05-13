@@ -25,24 +25,6 @@
     <div class="ch_cm ch_3">
       <a href="#"><img src="images/img_ch_3.png"  alt="" id="neo_cha"/></a>
     </div>
-<<<<<<< HEAD
-    
-    
-  
-  <div id="mobile_menu" class="mobile_menu">
-    <ul>
-      <li><a href="#"><img src="images/btn_summer.jpg"  alt=""/></a></li>
-      <li><a href="#"><img src="images/btn_vdl_kit.jpg"  alt=""/></a></li>
-    </ul>
-    <div class="btn_sns">
-    	<div class="inner_sns clearfix">
-        	<a href="#"><img src="images/btn_tw.jpg"  alt=""/></a>
-            <a href="#"><img src="images/btn_fb.jpg"  alt=""/></a>
-            <a href="#"><img src="images/btn_ks.jpg"  alt=""/></a>
-        </div>
-    </div>
-=======
->>>>>>> b6494dbcb4d483be343b7dbb7cbb228de5c33889
   </div>
 </div>
 
@@ -75,11 +57,19 @@
 <div class="footer">
   <img src="images/footer.jpg"  alt=""/>
 </div>
-
-<div id="mobile_menu" class="mobile_menu" style="width:227px">
+  
+<div id="mobile_menu" class="mobile_menu">
   <ul>
-    <li><a href="#">summer</a></li>
+    <li><a href="#"><img src="images/btn_summer.jpg"  alt=""/></a></li>
+    <li><a href="#"><img src="images/btn_vdl_kit.jpg"  alt=""/></a></li>
   </ul>
+  <div class="btn_sns">
+      <div class="inner_sns clearfix">
+          <a href="#"><img src="images/btn_tw.jpg"  alt=""/></a>
+          <a href="#"><img src="images/btn_fb.jpg"  alt=""/></a>
+          <a href="#"><img src="images/btn_ks.jpg"  alt=""/></a>
+      </div>
+  </div>
 </div>
 <div class="mask"></div>
 <?

@@ -1,27 +1,6 @@
 <?
 	include_once   "./header.php";
 ?>
-<style type="text/css">
-  .bx-wrapper .bx-pager {
-    bottom: -95px;
-  }
-  
-  .bx-wrapper .bx-pager a {
-    border: solid #ccc 1px;
-    display: block;
-    margin: 0 5px;
-    padding: 3px;
-  }
-  
-  .bx-wrapper .bx-pager a:hover,
-  .bx-wrapper .bx-pager a.active {
-    border: solid #5280DD 1px;
-  }
-  
-  .bx-wrapper {
-    margin-bottom: 120px;
-  }
-</style>
 <div id="contents_wrap" class="contents_wrap">
   <input type="hidden" name="mb_idx" id="mb_idx" value="">
   <div class="sec_summer">

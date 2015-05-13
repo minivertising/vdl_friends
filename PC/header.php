@@ -21,6 +21,10 @@
     <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
   </head>
   <body style="margin:0px">
+<?
+	if (stripos($_SERVER['REQUEST_URI'], "index.php"))
+	{
+?>
     <!------------------------ 헤더 타이틀 영역 ------------------------>
     <div class="navi clearfix" id="navi_menu">
       <div class="left">
@@ -43,3 +47,6 @@
       </div>
     </div>
     <!------------------------ 헤더 타이틀 영역 ------------------------>
+<?
+	}
+?>

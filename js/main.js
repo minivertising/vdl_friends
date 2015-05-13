@@ -215,6 +215,67 @@ function input_message()
 	}
 }
 
+function m_input_message()
+{
+	if (chk_ins == 0)
+	{
+		chk_ins = 1;
+		var mb_receive		= $("#mb_receive").val();
+		var mb_message	= $("#mb_message").val();
+		var mb_send			= $("#mb_send").val();
+
+		if (mb_receive == "")
+		{
+
+			//alert('개인정보 입력을 안 하셨습니다');
+			setTimeout("ins_data();",500);
+
+			$("#mb_receive").focus();
+			chk_ins = 0;
+			return false;
+		}
+
+		if (mb_message == "")
+		{
+
+			//alert('개인정보 입력을 안 하셨습니다');
+			setTimeout("ins_data();",500);
+
+			$("#mb_message").focus();
+			chk_ins = 0;
+			return false;
+		}
+
+		if (mb_send == "")
+		{
+
+			//alert('개인정보 입력을 안 하셨습니다');
+			setTimeout("ins_data();",500);
+
+			$("#mb_send").focus();
+			chk_ins = 0;
+			return false;
+		}
+
+		$.ajax({
+			type:"POST",
+			data:{
+				"exec"					: "insert_message",
+				"mb_receive"		: mb_receive,
+				"mb_message"		: mb_message,
+				"mb_send"			: mb_send
+			},
+			url: "../main_exec.php",
+			success: function(response){
+				//alert(response);
+				//$("#mb_idx").val(response);
+				//setTimeout("ins2_data('" + response + "');",500);
+				location.href = "./popup_input2.php";
+			}
+		});
+	}
+}
+
 function input_message2()
 {
 	if (chk_ins2 == 0)
@@ -439,6 +500,45 @@ function move_cha(param)
 			$('#muzi_cha').attr("src","images/chra_1_1.png");
 			$('#peach_cha').attr("src","images/chra_2_1.png");
 			$('#neo_cha').attr("src","images/chra_3_1.png");
+			cha_gubun = 0;
+		}
+	},800);
+}
+
+function m_stop_cha(param)
+{
+	if (param == "1")
+	{
+		clearInterval(interval_id);
+		$("#muzi_cha").attr("src","images/img_ch_1.png");
+		$("#peach_cha").attr("src","images/img_ch_2_2.png");
+		$("#neo_cha").attr("src","images/img_ch_3_2.png");
+	}else if (param == "2"){
+		clearInterval(interval_id);
+		$("#muzi_cha").attr("src","images/img_ch_1_1.png");
+		$("#peach_cha").attr("src","images/chra_2.png");
+		$("#neo_cha").attr("src","images/img_ch_3_2.png");
+	}else{
+		clearInterval(interval_id);
+		$("#muzi_cha").attr("src","images/img_ch_1_1.png");
+		$("#peach_cha").attr("src","images/img_ch_2_2.png");
+		$("#neo_cha").attr("src","images/img_ch_3.png");
+	}
+}
+
+function m_move_cha(param)
+{
+	interval_id	= setInterval(function(){
+		if (cha_gubun == 0)
+		{
+			$('#muzi_cha').attr("src","images/img_ch_1_1.png");
+			$('#peach_cha').attr("src","images/img_ch_2_2.png");
+			$('#neo_cha').attr("src","images/img_ch_3_2.png");
+			cha_gubun = 1;
+		}else{
+			$('#muzi_cha').attr("src","images/img_ch_1.png");
+			$('#peach_cha').attr("src","images/img_ch_2.png");
+			$('#neo_cha').attr("src","images/img_ch_3.png");
 			cha_gubun = 0;
 		}
 	},800);

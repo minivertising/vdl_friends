@@ -30,13 +30,21 @@
     <script type="text/javascript" src="../lib/Magnific-Popup/jquery.magnific-popup.js"></script>
     <script type="text/javascript" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
     <script type='text/javascript' src="../js/main.js"></script>
-    <script type="text/javascript" src="../js/jQueryTween.min.js"></script>
-    <script type="text/javascript" src="../js/RequestAnimationFrame.js"></script>
-    <script type="text/javascript" src="../js/tween.min.js"></script>
     <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-	<script type='text/javascript' src='../js/analytics.js'></script>
     <style>
 	html,body { height: 100%; margin: 0; padding: 0;}
     </style>
 
   </head>
+  <body>
+<?
+	if (stripos($_SERVER['REQUEST_URI'], "index.php"))
+	{
+?>
+    <div class="menu clearfix">
+      <a href="http://www.vdlcosmetic.com/m/index.jsp" class="logo" target="_blank"><img src="images/logo.png" width="170" alt=""/></a>
+      <a href="#" class="menu_ham"  onclick="show_menu()"><img src="images/menu_ham.png" width="26" alt=""/></a>
+    </div>
+<?
+	}
+?>

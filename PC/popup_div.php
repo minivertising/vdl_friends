@@ -1,15 +1,3 @@
-
-<!--------------------- 이벤트 시작 팝업 --------------------->
-<div id="pop_event_main" class="zoom-anim-dialog mfp-hide" style="background:white;width:800px;height:500px;margin-left:-400px;margin-top:-250px;top:50%;left:50%;position:absolute">
-  <h1>Funnier Than Ever!</h1>
-  <h1>VDL FRIENDS KIT을 받아볼까?</h1>
-  <h2>소중한 친구에게 메시지를 보내면 5천원 할인 쿠폰을 모든 분들에게!</h2>
-  <h2>친구가 메시지를 받고 VDL과 플러스 친구를 맺으면</h2>
-  <h2>귀여운 콜라보레이션 제품이 들어있는 VDL FRIENDS KIT를 받을 수 있어요!</h2>
-  <a href="#pop_event_input" class="popup-with-zoom-anim">메시지 보내기!</a>
-</div>
-<!--------------------- 이벤트 시작 팝업 --------------------->
-
 <!--------------------- 이벤트 메세지 입력 팝업 --------------------->
 <div id="pop_event_input" class="popup_wrap zoom-anim-dialog mfp-hide" style="top:50%;left:50%;margin-left:-303px">
   <div class="p_mid p_position">

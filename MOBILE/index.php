@@ -138,6 +138,12 @@ $(document).ready(function() {
 		}
 	},800);
 
+	$(".mask").click(function(){
+		$('#mobile_menu').animate({right:-200},300,'linear',function(){
+			$("#mobile_menu").hide();
+			$(".mask").fadeOut(300);
+		});
+	});
 });
 
 function screen_move(param)

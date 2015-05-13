@@ -52,9 +52,9 @@
       </ul>
       <div class="btn_sns">
         <div class="inner_sns clearfix">
-          <a href="#"><img src="images/btn_tw.jpg"  alt=""/></a>
-          <a href="#"><img src="images/btn_fb.jpg"  alt=""/></a>
-          <a href="#"><img src="images/btn_ks.jpg"  alt=""/></a>
+          <a href="#" onclick="sns_share('twitter');"><img src="images/btn_tw.jpg"  alt=""/></a>
+          <a href="#" onclick="sns_share('facebook');"><img src="images/btn_fb.jpg"  alt=""/></a>
+          <a href="#" onclick="sns_share('story');"><img src="images/btn_ks.jpg"  alt=""/></a>
         </div>
       </div>
     </div>

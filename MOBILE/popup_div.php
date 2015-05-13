@@ -128,7 +128,7 @@
 <div id="pop_use_agree" class="popup_wrap zoom-anim-dialog mfp-hide">
   <div class="p_mid p_position">
     <div class="block_close clearfix">
-      <a href="#pop_event_input2" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>
+      <a href="#"  onclick="$.magnificPopup.close();" class="btn_close"><img src="images/popup/btn_close.png" /></a>
     </div>
     <div class="block_content">
       <div class="agree_inner">
@@ -168,7 +168,7 @@
 <div id="pop_privacy_agree" class="popup_wrap zoom-anim-dialog mfp-hide">
   <div class="p_mid p_position">
     <div class="block_close clearfix">
-      <a href="#pop_event_input2" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>
+      <a href="#" onclick="$.magnificPopup.close();" class="btn_close"><img src="images/popup/btn_close.png" /></a>
     </div>
     <div class="block_content">
       <div class="agree_inner">
@@ -208,7 +208,7 @@
 <div id="pop_adver_agree" class="popup_wrap zoom-anim-dialog mfp-hide">
   <div class="p_mid p_position">
     <div class="block_close clearfix">
-      <a href="#pop_event_input2" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>
+      <a href="#" onclick="$.magnificPopup.close();" class="btn_close"><img src="images/popup/btn_close.png" /></a>
     </div>
     <div class="block_content">
       <div class="agree_inner">
@@ -248,14 +248,14 @@
 <div id="pop_close_confirm" class="popup_wrap zoom-anim-dialog mfp-hide">
   <div class="p_mid p_position">
     <div class="block_close clearfix">
-      <a href="#pop_event_input2" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>
+      <a href="index.php" class="btn_close"><img src="images/popup/btn_close.png" /></a>
     </div>
     <div class="block_content">
       <div class="inner">
         <div class="title"><img src="images/popup/title_close.png" /></div>
         <div class="block_btn clearfix">
-          <a href="#" onclick="$.magnificPopup.close();" class="left"><img src="images/popup/btn_out.png" /></a>
-          <a href="#pop_event_input2" class="right popup-with-zoom-anim"><img src="images/popup/btn_keep.png" /></a>
+          <a href="index.php" class="left"><img src="images/popup/btn_out.png" /></a>
+          <a href="#" class="right" onclick="$.magnificPopup.close();"><img src="images/popup/btn_keep.png" /></a>
         </div>
       </div><!--inner-->
     </div>
@@ -270,13 +270,13 @@
 <div id="pop_input1" class="popup_wrap zoom-anim-dialog mfp-hide">
   <div class="p_mid p_position">
     <div class="block_close clearfix">
-      <a href="#pop_event_input" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>
+      <a href="#" class="btn_close" onclick="$.magnificPopup.close();"><img src="images/popup/btn_close.png" /></a>
     </div>
     <div class="block_content">
       <div class="inner inner_common">
         <div class="title"><img src="images/popup/title_input_info.png" /></div>
         <div class="block_btn">
-          <a href="#pop_event_input" class="common popup-with-zoom-anim"><img src="images/popup/btn_ok.png" /></a>
+          <a href="#" class="common" onclick="$.magnificPopup.close();"><img src="images/popup/btn_ok.png" /></a>
         </div>
       </div><!--inner-->
     </div>
@@ -291,13 +291,13 @@
 <div id="pop_input2" class="popup_wrap zoom-anim-dialog mfp-hide">
   <div class="p_mid p_position">
     <div class="block_close clearfix">
-      <a href="#pop_event_input2" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>
+      <a href="#" class="btn_close" onclick="$.magnificPopup.close();"><img src="images/popup/btn_close.png" /></a>
     </div>
     <div class="block_content">
       <div class="inner inner_common">
         <div class="title"><img src="images/popup/title_input_info.png" /></div>
         <div class="block_btn">
-          <a href="#pop_event_input2" class="common popup-with-zoom-anim"><img src="images/popup/btn_ok.png" /></a>
+          <a href="#" class="common" onclick="$.magnificPopup.close();"><img src="images/popup/btn_ok.png" /></a>
         </div>
       </div><!--inner-->
     </div>
@@ -312,13 +312,13 @@
 	<div id="pop_use_agree_alert" class="popup_wrap zoom-anim-dialog mfp-hide">
    	  	<div class="p_mid p_position">
             <div class="block_close clearfix">
-                <a href="#pop_event_input2" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>
+                <a href="#" class="btn_close" onclick="$.magnificPopup.close();"><img src="images/popup/btn_close.png" /></a>
             </div>
             <div class="block_content">
             	<div class="inner inner_common">
                		<div class="title"><img src="images/popup/title_agree_info.png" /></div>
                     <div class="block_btn">
-                    	<a href="#pop_event_input2" class="common popup-with-zoom-anim"><img src="images/popup/btn_ok.png" /></a>
+                    	<a href="#" class="common" onclick="$.magnificPopup.close();"><img src="images/popup/btn_ok.png" /></a>
                     </div>
                 </div><!--inner-->
             </div>
@@ -333,13 +333,13 @@
 	<div id="pop_adver_agree_alert" class="popup_wrap zoom-anim-dialog mfp-hide">
    	  	<div class="p_mid p_position">
             <div class="block_close clearfix">
-                <a href="#pop_event_input2" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>
+                <a href="#" class="btn_close" onclick="$.magnificPopup.close();"><img src="images/popup/btn_close.png" /></a>
             </div>
             <div class="block_content">
             	<div class="inner inner_common">
                		<div class="title"><img src="images/popup/title_agree_ad.png" /></div>
                     <div class="block_btn">
-                    	<a href="#pop_event_input2" class="common popup-with-zoom-anim"><img src="images/popup/btn_ok.png" /></a>
+                    	<a href="#" class="common" onclick="$.magnificPopup.close();"><img src="images/popup/btn_ok.png" /></a>
                     </div>
                 </div><!--inner-->
             </div>
@@ -354,13 +354,13 @@
 	<div id="pop_privacy_agree_alert" class="popup_wrap zoom-anim-dialog mfp-hide">
    	  	<div class="p_mid p_position">
             <div class="block_close clearfix">
-                <a href="#pop_event_input2" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>
+                <a href="#" class="btn_close" onclick="$.magnificPopup.close();"><img src="images/popup/btn_close.png" /></a>
             </div>
             <div class="block_content">
             	<div class="inner inner_common">
                		<div class="title"><img src="images/popup/title_agree_agency.png" /></div>
                     <div class="block_btn">
-                    	<a href="#pop_event_input2" class="common popup-with-zoom-anim"><img src="images/popup/btn_ok.png" /></a>
+                    	<a href="#" class="common" onclick="$.magnificPopup.close();"><img src="images/popup/btn_ok.png" /></a>
                     </div>
                 </div><!--inner-->
             </div>

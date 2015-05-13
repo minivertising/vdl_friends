@@ -5,6 +5,7 @@
 <html>
   <head>
     <title>Document</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/pavicon.ico" />
     <link rel="stylesheet" type="text/css" href="../lib/fullpage/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="../lib/Magnific-Popup/magnific-popup.css"> 
     <link rel="stylesheet" type="text/css" href="./css/style.css"> 

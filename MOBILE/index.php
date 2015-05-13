@@ -10,20 +10,20 @@
   </div>
 </div>
 
-<div class="block_movie">
+<div class="block_movie" style="margin-top:-4px">
   <iframe allowfullscreen="1" src="<?=$_gl['youtube_url']?>" frameborder="0" id="ytplayer" class="ytplayer"></iframe>
 </div>
 
 <div class="block_chrc">
   <div class="inner_chrc clearfix">
     <div class="ch_cm ch_1">
-      <a href="#"><img src="images/img_ch_1.png"  alt=""/></a>
+      <a href="#"><img src="images/img_ch_1.png"  alt="" id="muzi_cha"/></a>
     </div>
     <div class="ch_cm ch_2">
-      <a href="#"><img src="images/img_ch_2.png"  alt=""/></a>
+      <a href="#"><img src="images/img_ch_2.png"  alt="" id="peach_cha"/></a>
     </div>
     <div class="ch_cm ch_3">
-      <a href="#"><img src="images/img_ch_3.png"  alt=""/></a>
+      <a href="#"><img src="images/img_ch_3.png"  alt="" id="neo_cha"/></a>
     </div>
   </div>
 </div>
@@ -33,7 +33,8 @@
     <img src="images/title_kit.png" alt=""/>
   </div>
   <div class="btn_block">
-    <a href="#" data-mfp-src="#pop_event_input" class="popup-with-zoom-anim"  style="outline: none;"><img src="images/btn_send.png" alt=""/></a>
+    <!-- <a href="#" data-mfp-src="#pop_event_input" class="popup-with-zoom-anim"  style="outline: none;"><img src="images/btn_send.png" alt=""/></a> -->
+    <a href="popup_input1.php" style="outline: none;"><img src="images/btn_send.png" alt=""/></a>
   </div>
   <div class="img_event">
     <img src="images/img_event.png" alt=""/>
@@ -46,7 +47,7 @@
 
 <div class="block_plus">
   <div class="btn_block">
-    <a href="#"><img src="images/btn_plus.png" alt=""/></a>
+    <a href="http://plus.kakao.com/home/@vdl" target="_blank"><img src="images/btn_plus.png" alt=""/></a>
   </div>
   <div class="img_plus">
     <img src="images/img_plus.jpg" alt=""/>
@@ -79,6 +80,10 @@ var interval_id1;
 var interval_id2;
 var interval_id3;
 $(document).ready(function() {
+	var width = $(window).width();
+	var youtube_height = (width / 16) * 9;
+	$("#ytplayer").width(width);
+	$("#ytplayer").height(youtube_height);
 
 	// 체크박스 스타일 설정
 	$('.zoom-anim-dialog input').on('ifChecked ifUnchecked', function(event){
@@ -126,14 +131,14 @@ $(document).ready(function() {
 	interval_id	= setInterval(function(){
 		if (cha_gubun == 0)
 		{
-			$('#muzi_cha').attr("src","images/chra_1_2.png");
-			$('#peach_cha').attr("src","images/chra_2_2.png");
-			$('#neo_cha').attr("src","images/chra_3_2.png");
+			$('#muzi_cha').attr("src","images/img_ch_1_1.png");
+			$('#peach_cha').attr("src","images/img_ch_2_2.png");
+			$('#neo_cha').attr("src","images/img_ch_3_2.png");
 			cha_gubun = 1;
 		}else{
-			$('#muzi_cha').attr("src","images/chra_1_1.png");
-			$('#peach_cha').attr("src","images/chra_2_1.png");
-			$('#neo_cha').attr("src","images/chra_3_1.png");
+			$('#muzi_cha').attr("src","images/img_ch_1.png");
+			$('#peach_cha').attr("src","images/img_ch_2.png");
+			$('#neo_cha').attr("src","images/img_ch_3.png");
 			cha_gubun = 0;
 		}
 	},800);

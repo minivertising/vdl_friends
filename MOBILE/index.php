@@ -3,67 +3,68 @@
 ?>
   <body>
 <div class="menu clearfix">
-   <a href="http://www.belifcosmetic.com/mobile" class="logo" target="_blank"><img src="img/logo.png" width="56" alt=""/></a>
-   <a href="#" class="menu_ham"  onclick="show_menu()"><img src="img/menu_ham.png" width="26" alt=""/></a>
+   <a href="#" class="logo" target="_blank"><img src="images/logo.png" width="170" alt=""/></a>
+   <a href="#" class="menu_ham"  onclick="show_menu()"><img src="images/menu_ham.png" width="26" alt=""/></a>
 </div>
-<div>
-  <div>
-    <div class="block_game">
-      <div class="inner_ele">
-        <div class="btn_block">
-          <a href="motion_game.php" style="background:none;outline: none;">
-            <img src="img/btn_game_go.png" alt=""/>
-          </a>
+
+    <div class="block_top">
+        <div class="title">
+            <img src="images/title_vdl.png"  alt=""/>
         </div>
-      </div>   
-      <div class="bg_top img_wrap"><img src="img/bg_top.png" alt=""/></div>   
-    </div>
-    <div class="offevent1">
-      <div class="inner_ele">
-        <div class="btn_block">
-          <a href="popup_cal.php"><img src="img/btn_cal.png" alt=""/></a>
+        <div class="top_bg">
+        	<img src="images/top_bg.jpg"  alt=""/>
         </div>
-      </div>    
-      <div class="bg_offevnet1 img_wrap"><img src="img/bg_offevent1.png" alt=""/></div>  
     </div>
-    <div class="offevent2">
-      <div class="inner_ele">
-        <div class="btn_block">
-          <a href="popup_cal.php"><img src="img/btn_cal.png" alt=""/></a>
+    
+    <div class="block_movie">
+    </div>
+    
+    <div class="block_chrc">
+    	<div class="inner_chrc clearfix">
+        	<div class="ch_cm ch_1">
+            	<a href="#"><img src="images/img_ch_1.png"  alt=""/></a>
+            </div>
+        	<div class="ch_cm ch_2">
+            	<a href="#"><img src="images/img_ch_2.png"  alt=""/></a>
+            </div>
+        	<div class="ch_cm ch_3">
+            	<a href="#"><img src="images/img_ch_3.png"  alt=""/></a>
+            </div>
         </div>
-      </div>    
-      <div class="bg_offevnet2 img_wrap"><img src="img/bg_offevent2.png" alt=""/></div>  
     </div>
-    <div class="mbom1">
-      <div class="inner_ele">
-        <div class="btn_block">
-          <a href="http://m.belifcosmetic.com/mobile_app/product/detail.jsp?pid=ACM04550" target="_blank"><img src="img/btn_detail_m.png" alt=""/></a>
+    <div class="block_vdl_kit">
+    	<div class="title">
+        	<img src="images/title_kit.png" alt=""/>
         </div>
-      </div>    
-      <div class="bg_mbom img_wrap"><img src="img/bg_mbom1.png" alt=""/></div>  
-    </div>
-    <div class="abom1">
-      <div class="inner_ele">
         <div class="btn_block">
-          <a href="http://m.belifcosmetic.com/mobile_app/product/detail.jsp?pid=ACM04551" target="_blank"><img src="img/btn_detail_a.png" alt=""/></a>
+        	<a href="#"><img src="images/btn_send.png" alt=""/></a>
         </div>
-      </div>    
-      <div class="bg_abom img_wrap"><img src="img/bg_abom1.png" alt=""/></div>  
+        <div class="img_event">
+        	<img src="images/img_event.png" alt=""/>
+        </div>
     </div>
-    <div class="footer img_wrap">
-      <img src="img/footer.png"  alt=""/>
+    <div class="block_howto">
+    	<img src="images/img_howto.jpg" alt=""/>
     </div>
-  </div>
+        
+    <div class="block_plus">
+    
+    	<div class="btn_block">
+        	<a href="#"><img src="images/btn_plus.png" alt=""/></a>
+        </div>
+    	<div class="img_plus">
+        	<img src="images/img_plus.jpg" alt=""/>
+        </div>
+    </div>
+    <div class="footer">
+      <img src="images/footer.jpg"  alt=""/>
+    </div>
+    
+    
+  
   <div id="mobile_menu" class="mobile_menu">
     <ul>
-      <li><a href="motion_game.php"><img src="img/gnb_game.png"  alt=""/></a></li>
-      <li><a href="#" onclick="screen_move('event');"><img src="img/gnb_event.png"  alt=""/></a></li>
-      <li class="cal"><a href="popup_cal.php"><img src="img/gnb_cal.png"  alt=""/></a></li>
-      <li class="pd"><a href="#" onclick="screen_move('product');"><img src="img/gnb_pd.png"  alt=""/></a></li>
-      <li class="clearfix last">
-        <a href="#" class="left" onclick="sns_share('facebook')"><img src="img/gnb_fb.png"  alt=""/></a>
-        <a href="#"   id="kakao-link-btn" onclick="sns_share('kakao')"><img src="img/gnb_kt.png"  alt=""/></a>
-      </li>
+      <li><a href="#">summer</a></li>
     </ul>
   </div>
   <div class="mask"></div>

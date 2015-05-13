@@ -639,3 +639,23 @@ function next_collection(param)
 		}
 	}
 }
+
+function show_menu()
+{
+	if ($("#mobile_menu").css("display") == "block")
+	{
+		$('#mobile_menu').animate({right:-200},300,'linear',function(){
+			$("#mobile_menu").hide();
+			$(".mask").fadeOut(300);
+		});
+	}else{
+		$(".mask").width($(window).width());
+		$(".mask").height($(window).height());
+		$(".mask").fadeTo(1000, 0.6);
+
+		$('#mobile_menu').css('right','-200px');
+		// 이동위치값 지정
+		var position = 0;
+		$('#mobile_menu').show().animate({right:position},300,'linear');
+	}
+}

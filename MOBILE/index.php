@@ -3,7 +3,7 @@
 ?>
   <body>
 <div class="menu clearfix">
-   <a href="#" class="logo" target="_blank"><img src="images/logo.png" width="170" alt=""/></a>
+   <a href="http://www.vdlcosmetic.com/m/index.jsp" class="logo" target="_blank"><img src="images/logo.png" width="170" alt=""/></a>
    <a href="#" class="menu_ham"  onclick="show_menu()"><img src="images/menu_ham.png" width="26" alt=""/></a>
 </div>
 
@@ -17,6 +17,7 @@
     </div>
     
     <div class="block_movie">
+      <iframe allowfullscreen="1" src="<?=$_gl['youtube_url']?>" frameborder="0" id="ytplayer" class="ytplayer"></iframe>
     </div>
     
     <div class="block_chrc">
@@ -62,7 +63,7 @@
     
     
   
-  <div id="mobile_menu" class="mobile_menu">
+  <div id="mobile_menu" class="mobile_menu" style="width:227px">
     <ul>
       <li><a href="#">summer</a></li>
     </ul>

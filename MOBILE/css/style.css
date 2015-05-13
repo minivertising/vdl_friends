@@ -534,6 +534,16 @@ html[xmlns] .clearfix {
 	height: 1%;
 }
 
+.mobile_menu{
+	position:absolute;
+	width:55%;
+	height:100%;
+	background:#fff;
+	top:0;right:0;
+	display:none;
+	z-index:9;
+	margin-top:56px;
+}
 
 
 /* 팝업 jQuery ( Magnific-Popup ) 관련 CSS */

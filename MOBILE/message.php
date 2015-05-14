@@ -1,4 +1,5 @@
 <?
+	include_once "../config.php";
 	//include_once   "./header.php";
 
 	$serial		= $_REQUEST['serial'];
@@ -13,9 +14,6 @@
 
 	//if ($result)
 		//echo "<script>location.href='http://plus.kakao.com/home/@vdl';</script>";
-?>
-<?
-	include_once "../config.php";
 ?>
 <!doctype html>
 <html>

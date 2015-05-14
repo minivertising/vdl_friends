@@ -53,7 +53,7 @@
         <div class="inner_sns clearfix">
           <a href="#" onclick="sns_share('twitter');"><img src="images/btn_tw.jpg"  alt=""/></a>
           <a href="#" onclick="sns_share('facebook');"><img src="images/btn_fb.jpg"  alt=""/></a>
-          <a href="#" onclick="sns_share('kakao');"><img src="images/btn_kt.jpg"  alt=""/></a>
+          <a href="#" onclick="sns_share('kakao');" id="kakao-link-btn"><img src="images/btn_kt.jpg"  alt=""/></a>
           <a href="#" onclick="sns_share('story');"><img src="images/btn_ks.jpg"  alt=""/></a>
         </div>
       </div>

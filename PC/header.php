@@ -22,6 +22,7 @@
     <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="../js/unslider.js"></script>
     <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/jquery.zclip.js"></script>
     <script type="text/javascript" src="../lib/fullpage/jquery.fullPage.js"></script>
     <script type="text/javascript" src="../lib/Magnific-Popup/jquery.magnific-popup.js"></script>
     <script type='text/javascript' src='../lib/iCheck/icheck.js'></script>

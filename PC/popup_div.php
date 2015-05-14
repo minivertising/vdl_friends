@@ -145,9 +145,9 @@
         <div class="block_url" id="c_url"></div>
         <div class="txt_notice">
           <img src="images/popup/txt_url_notice_2.png" alt=""/>
-        </div>                    
+        </div>
         <div class="btn_block">
-          <a href="#" onclick="copy_url();"><img src="images/popup/btn_url.png" alt=""/></a>
+          <a href="#" id="cp_url" onclick="copy_url();"><img src="images/popup/btn_url.png" alt=""/></a>
         </div>
         <div class="txt_notice">
           <img src="images/popup/txt_url_notice.png" alt=""/>

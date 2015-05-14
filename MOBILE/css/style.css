@@ -484,6 +484,9 @@
 	width:40px;
 	height:40px;
 }
+.popup_wrap .block_close .btn_close img{
+	width:95%;
+}
 .popup_wrap .title{
 	text-align:center;
 }

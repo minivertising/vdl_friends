@@ -168,7 +168,7 @@ function input_message()
 		{
 
 			//alert('개인정보 입력을 안 하셨습니다');
-			setTimeout("ins_data();",500);
+			setTimeout("ins_message_data();",500);
 
 			$("#mb_receive").focus();
 			chk_ins = 0;
@@ -190,7 +190,7 @@ function input_message()
 		{
 
 			//alert('개인정보 입력을 안 하셨습니다');
-			setTimeout("ins_data();",500);
+			setTimeout("ins_message_data();",500);
 
 			$("#mb_send").focus();
 			chk_ins = 0;
@@ -228,7 +228,7 @@ function m_input_message()
 		{
 
 			//alert('개인정보 입력을 안 하셨습니다');
-			setTimeout("ins_data();",500);
+			setTimeout("ins_message_data();",500);
 
 			$("#mb_receive").focus();
 			chk_ins = 0;
@@ -250,7 +250,7 @@ function m_input_message()
 		{
 
 			//alert('개인정보 입력을 안 하셨습니다');
-			setTimeout("ins_data();",500);
+			setTimeout("ins_message_data();",500);
 
 			$("#mb_send").focus();
 			chk_ins = 0;

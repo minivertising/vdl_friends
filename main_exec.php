@@ -87,7 +87,7 @@ switch ($_REQUEST['exec'])
 			$result2			= mysqli_query($my_db, $query2);
 			$member_info	= mysqli_fetch_array($result2);
 
-			send_lms($member_info['mb_phone'], $member_info['mb_url']);
+			send_lms($member_info['mb_phone'], $member_info['mb_winner_url']);
 
 			$flag = "Y";
 		}else{

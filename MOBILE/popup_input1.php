@@ -19,7 +19,7 @@
         </div>
         <div class="block_input clearfix">
           <div class="label"><img src="images/popup/label_mss.png" /></div>
-          <div class="input_txt"><textarea name="mb_message" id="mb_message" placeholder="친구에게 보낼 메세지를 입력해주세요."></textarea></div>
+          <div class="input_txt"><textarea name="mb_message" id="mb_message" placeholder="친구에게 보낼 메세지를 입력해주세요." onkeyup="check_message();"></textarea></div>
         </div>
         <div class="block_input clearfix">
           <div class="label"><img src="images/popup/label_from.png" /></div>

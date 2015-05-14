@@ -11,8 +11,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
     <meta property="og:title" content="VDL MEETS KAKAO FRIENDS">
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.belifbomb.com/MOBILE/index.php" />
-    <meta property="og:image" content="http://www.belifbomb.com/MOBILE/images/img_sns_share.png" />
+    <meta property="og:url" content="http://www.mnv.kr/MOBILE/index.php" />
+    <meta property="og:image" content="http://www.mnv.kr/MOBILE/images/img_sns_share.jpg" />
     <meta property="og:description" content="재기 발랄한 카카오 프렌즈와 감각적인 브이디엘이 만나 선보이는 키치 꾸뛰르 감성의 써머 컬렉션">
 
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
@@ -53,7 +53,7 @@
         <div class="inner_sns clearfix">
           <a href="#" onclick="sns_share('twitter');"><img src="images/btn_tw.jpg"  alt=""/></a>
           <a href="#" onclick="sns_share('facebook');"><img src="images/btn_fb.jpg"  alt=""/></a>
-          <a href="#" onclick="sns_share('facebook');"><img src="images/btn_kt.jpg"  alt=""/></a>
+          <a href="#" onclick="sns_share('kakao');" id="kakao-link-btn"><img src="images/btn_kt.jpg"  alt=""/></a>
           <a href="#" onclick="sns_share('story');"><img src="images/btn_ks.jpg"  alt=""/></a>
         </div>
       </div>

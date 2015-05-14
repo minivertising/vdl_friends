@@ -3,7 +3,7 @@ function sns_share(media)
 {
 	if (media == "facebook")
 	{
-		var newWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('http://www.belifbomb.com/?media=facebook'),'sharer','toolbar=0,status=0,width=600,height=325');
+		var newWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('http://www.mnv.kr/?media=facebook'),'sharer','toolbar=0,status=0,width=600,height=325');
 		$.ajax({
 			type   : "POST",
 			async  : false,
@@ -18,15 +18,15 @@ function sns_share(media)
 		// 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
 		Kakao.Link.createTalkLinkButton({
 		  container: '#kakao-link-btn',
-		  label: "지금 정해진 시간안에 폭탄 크림을 터트리면 빌리프의 다양한 선물이 쏟아집니다.\r\n\r\n더 많은 이벤트 자세히 보기",
+		  label: "재기 발랄한 카카오 프렌즈와 감각적인 브이디엘이 만나 선보이는 키치 꾸뛰르 감성의 써머 컬렉션",
 		  image: {
-			src: 'http://www.belifbomb.com/MOBILE/img/sns_image.png',
+			src: 'http://www.mnv.kr/MOBILE/images/img_sns_share.jpg',
 			width: '1200',
 			height: '630'
 		  },
 		  webButton: {
-			text: '수분폭탄, 즐거움이 터진다',
-			url: 'http://www.belifbomb.com/?media=kakao' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
+			text: 'VDL 써머 컬렉션',
+			url: 'http://www.mnv.kr/?media=kakao' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
 		  }
 		});
 		$.ajax({
@@ -39,7 +39,7 @@ function sns_share(media)
 			}
 		});
 	}else if (media == "twitter"){
-		var newWindow = window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent("1. 서장훈, 촉촉하게 수지랑! 서장훈 구름탄 기분이랄까~촉촉한 선물 2. 서장훈 더페이스샵 CF모델? '아니아니 그게 아니고' 공개! 구름선물") + '&url='+ encodeURIComponent('http://bit.ly/1E9UlZ3'),'sharer','toolbar=0,status=0,width=600,height=325');
+		var newWindow = window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent("재기 발랄한 카카오 프렌즈와 감각적인 브이디엘이 만나 선보이는 키치 꾸뛰르 감성의 써머 컬렉션") + '&url='+ encodeURIComponent('http://bit.ly/1E9UlZ3'),'sharer','toolbar=0,status=0,width=600,height=325');
 		$.ajax({
 			type   : "POST",
 			async  : false,
@@ -59,7 +59,7 @@ function sns_share(media)
 				Kakao.API.request( {
 					url : '/v1/api/story/linkinfo',
 					data : {
-						url : 'http://www.belifbomb.com/?media=story'
+						url : 'http://www.mnv.kr/?media=story'
 					}
 				}).then(function(res) {
 					// 이전 API 호출이 성공한 경우 다음 API를 호출합니다.
@@ -67,7 +67,7 @@ function sns_share(media)
 						url : '/v1/api/story/post/link',
 						data : {
 						link_info : res,
-							content:"지금 정해진 시간안에 폭탄 크림을 터트리면 빌리프의 다양한 선물이 쏟아집니다.\r\n\r\n더 많은 이벤트 자세히 보기"
+							content:"재기 발랄한 카카오 프렌즈와 감각적인 브이디엘이 만나 선보이는 키치 꾸뛰르 감성의 써머 컬렉션"
 						}
 					});
 				}).then(function(res) {
@@ -107,13 +107,13 @@ function send_kakao()
 	  container: '#kakao-link-btn',
 	  label: "VDL 플러스 친구 맺고 카카오프렌즈 KIT 받자!!\r\n아래 링크 클릭해서 플러스 친구 가입\r\n" + k_url,
 	  image: {
-		src: 'http://www.belifbomb.com/MOBILE/img/sns_image.png',
+		src: 'http://www.mnv.kr/MOBILE/images/img_sns_share.png',
 		width: '1200',
 		height: '630'
 	  },
 	  webButton: {
 		text: 'VDL x KAKAO',
-		url: 'http://www.belifbomb.com/?media=kakao' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
+		url: 'http://www.mnv.kr/?media=kakao' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
 	  }
 	});
 	alert("친구에게 메세지가 전송되었습니다.");
@@ -179,7 +179,7 @@ function input_message()
 		{
 
 			//alert('개인정보 입력을 안 하셨습니다');
-			setTimeout("ins_data();",500);
+			setTimeout("ins_message_data();",500);
 
 			$("#mb_message").focus();
 			chk_ins = 0;
@@ -239,7 +239,7 @@ function m_input_message()
 		{
 
 			//alert('개인정보 입력을 안 하셨습니다');
-			setTimeout("ins_data();",500);
+			setTimeout("ins_message_data();",500);
 
 			$("#mb_message").focus();
 			chk_ins = 0;
@@ -396,9 +396,9 @@ function popup_desc(param)
 			close: function() {
 				chk_ins = 0;
 				chk_ins2 = 0;
-				$("#mb_receive").val("");
-				$("#mb_send").val("");
-				$("#mb_message").val("");
+				//$("#mb_receive").val("");
+				//$("#mb_send").val("");
+				//$("#mb_message").val("");
 			}
 		}
 	}, 0);
@@ -427,6 +427,11 @@ function thanks_data(url)
 function ins_data()
 {
 	popup_desc('pop_input1');
+}
+
+function ins_message_data()
+{
+	popup_desc('pop_message_input1');
 }
 
 function ins_data2()
@@ -462,7 +467,7 @@ function copy_url(ss_url)
 		window.clipboardData.setData('text', text);
 	} else {
 		// 비IE 처리    
-		window.prompt ("Ctrl+C 를 눌러 텍스트를 복사하세요.", text);  
+		window.prompt ("Ctrl+C를 눌러 메시지 URL을 복사해주세요!", text);  
 	}
 }
 
@@ -758,4 +763,51 @@ function show_menu()
 		var position = 0;
 		$('#mobile_menu').show().animate({right:position},300,'linear');
 	}
+}
+
+function chk_len(val)
+{
+	if (val.length == 4)
+	{
+		$("#mb_phone3").focus();
+	}
+}
+
+function chk_len2(val)
+{
+	if (val.length == 4)
+	{
+		$("#mb_phone3").blur();
+	}
+}
+
+function check_message()
+{
+	//var string = document.a.test.value;
+	var string = $("#mb_message").val();
+	if (getStringLength(string) > 200)
+	{
+		alert("200자 이하로만 메세지를 작성하실 수 있습니다.");
+	}
+}
+
+// 문자열 길이 체크 알파뉴메릭(1자리), 한글(2자리)
+function getStringLength (str)
+{
+	var retCode = 0;
+	var strLength = 0;
+
+	for (i = 0; i < str.length; i++)
+	{
+	var code = str.charCodeAt(i)
+	var ch = str.substr(i,1).toUpperCase()
+
+	code = parseInt(code)
+
+	if ((ch < "0" || ch > "9") && (ch < "A" || ch > "Z") && ((code > 255) || (code < 0)))
+	strLength = strLength + 2;
+	else
+	strLength = strLength + 1;
+	}
+	return strLength;
 }

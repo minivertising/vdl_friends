@@ -18,13 +18,17 @@
 	//if ($result)
 		//echo "<script>location.href='http://plus.kakao.com/home/@vdl';</script>";
 ?>
-    <div>
-      <h1>Funnier Than Ever!</h1>
-      <h1>친구야 VDL과 플친 맺고 VDL FRIENDS KIT를 받자!</h1>
-      <input type="text" name="receive_txt" id="receive_txt" value="<?=$member_info['mb_receive']?>" readonly><br />
-      <textarea name="message_txt" id="message_txt" readonly><?=$member_info['mb_message']?></textarea>
-      <input type="text" name="send_txt" id="send_txt" value="<?=$member_info['mb_send']?>" readonly><br />
-      <a href="#" onclick="go_friends('<?=$serial	?>')">플러스 친구 맺기</a>
-    </div>
+      <div class="sec_summer_coupon">
+        <div class="title">
+        	<div class="inner_title">
+            	<div class="qr"><img src="<?=$member_info['mb_qr']?>" alt="" width="163" height="163"/></div>
+        		<div class="url"><?=$member_info['mb_url']?></div>
+            </div>
+        </div>
+        <div class="btn_block">
+        	<a href="http://www.mnv.kr/?media=message" target="_blank"><img src="images/btn_go_event.png" alt=""/></a>
+        </div>
+      </div>
+
   </body>
 </html>

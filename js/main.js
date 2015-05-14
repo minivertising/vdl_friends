@@ -460,7 +460,7 @@ function copy_url(ss_url)
 	//window.clipboardData.setData('text',"11<?=$_SESSION['ss_url']?>");
     //alert("클립보드에 복사되었습니다.");
 	$('a#cp_url').zclip({
-		path:'js/ZeroClipboard.swf',
+		path:'../js/ZeroClipboard.swf',
 		copy:$('#c_url').text()
 	});
 

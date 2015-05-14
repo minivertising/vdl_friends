@@ -23,7 +23,7 @@
         <div class="inner_title">
           <div class="qr">
             <div class="frame"><img src="images/qr_frame.png" alt=""/></div>
-            <div class="img"><img src="<?=$member_info['mb_qr']?>" alt="" width="163" height="163"/></div>
+            <div class="img"><img src="<?=$member_info['mb_qr']?>" alt="" width="140" height="140"/></div>
           </div>
           <div class="url"><?=$member_info['mb_url']?></div>
         </div>

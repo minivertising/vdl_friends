@@ -57,6 +57,7 @@
 <div class="footer">
   <img src="images/footer.jpg"  alt=""/>
 </div>
+<<<<<<< HEAD
   
 <div id="mobile_menu" class="mobile_menu">
   <ul>
@@ -71,6 +72,9 @@
       </div>
   </div>
 </div>
+=======
+
+>>>>>>> e6ee112e1a4c9abc23670c572aed36af7433bef4
 <div class="mask"></div>
 <?
 	include_once   "./popup_div.php";
@@ -151,7 +155,31 @@ $(document).ready(function() {
 		}
 	},800);
 
+	$(".mask").click(function(){
+		$('#mobile_menu').animate({right:-200},300,'linear',function(){
+			$("#mobile_menu").hide();
+			$(".mask").fadeOut(300);
+		});
+	});
 });
 
+function screen_move(param)
+{
+	if (param == "summer")
+	{
+		$('#mobile_menu').animate({right:-200},300,'linear',function(){
+			$("#mobile_menu").hide();
+			$(".mask").fadeOut(100);
+			$( 'html, body' ).animate({ scrollTop: 0},500);
+		});
+		
+	}else{
+		$('#mobile_menu').animate({right:-200},300,'linear',function(){
+			$("#mobile_menu").hide();
+			$(".mask").fadeOut(100);
+			$( 'html, body' ).animate({ scrollTop: $(".block_top").height() + $(".block_movie").height() + $(".block_chrc").height() + 8},500);
+		});
+	}
+}
 
 </script>

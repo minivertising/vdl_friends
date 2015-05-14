@@ -45,6 +45,20 @@
       <a href="http://www.vdlcosmetic.com/m/index.jsp" class="logo" target="_blank"><img src="images/logo.png" width="170" alt=""/></a>
       <a href="#" class="menu_ham"  onclick="show_menu()"><img src="images/menu_ham.png" width="26" alt=""/></a>
     </div>
+    <div id="mobile_menu" class="mobile_menu">
+      <ul>
+        <li><a href="#" onclick="screen_move('summer')"><img src="images/btn_summer.jpg"  alt=""/></a></li>
+        <li><a href="#" onclick="screen_move('kit')"><img src="images/btn_vdl_kit.jpg"  alt=""/></a></li>
+      </ul>
+      <div class="btn_sns">
+        <div class="inner_sns clearfix">
+          <a href="#" onclick="sns_share('twitter');"><img src="images/btn_tw.jpg"  alt=""/></a>
+          <a href="#" onclick="sns_share('facebook');"><img src="images/btn_fb.jpg"  alt=""/></a>
+          <a href="#" onclick="sns_share('story');"><img src="images/btn_ks.jpg"  alt=""/></a>
+        </div>
+      </div>
+    </div>
+
 <?
 	}
 ?>

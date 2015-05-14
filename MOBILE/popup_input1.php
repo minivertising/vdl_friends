@@ -15,15 +15,15 @@
         </div>
         <div class="block_input first clearfix">
           <div class="label"><img src="images/popup/label_to.png" /></div>
-          <div class="input_txt"><input type="text" name="mb_receive" id="mb_receive"></div>
+          <div class="input_txt"><input type="text" name="mb_receive" id="mb_receive" placeholder="To. 사랑하는 내친구, 정은이에게"></div>
         </div>
         <div class="block_input clearfix">
           <div class="label"><img src="images/popup/label_mss.png" /></div>
-          <div class="input_txt"><textarea name="mb_message" id="mb_message"></textarea></div>
+          <div class="input_txt"><textarea name="mb_message" id="mb_message" placeholder="친구에게 보낼 메세지를 입력해주세요."></textarea></div>
         </div>
         <div class="block_input clearfix">
           <div class="label"><img src="images/popup/label_from.png" /></div>
-          <div class="input_txt"><input type="text" name="mb_send" id="mb_send"></div>
+          <div class="input_txt"><input type="text" name="mb_send" id="mb_send" placeholder="From. 너의 단짝 친구 우주!"></div>
         </div>
         <div class="block_btn send">
           <a href="#" onclick="m_input_message();" class="common_2"><img src="images/popup/btn_send.png" /></a>

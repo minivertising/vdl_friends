@@ -61,3 +61,14 @@
     </div>
   </body>
 </html>
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".sec_summer_coupon").width($(window).width());
+	$(".sec_summer_coupon").height($(window).height());
+});
+
+$(window).resize(function(){
+	$(".sec_summer_coupon").width($(window).width());
+	$(".sec_summer_coupon").height($(window).height());
+});
+</script>

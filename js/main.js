@@ -759,3 +759,50 @@ function show_menu()
 		$('#mobile_menu').show().animate({right:position},300,'linear');
 	}
 }
+
+function chk_len(val)
+{
+	if (val.length == 4)
+	{
+		$("#mb_phone3").focus();
+	}
+}
+
+function chk_len2(val)
+{
+	if (val.length == 4)
+	{
+		$("#mb_phone3").blur();
+	}
+}
+
+function check_message()
+{
+	//var string = document.a.test.value;
+	var string = $("#mb_message").val();
+	if (getStringLength(string) > 200)
+	{
+		alert("200자 이하로만 메세지를 작성하실 수 있습니다.");
+	}
+}
+
+// 문자열 길이 체크 알파뉴메릭(1자리), 한글(2자리)
+function getStringLength (str)
+{
+	var retCode = 0;
+	var strLength = 0;
+
+	for (i = 0; i < str.length; i++)
+	{
+	var code = str.charCodeAt(i)
+	var ch = str.substr(i,1).toUpperCase()
+
+	code = parseInt(code)
+
+	if ((ch < "0" || ch > "9") && (ch < "A" || ch > "Z") && ((code > 255) || (code < 0)))
+	strLength = strLength + 2;
+	else
+	strLength = strLength + 1;
+	}
+	return strLength;
+}

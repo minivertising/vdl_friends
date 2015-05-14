@@ -23,7 +23,7 @@
               <img src="images/popup/label_txt.png" alt=""/>
             </div>
             <div class="txt_input">
-              <textarea name="mb_message" id="mb_message"></textarea>
+              <textarea name="mb_message" id="mb_message" onkeyup="check_message();"></textarea>
             </div>
           </div>
           <div class="input_from clearfix">

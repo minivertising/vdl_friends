@@ -3,21 +3,23 @@
 ?>
 <!--------------------- 이벤트 메세지 입력 팝업 --------------------->
 <div id="pop_event_input" class="popup_wrap">
-  <div class="p_mid p_position">
+  <div class="p_mid p_wide p_position">
     <div class="block_close clearfix">
       <a href="index.php" class="btn_close"><img src="images/popup/btn_close.png" /></a>
     </div>
     <div class="block_content">
       <div class="inner">
         <div class="title title_input"><img src="images/popup/title_mss.png" /></div>
-        <div class="block_input_bg"></div>
-        <div class="block_input clearfix">
+        <div class="block_input_bg clearfix">
+        	<div class="bg"></div>
+        </div>
+        <div class="block_input first clearfix">
           <div class="label"><img src="images/popup/label_to.png" /></div>
           <div class="input_txt"><input type="text" name="mb_receive" id="mb_receive" placeholder="To. 사랑하는 내친구, 정은이에게"></div>
         </div>
         <div class="block_input clearfix">
           <div class="label"><img src="images/popup/label_mss.png" /></div>
-          <div class="input_txt"><textarea name="mb_message" id="mb_message" placeholder="친구에게 보낼 메세지를 입력해주세요."></textarea></div>
+          <div class="input_txt"><textarea name="mb_message" id="mb_message" placeholder="친구에게 보낼 메세지를 입력해주세요." onkeyup="check_message();"></textarea></div>
         </div>
         <div class="block_input clearfix">
           <div class="label"><img src="images/popup/label_from.png" /></div>
@@ -29,7 +31,7 @@
       </div><!--inner-->
     </div>
   </div>
-  <div class="p_mid_bg_chrc">
+  <div class="p_mid_bg_chrc" style="display:none;">
     <img src="images/popup/bg_chrc.png"  width="160" alt=""/>
   </div>
 </div>

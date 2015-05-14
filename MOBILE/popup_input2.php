@@ -3,7 +3,7 @@
 ?>
 <!--------------------- 이벤트 메세지 입력(이름, 전화번호) 팝업 --------------------->
 <div id="pop_event_input2" class="popup_wrap">
-  <div class="p_mid p_position">
+  <div class="p_mid p_wide p_position">
     <div class="block_close clearfix">
       <a href="#pop_close_confirm" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>
     </div>
@@ -54,7 +54,7 @@
       </div><!--inner-->
     </div>
   </div>
-  <div class="p_mid_bg_chrc">
+  <div class="p_mid_bg_chrc" style="display:none;">
     <img src="images/popup/bg_chrc.png"  width="160" alt=""/>
   </div>
 </div>

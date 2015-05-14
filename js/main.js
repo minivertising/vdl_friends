@@ -825,3 +825,26 @@ function getStringLength (str)
 	}
 	return strLength;
 }
+
+function use_coupon(serial)
+{
+	if (confirm('쿠폰을 사용하시겠습니까?'))
+	{
+		$.ajax({
+			type:"POST",
+			data:{
+				"exec"			: "use_coupon",
+				"serial"		: serial
+			},
+			url: "../main_exec.php",
+			success: function(response){
+				if (response == "N"){
+					alert("사용자가 많습니다. 다시 참여해 주세요.");
+				}else{
+					location.reload();
+				}
+			}
+		});
+	}
+
+}

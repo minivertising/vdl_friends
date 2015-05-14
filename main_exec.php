@@ -97,5 +97,18 @@ switch ($_REQUEST['exec'])
 		echo $flag;
 	break;
 
+	case "use_coupon" :
+		$serial		= $_REQUEST['serial'];
+
+		$query 		= "UPDATE ".$_gl['member_info_table']." SET mb_use='Y' WHERE mb_serial='".$serial."'";
+		$result 	= mysqli_query($my_db, $query);
+
+		if ($result)
+			$flag = "Y";
+		else
+			$flag = "N";
+
+		echo $flag;
+	break;
 }
 ?>

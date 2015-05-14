@@ -20,7 +20,7 @@ function sns_share(media)
 		  container: '#kakao-link-btn',
 		  label: "재기 발랄한 카카오 프렌즈와 감각적인 브이디엘이 만나 선보이는 키치 꾸뛰르 감성의 써머 컬렉션",
 		  image: {
-			src: 'http://www.mnv.kr/MOBILE/images/img_sns_share.png',
+			src: 'http://www.mnv.kr/MOBILE/images/img_sns_share.jpg',
 			width: '1200',
 			height: '630'
 		  },

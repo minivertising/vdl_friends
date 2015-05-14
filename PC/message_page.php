@@ -49,7 +49,10 @@
       <div class="sec_summer_coupon">
         <div class="title">
         	<div class="inner_title">
-            	<div class="qr"><img src="http://me2.do/5Eceyx0J.qr" alt="" width="163" height="163" /></div>
+            	<div class="qr">
+                	<div class="frame"><img src="images/qr_frame.png" alt=""/></div>
+                	<div class="img"><img src="http://me2.do/5Eceyx0J.qr" alt="" width="140" height="140" /></div>
+                </div>
         		<div class="url">www.ddd.ddddd</div>
             </div>
         </div>

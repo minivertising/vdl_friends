@@ -186,6 +186,23 @@ body{
 .sec_summer_coupon .title .qr{
 	padding-top:232px;
 	height:171px;
+	position:relative;
+	width:575px;
+	text-align:center;
+}
+.sec_summer_coupon .title .qr .frame{
+	position:absolute;
+	z-index:1000;
+	top:227px;
+	left:50%;
+	margin-left:-89px;
+}
+.sec_summer_coupon .title .qr .img{
+	position:absolute;
+	z-index:999;
+	top:248px;
+	left:50%;
+	margin-left:-70px;
 }
 .sec_summer_coupon .title .url{
 	padding-top:50px;

@@ -57,19 +57,6 @@
 <div class="footer">
   <img src="images/footer.jpg"  alt=""/>
 </div>
-<div id="mobile_menu" class="mobile_menu">
-  <ul>
-    <li><a href="#"><img src="images/btn_summer.jpg"  alt=""/></a></li>
-    <li><a href="#"><img src="images/btn_vdl_kit.jpg"  alt=""/></a></li>
-  </ul>
-  <div class="btn_sns">
-      <div class="inner_sns clearfix">
-          <a href="#"><img src="images/btn_tw.jpg"  alt=""/></a>
-          <a href="#"><img src="images/btn_fb.jpg"  alt=""/></a>
-          <a href="#"><img src="images/btn_ks.jpg"  alt=""/></a>
-      </div>
-  </div>
-</div>
 <div class="mask"></div>
 <?
 	include_once   "./popup_div.php";

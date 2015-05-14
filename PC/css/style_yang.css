@@ -125,12 +125,12 @@ body{
 .navi .left{
 	float:left;
 	width:350px;
-	padding-left:100px;
+	padding-left:60px;
 }
 .navi .right{
 	float:right;
 	width:500px;
-	padding-right:100px;
+	padding-right:60px;
 }
 .navi .right .right_wrap{
 	width:500px;
@@ -163,6 +163,43 @@ body{
 	left:50%;
 	margin-left:-250px;
 }
+
+
+.sec_summer_coupon{
+	background:#ffd503;
+	background:url(../images/bg_page.jpg) no-repeat center;
+	background-size:cover;
+	height:850px;
+	position:relative;
+}
+.sec_summer_coupon .title{
+	position:absolute;
+	background:url(../images/bg_mms_page.png) no-repeat center;
+	text-align:center;
+	width:575px;
+	height:519px;
+	top:45%;
+	margin-top:-259px;
+	left:50%;
+	margin-left:-287px;
+}
+.sec_summer_coupon .title .qr{
+	padding-top:232px;
+	height:171px;
+}
+.sec_summer_coupon .title .url{
+	padding-top:50px;
+	font-weight:bold;
+	font-size:16px;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.sec_summer_coupon .btn_block{
+	position:absolute;
+	width:100%;
+	text-align:center;
+	bottom:10%;
+}
+
 .sec_movie{
 	background:#fff;
 	height:740px;

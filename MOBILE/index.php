@@ -17,13 +17,13 @@
 <div class="block_chrc">
   <div class="inner_chrc clearfix">
     <div class="ch_cm ch_1">
-      <a href="#"><img src="images/img_ch_1.png"  alt="" id="muzi_cha"/></a>
+      <a href="muzi_collection.php"><img src="images/img_ch_1.png"  alt="" id="muzi_cha"/></a>
     </div>
     <div class="ch_cm ch_2">
-      <a href="#"><img src="images/img_ch_2.png"  alt="" id="peach_cha"/></a>
+      <a href="apeach_collection.php"><img src="images/img_ch_2.png"  alt="" id="peach_cha"/></a>
     </div>
     <div class="ch_cm ch_3">
-      <a href="#"><img src="images/img_ch_3.png"  alt="" id="neo_cha"/></a>
+      <a href="neo_collection.php"><img src="images/img_ch_3.png"  alt="" id="neo_cha"/></a>
     </div>
   </div>
 </div>

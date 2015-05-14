@@ -357,6 +357,54 @@
 	width:90%;
 }
 
+.block_coupon{
+	width:100%;
+	position:relative;
+	height:100%;
+	background:#fee600;
+}
+.block_coupon .btn_block{
+	width:100%;
+	position:absolute;
+	text-align:center;
+	bottom:5%;
+}
+.block_coupon .btn_block img{
+	width:80%;
+}
+.block_coupon .info_txt{
+	width:85%;
+	padding-left:15%;
+	position:absolute;
+	top:62%;
+	font-size:15px;
+	font-weight:bold;
+	letter-spacing:-1px;
+}
+.block_coupon .info_txt .inner_info,
+.block_coupon .info_txt ul{
+	width:100%;
+}
+.block_coupon .info_txt ul li{
+	list-style:none;
+	display:block;
+	float:left;
+}
+.block_coupon .info_txt ul li.txt_1{
+	width:24%;
+	color:#41baeb;
+}
+.block_coupon .info_txt ul li.txt_2{
+	width:76%;
+}
+.block_coupon .img_coupon_bg,
+.block_coupon .img_coupon_bg img{
+	width:100%;
+}
+.bg_coupon_body{
+	background:#fee600;
+}
+
 /*popup common*/
 .popup_wrap {
 	position:relative;

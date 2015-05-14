@@ -441,16 +441,18 @@
 /*팝업별 사이즈 조정*/
 
 .popup_wrap .p_position .block_content .agree_inner{
-	padding:10%;
-	width:80%;
-	height:80%;
+	padding:7%;
+	width:86%;
+	height:86%;
 	font-size:14px;
 	line-height:18px;
 	color:#000;
 	overflow:scroll;
 	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
+.popup_wrap .p_position .block_content .agree_inner span.tt{
+	font-size:15px;
+}
 .popup_wrap .p_position .block_content .inner{
 	padding:10% 0 7%;
 	width:100%;
@@ -654,6 +656,7 @@
 	padding-top:2px;
 	letter-spacing:-1px;
 }
+
 .popup_wrap .p_position .block_content .inner .block_ckeck .inner_check .btn_check{
 	width:70px;
 	padding-left:10px;

@@ -846,5 +846,4 @@ function use_coupon(serial)
 			}
 		});
 	}
-
 }

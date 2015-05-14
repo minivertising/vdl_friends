@@ -7,6 +7,21 @@
 	$query 		= "SELECT * FROM ".$_gl['member_info_table']." WHERE mb_serial='".$serial."'";
 	$result 	= mysqli_query($my_db, $query);
 	$member_info	= mysqli_fetch_array($result);
+
+	$query2 		= "SELECT * FROM ".$_gl['member_info_table']." WHERE mb_phone='".$member_info['mb_phone']."'";
+	$result2 	= mysqli_query($my_db, $query2);
+
+	$flag	= "N";
+	while($data	= mysqli_fetch_array($result2)){
+		if ($data['mb_use'] == "Y")
+		{
+			$flag	= "Y";
+			break;
+		}else{
+			$flag	= "N";
+		}
+	}
+
 ?>
 <!doctype html>
 <html>
@@ -56,7 +71,18 @@
                 </ul>
             </div>
         </div>
-        <div class="btn_block"><a href="#"><img src="images/btn_coupon_use.png" /></a></div> <!-- 사용된 버튼 명 btn_coupon_used.png-->
+<?
+	if ($flag == "Y")
+	{
+?>
+        <div class="btn_block"><a href="#"><img src="images/btn_coupon_used.png" /></a></div> <!-- 사용된 버튼 명 btn_coupon_used.png-->
+<?
+	}else{
+?>
+        <div class="btn_block"><a href="#" onclick="use_coupon('<?=$serial?>');"><img src="images/btn_coupon_use.png" /></a></div> <!-- 사용된 버튼 명 btn_coupon_used.png-->
+<?
+	}
+?>
     	<div class="img_coupon_bg"><img src="images/bg_coupon.jpg" /></div>
     </div>
 </body>

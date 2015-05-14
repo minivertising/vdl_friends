@@ -70,10 +70,17 @@ switch ($_REQUEST['exec'])
 		$query 		= "UPDATE ".$_gl['member_info_table']." SET mb_join='Y', mb_joindate='".date('Y-m-d H:i:s')."' WHERE mb_serial='".$serial."'";
 		$result 	= mysqli_query($my_db, $query);
 
-		if ($result)
+		if ($result){
+			$query2			= "SELECT * FROM ".$_gl['member_info_table']." WHERE mb_serial='".$serial."'";
+			$result2			= mysqli_query($my_db, $query2);
+			$member_info	= mysqli_fetch_array($result2);
+
+			send_lms($member_info['mb_phone'], $member_info['mb_url']);
+
 			$flag = "Y";
-		else
+		}else{
 			$flag = "N";
+		}
 
 		echo $flag;
 	break;

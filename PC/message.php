@@ -26,5 +26,18 @@
       <input type="text" name="send_txt" id="send_txt" value="<?=$member_info['mb_send']?>" readonly><br />
       <a href="#" onclick="go_friends('<?=$serial	?>')">플러스 친구 맺기</a>
     </div>
+
+      <div class="sec_summer_coupon">
+        <div class="title">
+        	<div class="inner_title">
+            	<div class="qr"><img src="<?=$member_info['mb_qr']?>" alt=""/></div>
+        		<div class="url"><?=$member_info['mb_url']?></div>
+            </div>
+        </div>
+        <div class="btn_block">
+        	<a href="http://www.mnv.kr/?media=message" target="_blank"><img src="images/btn_go_event.png" alt=""/></a>
+        </div>
+      </div>
+
   </body>
 </html>

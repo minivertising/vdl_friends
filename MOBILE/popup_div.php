@@ -203,7 +203,7 @@
 <div id="pop_close_confirm" class="popup_wrap zoom-anim-dialog mfp-hide">
   <div class="p_mid p_position">
     <div class="block_close clearfix">
-      <a href="index.php" class="btn_close"><img src="images/popup/btn_close.png" /></a>
+      <a href="#" onclick="$.magnificPopup.close();" class="btn_close"><img src="images/popup/btn_close.png" /></a>
     </div>
     <div class="block_content">
       <div class="inner">

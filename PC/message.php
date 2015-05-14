@@ -18,17 +18,20 @@
 	//if ($result)
 		//echo "<script>location.href='http://plus.kakao.com/home/@vdl';</script>";
 ?>
-      <div class="sec_summer_coupon">
-        <div class="title">
-        	<div class="inner_title">
-            	<div class="qr"><img src="<?=$member_info['mb_qr']?>" alt="" width="163" height="163"/></div>
-        		<div class="url"><?=$member_info['mb_url']?></div>
-            </div>
-        </div>
-        <div class="btn_block">
-        	<a href="http://www.mnv.kr/?media=message" target="_blank"><img src="images/btn_go_event.png" alt=""/></a>
+    <div class="sec_summer_coupon">
+      <div class="title">
+        <div class="inner_title">
+          <div class="qr">
+            <div class="frame"><img src="images/qr_frame.png" alt=""/></div>
+            <div class="img"><img src="<?=$member_info['mb_qr']?>" alt="" width="163" height="163"/></div>
+          </div>
+          <div class="url"><?=$member_info['mb_url']?></div>
         </div>
       </div>
+      <div class="btn_block">
+        <a href="http://www.mnv.kr/?media=message" target="_blank"><img src="images/btn_go_event.png" alt=""/></a>
+      </div>
+    </div>
 
   </body>
 </html>
@@ -42,6 +45,4 @@ $(window).resize(function(){
 	$(".sec_summer_coupon").width($(window).width());
 	$(".sec_summer_coupon").height($(window).height());
 });
-
-
 </script>

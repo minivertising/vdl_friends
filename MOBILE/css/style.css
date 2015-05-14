@@ -282,7 +282,9 @@
 	width:80%;
 }
 
-
+.bg_mms{
+	background:#fee600;
+}
 .block_mms_received{
 	width:100%;
 	position:relative;
@@ -290,12 +292,14 @@
 }
 .block_mms_received .mms{
 	position:absolute;
-	top:34%;
-	left:17%;
-	width:66%;
+	top:17%;
+	left:10%;
+	width:80%;
 	height:27%;
 	line-height:18px;
 	font-size:15px;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing:-1px;
 }
 .block_mms_received img{
 	width:100%;
@@ -319,18 +323,19 @@
 .block_mms_received .mms .title_from .label,
 .block_mms_received .mms .title_from .txt{
 	float:left;
-	width:18%;
+	width:19%;
 }
 .block_mms_received .mms .title_to .txt,
 .block_mms_received .mms .title_from .txt{
-	width:82%;
+	float:left;
+	width:77%;
 	border-bottom:1px solid #000;
 }
 .block_mms_received .mms .title_to .label{
 	width:12%;
 }
 .block_mms_received .mms .title_to .txt{
-	width:88%;
+	width:86%;
 }
 
 
@@ -351,7 +356,7 @@
 	position:absolute;
 	width:100%;
 	text-align:center;
-	bottom:5%;
+	bottom:33%;
 }
 .block_mms_received .btn_block img{
 	width:90%;

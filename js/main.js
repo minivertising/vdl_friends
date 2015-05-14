@@ -781,13 +781,27 @@ function chk_len2(val)
 	}
 }
 
-function check_message()
+function check_message(param)
 {
-	//var string = document.a.test.value;
-	var string = $("#mb_message").val();
-	if (getStringLength(string) > 200)
+	if (param == "receive")
 	{
-		alert("200자 이하로만 메세지를 작성하실 수 있습니다.");
+		var string1 = $("#mb_receive").val();
+		if (getStringLength(string1) > 20)
+		{
+			alert("20자 이하로만 메세지를 작성하실 수 있습니다.");
+		}
+	}else if (param == "send"){
+		var string2 = $("#mb_send").val();
+		if (getStringLength(string2) > 20)
+		{
+			alert("20자 이하로만 메세지를 작성하실 수 있습니다.");
+		}
+	}else{
+		var string3 = $("#mb_message").val();
+		if (getStringLength(string3) > 200)
+		{
+			alert("200자 이하로만 메세지를 작성하실 수 있습니다.");
+		}
 	}
 }
 

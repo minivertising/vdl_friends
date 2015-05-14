@@ -15,7 +15,7 @@
               <img src="images/popup/label_to.png" alt=""/>
             </div>
             <div class="txt_input">
-              <input type="text" name="mb_receive" id="mb_receive">
+              <input type="text" name="mb_receive" id="mb_receive" onkeyup="check_message('receive')">
             </div>
           </div>
           <div class="input_txtarea clearfix">
@@ -23,7 +23,7 @@
               <img src="images/popup/label_txt.png" alt=""/>
             </div>
             <div class="txt_input">
-              <textarea name="mb_message" id="mb_message" onkeyup="check_message();"></textarea>
+              <textarea name="mb_message" id="mb_message" onkeyup="check_message('message');"></textarea>
             </div>
           </div>
           <div class="input_from clearfix">
@@ -31,7 +31,7 @@
               <img src="images/popup/label_from.png" alt=""/>
             </div>
             <div class="txt_input">
-              <input type="text" name="mb_send" id="mb_send">
+              <input type="text" name="mb_send" id="mb_send" onkeyup="check_message('send')">
             </div>
           </div>
         </div>

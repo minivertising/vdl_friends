@@ -172,6 +172,13 @@
         <div class="title">
           <img src="images/popup/title_muji.png" />
         </div>
+        <div class="block_thumb muji">
+          <ul class="clearfix">
+            <li><a href="#" id="thumb_muzi1" class="selected"><img src="images/popup/thumb_muji_1.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_muzi2"><img src="images/popup/thumb_muji_2.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_muzi3"><img src="images/popup/thumb_muji_3.png" alt=""/></a></li>
+          </ul>
+        </div>
         <div class="content clearfix">
           <div class="arrow_left">
             <a href="#" onclick="prev_collection('muzi');"><img src="images/popup/btn_arrow_left.png" alt=""/></a>
@@ -180,24 +187,14 @@
             <img src="images/popup/col_img_muji_1.png" alt=""/>
           </div>
           <div class="img_block" id="muzi_block2" style="display:none">
-            <img src="images/popup/col_img_muji_1.png" alt=""/>
+            <img src="images/popup/col_img_muji_2.png" alt=""/>
           </div>
           <div class="img_block" id="muzi_block3" style="display:none">
-            <img src="images/popup/col_img_muji_1.png" alt=""/>
+            <img src="images/popup/col_img_muji_3.png" alt=""/>
           </div>
           <div class="arrow_right">
             <a href="#" onclick="next_collection('muzi');"><img src="images/popup/btn_arrow_right.png" alt=""/></a>
           </div>
-        </div>
-        <div class="block_thumb muji">
-          <ul class="clearfix">
-            <li><a href="#" id="thumb_muzi1" class="selected"><img src="images/popup/thumb_muji_1.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_muzi2"><img src="images/popup/thumb_muji_1.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_muzi3"><img src="images/popup/thumb_muji_1.png" alt=""/></a></li>
-          </ul>
-        </div>
-        <div class="txt_col">
-          <img src="images/popup/col_img_muji_1_txt.png" alt=""/>
         </div>
       </div><!--inner-->
     </div>
@@ -219,32 +216,29 @@
         <div class="title">
           <img src="images/popup/title_peach.png" />
         </div>
+        <div class="block_thumb peach">
+          <ul class="clearfix">
+            <li><a href="#" id="thumb_apeach1" class="selected"><img src="images/popup/thumb_peach_1.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_apeach2"><img src="images/popup/thumb_peach_2.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_apeach3"><img src="images/popup/thumb_peach_3.png" alt=""/></a></li>
+          </ul>
+        </div>
         <div class="content clearfix">
           <div class="arrow_left">
             <a href="#" onclick="prev_collection('apeach');"><img src="images/popup/btn_arrow_left.png" alt=""/></a>
           </div>
           <div class="img_block" id="apeach_block1">
-            <img src="images/popup/col_img_muji_1.png" alt=""/>
+            <img src="images/popup/col_img_peach_1.png" alt=""/>
           </div>
           <div class="img_block" id="apeach_block2" style="display:none">
-            <img src="images/popup/col_img_muji_1.png" alt=""/>
+            <img src="images/popup/col_img_peach_2.png" alt=""/>
           </div>
           <div class="img_block" id="apeach_block3" style="display:none">
-            <img src="images/popup/col_img_muji_1.png" alt=""/>
+            <img src="images/popup/col_img_peach_3.png" alt=""/>
           </div>
           <div class="arrow_right">
             <a href="#" onclick="next_collection('apeach');"><img src="images/popup/btn_arrow_right.png" alt=""/></a>
           </div>
-        </div>
-        <div class="block_thumb muji">
-          <ul class="clearfix">
-            <li><a href="#" id="thumb_apeach1" class="selected"><img src="images/popup/thumb_peach_1.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_apeach2"><img src="images/popup/thumb_peach_1.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_apeach3"><img src="images/popup/thumb_peach_1.png" alt=""/></a></li>
-          </ul>
-        </div>
-        <div class="txt_col">
-          <img src="images/popup/col_img_muji_1_txt.png" alt=""/>
         </div>
       </div><!--inner-->
     </div>
@@ -266,33 +260,37 @@
         <div class="title">
           <img src="images/popup/title_neo.png" />
         </div>
+        
+        <div class="block_thumb neo">
+          <ul class="clearfix">
+            <li><a href="#" id="thumb_neo1" class="selected"><img src="images/popup/thumb_neo_1.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_neo2"><img src="images/popup/thumb_neo_2.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_neo3"><img src="images/popup/thumb_neo_3.png" alt=""/></a></li>
+            <li class="last"><a href="#" id="thumb_neo3"><img src="images/popup/thumb_neo_4.png" alt=""/></a></li>
+          </ul>
+        </div>
+                
         <div class="content clearfix">
           <div class="arrow_left">
             <a href="#" onclick="prev_collection('neo');"><img src="images/popup/btn_arrow_left.png" alt=""/></a>
           </div>
           <div class="img_block" id="neo_block1">
-            <img src="images/popup/col_img_muji_1.png" alt=""/>
+            <img src="images/popup/col_img_neo_1.png" alt=""/>
           </div>
           <div class="img_block" id="neo_block2" style="display:none">
-            <img src="images/popup/col_img_muji_1.png" alt=""/>
+            <img src="images/popup/col_img_neo_2.png" alt=""/>
           </div>
           <div class="img_block" id="neo_block3" style="display:none">
-            <img src="images/popup/col_img_muji_1.png" alt=""/>
+            <img src="images/popup/col_img_neo_3.png" alt=""/>
+          </div>
+          <div class="img_block" id="neo_block3" style="display:none">
+            <img src="images/popup/col_img_neo_4.png" alt=""/>
           </div>
           <div class="arrow_right">
             <a href="#" onclick="next_collection('neo');"><img src="images/popup/btn_arrow_right.png" alt=""/></a>
           </div>
         </div>
-        <div class="block_thumb muji">
-          <ul class="clearfix">
-            <li><a href="#" id="thumb_neo1" class="selected"><img src="images/popup/thumb_neo_1.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_neo2"><img src="images/popup/thumb_neo_1.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_neo3"><img src="images/popup/thumb_neo_1.png" alt=""/></a></li>
-          </ul>
-        </div>
-        <div class="txt_col">
-          <img src="images/popup/col_img_muji_1_txt.png" alt=""/>
-        </div>
+
       </div><!--inner-->
     </div>
     <div class="bg_chrc">
@@ -447,7 +445,7 @@
 <!--------------------- 광고성 정보 전송 동의 약관 팝업 --------------------->
 
 <!--------------------- 개인정보 입력 팝업1 --------------------->
-<div id="pop_input1" class="popup_wrap zoom-anim-dialog mfp-hide" style="margin-left:-263px;top:50%;left:50%;">
+<div id="pop_input1" class="popup_wrap zoom-anim-dialog mfp-hide" style="margin-left:-240px;top:50%;left:50%;">
   <div class="p_alert p_position">
     <div class="block_close clearfix">
       <a href="#pop_event_input" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>
@@ -470,7 +468,7 @@
 <!--------------------- 개인정보 입력 팝업1 --------------------->
 
 <!--------------------- 개인정보(메세지) 입력 팝업1 --------------------->
-<div id="pop_message_input1" class="popup_wrap zoom-anim-dialog mfp-hide" style="margin-left:-263px;top:50%;left:50%;">
+<div id="pop_message_input1" class="popup_wrap zoom-anim-dialog mfp-hide" style="margin-left:-240px;top:50%;left:50%;">
   <div class="p_alert p_position">
     <div class="block_close clearfix">
       <a href="#pop_event_input" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>
@@ -493,7 +491,7 @@
 <!--------------------- 개인정보(메세지) 입력 팝업1 --------------------->
 
 <!--------------------- 개인정보 입력 팝업2 --------------------->
-<div id="pop_input2" class="popup_wrap zoom-anim-dialog mfp-hide" style="margin-left:-263px;top:50%;left:50%;">
+<div id="pop_input2" class="popup_wrap zoom-anim-dialog mfp-hide" style="margin-left:-240px;top:50%;left:50%;">
   <div class="p_alert p_position">
     <div class="block_close clearfix">
       <a href="#pop_event_input2" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>

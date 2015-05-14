@@ -309,7 +309,6 @@ body{
 	z-index:200;
 	border-radius: 10px;
 	border:3px solid #000;
-	background:#fff url(../images/popup/bg_col_bottom.png) bottom repeat-x;
 	top:15px;
 }
 .popup_wrap .p_position .bg_chrc{
@@ -406,12 +405,12 @@ body{
 }
 .popup_wrap .p_position.p_alert{
 	position:relative;
-	width:521px;
+	width:480px;
 	height:330px;
 }
 .popup_wrap .p_position.p_alert .block_content{
 	position:relative;
-	width:521px;
+	width:480px;
 	height:250px;
 }
 .popup_wrap .p_position.p_alert_big{
@@ -439,8 +438,8 @@ body{
 	padding-bottom:20px;
 }
 .popup_wrap .p_position.p_mid_col .block_content .title{
-	padding-top:50px;
-	padding-bottom:0px;
+	padding-top:35px;
+	padding-bottom:20px;
 }
 .popup_wrap .p_position.p_alert .block_content .title{
 	padding-top:70px;
@@ -597,29 +596,35 @@ body{
 /*콜렉션 팝업*/
 .popup_wrap .p_position.p_mid_col .block_content .content{
 	width:100%;
-	padding-top:20px;
+	padding-top:0x;
 }
 .popup_wrap .p_position.p_mid_col .block_content .content .arrow_left,
 .popup_wrap .p_position.p_mid_col .block_content .content .arrow_right,
 .popup_wrap .p_position.p_mid_col .block_content .content .img_block{
 	float:left;
 	text-align:center;
-	width:60%;
+	width:76%;
 }
 .popup_wrap .p_position.p_mid_col .block_content .content .arrow_left,
 .popup_wrap .p_position.p_mid_col .block_content .content .arrow_right{
 	padding-top:120px;
-	width:20%;
+	width:12.5%;
+}
+.popup_wrap .p_position.p_mid_col .block_content .content .arrow_left{
+	width:11.5%;
 }
 .popup_wrap .p_position.p_mid_col .block_content .block_thumb ul li{
 	display:block;
 	float:left;
-	width:83px;
+	width:81px;
+}
+.popup_wrap .p_position.p_mid_col .block_content .block_thumb ul li.last{
+	width:78px;
 }
 .popup_wrap .p_position.p_mid_col .block_content .block_thumb ul li a{
 	display:block;
-	width:73px;
-	height:73px;
+	width:74px;
+	height:74px;
 	text-align:center;
 	background:#fafafa;
 	border:1px solid #ccc;
@@ -639,7 +644,11 @@ body{
 	height:68px;
 	border:4px solid #fac9cc;
 }
-
+.popup_wrap .p_position.p_mid_col .block_content .block_thumb.neo ul li a.selected{
+	width:68px;
+	height:68px;
+	border:4px solid #6f93b6;
+}
 .popup_wrap .p_position.p_mid_col .block_content .block_thumb.muji{
 	width:250px;
 	margin:0 auto;
@@ -649,7 +658,7 @@ body{
 	margin:0 auto;
 }
 .popup_wrap .p_position.p_mid_col .block_content .block_thumb.neo{
-	width:250px;
+	width:323px;
 	margin:0 auto;
 }
 

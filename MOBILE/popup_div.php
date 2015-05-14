@@ -209,7 +209,7 @@
     </div>
     <div class="block_content">
       <div class="inner">
-        <div class="title"><img src="images/popup/title_close.png" /></div>
+        <div class="title"><img src="images/popup/title_close2.png" /></div>
         <div class="block_btn clearfix">
           <a href="index.php" class="left"><img src="images/popup/btn_out.png" /></a>
           <a href="#" class="right" onclick="$.magnificPopup.close();"><img src="images/popup/btn_keep.png" /></a>

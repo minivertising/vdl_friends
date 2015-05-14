@@ -311,7 +311,7 @@
     <div class="block_content">
       <div class="inner">
         <div class="title">
-          <img src="images/popup/title_alert_close.png" />
+          <img src="images/popup/title_alert_close_2.png" />
         </div>
         <div class="btn_block">
           <a href="#" onclick="$.magnificPopup.close();"><img src="images/popup/btn_out.png" alt=""/></a>

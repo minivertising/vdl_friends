@@ -25,7 +25,7 @@ function sns_share(media)
 			height: '630'
 		  },
 		  webButton: {
-			text: '수분폭탄, 즐거움이 터진다',
+			text: 'VDL 써머 컬렉션',
 			url: 'http://www.mnv.kr/?media=kakao' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
 		  }
 		});
@@ -467,7 +467,7 @@ function copy_url(ss_url)
 		window.clipboardData.setData('text', text);
 	} else {
 		// 비IE 처리    
-		window.prompt ("Ctrl+C 를 눌러 텍스트를 복사하세요.", text);  
+		window.prompt ("Ctrl+C를 눌러 메시지 URL을 복사해주세요!", text);  
 	}
 }
 

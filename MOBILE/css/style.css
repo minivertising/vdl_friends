@@ -514,6 +514,9 @@
 	line-height:18px;
 	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight:bold;
+	-webkit-appearance: none;
+    -webkit-border-radius:0; 
+    border-radius:0;
 }
 
 .popup_wrap .p_position .block_content .inner .block_input .input_txt textarea{

@@ -28,6 +28,7 @@ switch ($_REQUEST['exec'])
 		$key				= "f875ecbd21fa4214075c6645635c769c"; // 사용자가 발급받은 단축 URL KEY를 입력 하세요
 		$serial				= VK_SerialNumber();
 		$longurl				= "http://www.mnv.kr/PC/message.php?serial=".$serial;
+		$longurl2				= "http://www.mnv.kr/MOBILE/winner_coupon.php?serial=".$serial;
 		$url = sprintf("%s?url=%s&key=%s", "http://openapi.naver.com/shorturl.xml", $longurl, $key);
 		$data =file_get_contents($url);
 		$xml = simplexml_load_string($data, 'SimpleXMLElement', LIBXML_NOCDATA);
@@ -38,7 +39,18 @@ switch ($_REQUEST['exec'])
 			$qr = $xml->result->url.".qr";
 			$_SESSION['ss_url'] = $transUrl;
 		}
-		$query 		= "UPDATE ".$_gl['member_info_table']." SET mb_name='".$mb_name."', mb_phone='".$mb_phone."', mb_url='".$transUrl."', mb_qr='".$qr."', mb_serial='".$serial."' WHERE idx='".$mb_idx."'";
+
+		$url2 = sprintf("%s?url=%s&key=%s", "http://openapi.naver.com/shorturl.xml", $longurl2, $key);
+		$data2 =file_get_contents($url2);
+		$xml2 = simplexml_load_string($data2, 'SimpleXMLElement', LIBXML_NOCDATA);
+
+		if($xml2->code == 200){
+			$transUrl2 = $xml2->result->url;
+			$orgUrl2 = $xml2->result->orgUrl;
+			$qr2 = $xml2->result->url.".qr";
+		}
+
+		$query 		= "UPDATE ".$_gl['member_info_table']." SET mb_name='".$mb_name."', mb_phone='".$mb_phone."', mb_url='".$transUrl."', mb_winner_url='".$transUrl2."', mb_qr='".$qr."', mb_serial='".$serial."' WHERE idx='".$mb_idx."'";
 		$result 	= mysqli_query($my_db, $query);
 		
 		if ($result){

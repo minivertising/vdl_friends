@@ -9,14 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
-    <meta property="og:title" content="수분폭탄, 즐거움이 터진다">
+    <meta property="og:title" content="VDL MEETS KAKAO FRIENDS">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://www.belifbomb.com/MOBILE/index.php" />
-    <meta property="og:image" content="http://www.belifbomb.com/MOBILE/img/sns_image2.png" />
-    <meta property="og:description" content="지금 정해진 시간안에 폭탄 크림을 터트리면, 빌리프의 다양한 선물이 쏟아집니다. 더 많은 이벤트 자세히 보기">
+    <meta property="og:image" content="http://www.belifbomb.com/MOBILE/images/img_sns_share.png" />
+    <meta property="og:description" content="재기 발랄한 카카오 프렌즈와 감각적인 브이디엘이 만나 선보이는 키치 꾸뛰르 감성의 써머 컬렉션">
 
-    <link rel="shortcut icon" type="image/x-icon" href="./images/icon/favicon.ico" />
-    <title>Belif</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link rel="stylesheet" href="../lib/iCheck/skins/all.css">
     <link rel="stylesheet" href="../lib/Magnific-Popup/magnific-popup.css"> 
@@ -54,10 +53,12 @@
         <div class="inner_sns clearfix">
           <a href="#" onclick="sns_share('twitter');"><img src="images/btn_tw.jpg"  alt=""/></a>
           <a href="#" onclick="sns_share('facebook');"><img src="images/btn_fb.jpg"  alt=""/></a>
+          <a href="#" onclick="sns_share('facebook');"><img src="images/btn_kt.jpg"  alt=""/></a>
           <a href="#" onclick="sns_share('story');"><img src="images/btn_ks.jpg"  alt=""/></a>
         </div>
       </div>
     </div>
+    <div class="mask"></div>
 
 <?
 	}

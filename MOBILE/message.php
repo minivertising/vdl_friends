@@ -1,10 +1,6 @@
 <?
-	include_once "../config.php";
-
 	$serial		= $_REQUEST['serial'];
 
-	if ($gubun == "MOBILE")
-		echo "<script>location.href='http://www.mnv.kr/MOBILE/message.php?serial=".$serial."'</script>";
 
 	$query 		= "SELECT * FROM ".$_gl['member_info_table']." WHERE mb_serial='".$serial."'";
 	$result 	= mysqli_query($my_db, $query);

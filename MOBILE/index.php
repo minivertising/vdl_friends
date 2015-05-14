@@ -57,7 +57,6 @@
 <div class="footer">
   <img src="images/footer.jpg"  alt=""/>
 </div>
-<<<<<<< HEAD
   
 <div id="mobile_menu" class="mobile_menu">
   <ul>
@@ -72,9 +71,6 @@
       </div>
   </div>
 </div>
-=======
-
->>>>>>> e6ee112e1a4c9abc23670c572aed36af7433bef4
 <div class="mask"></div>
 <?
 	include_once   "./popup_div.php";

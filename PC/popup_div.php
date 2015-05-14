@@ -469,6 +469,29 @@
 </div>
 <!--------------------- 개인정보 입력 팝업1 --------------------->
 
+<!--------------------- 개인정보(메세지) 입력 팝업1 --------------------->
+<div id="pop_message_input1" class="popup_wrap zoom-anim-dialog mfp-hide" style="margin-left:-263px;top:50%;left:50%;">
+  <div class="p_alert p_position">
+    <div class="block_close clearfix">
+      <a href="#pop_event_input" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>
+    </div>
+    <div class="block_content">
+      <div class="inner">
+        <div class="title">
+          <img src="images/popup/title_alert_input_mss.png" />
+        </div>
+        <div class="btn_block">
+          <a href="#pop_event_input" class="popup-with-zoom-anim"><img src="images/popup/btn_ok.png" alt=""/></a>
+        </div>
+      </div><!--inner-->
+    </div>
+    <div class="bg_chrc">
+      <img src="images/popup/bg_chrc.png" alt=""/>
+    </div>
+  </div>
+</div>
+<!--------------------- 개인정보(메세지) 입력 팝업1 --------------------->
+
 <!--------------------- 개인정보 입력 팝업2 --------------------->
 <div id="pop_input2" class="popup_wrap zoom-anim-dialog mfp-hide" style="margin-left:-263px;top:50%;left:50%;">
   <div class="p_alert p_position">

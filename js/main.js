@@ -179,7 +179,7 @@ function input_message()
 		{
 
 			//alert('개인정보 입력을 안 하셨습니다');
-			setTimeout("ins_data();",500);
+			setTimeout("ins_message_data();",500);
 
 			$("#mb_message").focus();
 			chk_ins = 0;
@@ -239,7 +239,7 @@ function m_input_message()
 		{
 
 			//alert('개인정보 입력을 안 하셨습니다');
-			setTimeout("ins_data();",500);
+			setTimeout("ins_message_data();",500);
 
 			$("#mb_message").focus();
 			chk_ins = 0;
@@ -396,9 +396,9 @@ function popup_desc(param)
 			close: function() {
 				chk_ins = 0;
 				chk_ins2 = 0;
-				$("#mb_receive").val("");
-				$("#mb_send").val("");
-				$("#mb_message").val("");
+				//$("#mb_receive").val("");
+				//$("#mb_send").val("");
+				//$("#mb_message").val("");
 			}
 		}
 	}, 0);
@@ -427,6 +427,11 @@ function thanks_data(url)
 function ins_data()
 {
 	popup_desc('pop_input1');
+}
+
+function ins_message_data()
+{
+	popup_desc('pop_message_input1');
 }
 
 function ins_data2()

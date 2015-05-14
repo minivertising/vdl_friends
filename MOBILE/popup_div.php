@@ -287,6 +287,27 @@
 </div>
 <!--------------------- 개인정보 입력 팝업1 --------------------->
 
+<!--------------------- 개인정보(메세지) 입력 팝업1 --------------------->
+<div id="pop_message_input1" class="popup_wrap zoom-anim-dialog mfp-hide">
+  <div class="p_mid p_position">
+    <div class="block_close clearfix">
+      <a href="#" class="btn_close" onclick="$.magnificPopup.close();"><img src="images/popup/btn_close.png" /></a>
+    </div>
+    <div class="block_content">
+      <div class="inner inner_common">
+        <div class="title"><img src="images/popup/title_input_mss.png" /></div>
+        <div class="block_btn">
+          <a href="#" class="common" onclick="$.magnificPopup.close();"><img src="images/popup/btn_ok.png" /></a>
+        </div>
+      </div><!--inner-->
+    </div>
+  </div>
+  <div class="p_mid_bg_chrc">
+    <img src="images/popup/bg_chrc.png"  width="160" alt=""/>
+  </div>
+</div>
+<!--------------------- 개인정보(메세지) 입력 팝업1 --------------------->
+
 <!--------------------- 개인정보 입력 팝업2 --------------------->
 <div id="pop_input2" class="popup_wrap zoom-anim-dialog mfp-hide">
   <div class="p_mid p_position">

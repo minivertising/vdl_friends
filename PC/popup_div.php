@@ -171,7 +171,7 @@
 <!--------------------- 이벤트 참여 완료 팝업 --------------------->
 
 <!--------------------- 무지 안내 팝업 --------------------->
-<div id="muzi_div" class="popup_wrap zoom-anim-dialog mfp-hide" style="">
+<div id="muzi_div"  class="popup_wrap zoom-anim-dialog mfp-hide">
   <div class="p_mid_col p_position">
     <div class="block_close clearfix">
       <a href="#" onclick="$.magnificPopup.close();" class="btn_close"><img src="images/popup/btn_close.png" /></a>
@@ -181,13 +181,6 @@
         <div class="title">
           <img src="images/popup/title_muji.png" />
         </div>
-        <div class="block_thumb muji">
-          <ul class="clearfix">
-            <li><a href="#" id="thumb_muzi1" class="selected"><img src="images/popup/thumb_muji_1.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_muzi2"><img src="images/popup/thumb_muji_2.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_muzi3"><img src="images/popup/thumb_muji_3.png" alt=""/></a></li>
-          </ul>
-        </div>
         <div class="content clearfix">
           <div class="arrow_left">
             <a href="#" onclick="prev_collection('muzi');"><img src="images/popup/btn_arrow_left.png" alt=""/></a>
@@ -196,14 +189,24 @@
             <img src="images/popup/col_img_muji_1.png" alt=""/>
           </div>
           <div class="img_block" id="muzi_block2" style="display:none">
-            <img src="images/popup/col_img_muji_2.png" alt=""/>
+            <img src="images/popup/col_img_muji_1.png" alt=""/>
           </div>
           <div class="img_block" id="muzi_block3" style="display:none">
-            <img src="images/popup/col_img_muji_3.png" alt=""/>
+            <img src="images/popup/col_img_muji_1.png" alt=""/>
           </div>
           <div class="arrow_right">
             <a href="#" onclick="next_collection('muzi');"><img src="images/popup/btn_arrow_right.png" alt=""/></a>
           </div>
+        </div>
+        <div class="block_thumb muji">
+          <ul class="clearfix">
+            <li><a href="#" id="thumb_muzi1" class="selected"><img src="images/popup/thumb_muji_1.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_muzi2"><img src="images/popup/thumb_muji_1.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_muzi3"><img src="images/popup/thumb_muji_1.png" alt=""/></a></li>
+          </ul>
+        </div>
+        <div class="txt_col">
+          <img src="images/popup/col_img_muji_1_txt.png" alt=""/>
         </div>
       </div><!--inner-->
     </div>

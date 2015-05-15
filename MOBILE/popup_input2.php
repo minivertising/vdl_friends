@@ -41,17 +41,17 @@
           <div class="inner_check clearfix">
             <div class="in_check"><input type="checkbox" name="use_agree" id="use_agree"></div>
             <div class="label_check">개인정보활용</div>
-            <div class="btn_check"><a href="#pop_use_agree" class="popup-with-zoom-anim"><img src="images/popup/btn_detail.png" /></a></div>
+            <div class="btn_check"><a href="#pop_use_agree" class="popup-with-zoom-anim" style="outline: none;"><img src="images/popup/btn_detail.png" /></a></div>
           </div>
           <div class="inner_check clearfix">
             <div class="in_check"><input type="checkbox" name="privacy_agree" id="privacy_agree"></div>
             <div class="label_check">개인 정보 취급 위탁 동의</div>
-            <div class="btn_check"><a href="#pop_privacy_agree" class="popup-with-zoom-anim"><img src="images/popup/btn_detail.png" /></a></div>
+            <div class="btn_check"><a href="#pop_privacy_agree" class="popup-with-zoom-anim" style="outline: none;"><img src="images/popup/btn_detail.png" /></a></div>
           </div>
           <div class="inner_check clearfix">
             <div class="in_check"><input type="checkbox" name="adver_agree" id="adver_agree"></div>
             <div class="label_check">광고성 정보 전송 동의  </div>
-            <div class="btn_check"><a href="#pop_adver_agree" class="popup-with-zoom-anim"><img src="images/popup/btn_detail.png" /></a></div>
+            <div class="btn_check"><a href="#pop_adver_agree" class="popup-with-zoom-anim" style="outline: none;"><img src="images/popup/btn_detail.png" /></a></div>
           </div>
         </div>
         <div class="txt_notice">

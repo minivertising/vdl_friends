@@ -171,7 +171,7 @@
 <!--------------------- 이벤트 참여 완료 팝업 --------------------->
 
 <!--------------------- 무지 안내 팝업 --------------------->
-<div id="muzi_div"  class="popup_wrap zoom-anim-dialog mfp-hide">
+<div id="muzi_div" class="popup_wrap zoom-anim-dialog mfp-hide" style="margin-left:-328px;top:50%;left:50%;">
   <div class="p_mid_col p_position">
     <div class="block_close clearfix">
       <a href="#" onclick="$.magnificPopup.close();" class="btn_close"><img src="images/popup/btn_close.png" /></a>
@@ -181,33 +181,37 @@
         <div class="title">
           <img src="images/popup/title_muji.png" />
         </div>
+        
+        <div class="block_thumb neo">
+          <ul class="clearfix">
+            <li><a href="#" id="thumb_muzi1" class="selected"><img src="images/popup/thumb_mui_1.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_muzi2"><img src="images/popup/thumb_muzi_2.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_muzi3"><img src="images/popup/thumb_muzi_3.png" alt=""/></a></li>
+            <li class="last"><a href="#" id="thumb_neo4"><img src="images/popup/thumb_muzi_4.png" alt=""/></a></li>
+          </ul>
+        </div>
+                
         <div class="content clearfix">
           <div class="arrow_left">
             <a href="#" onclick="prev_collection('muzi');"><img src="images/popup/btn_arrow_left.png" alt=""/></a>
           </div>
-          <div class="img_block" id="muzi_block1">
-            <img src="images/popup/col_img_muji_1.png" alt=""/>
+          <div class="img_block" id="neo_block1">
+            <img src="images/popup/col_img_muzi_1.png" alt=""/>
           </div>
-          <div class="img_block" id="muzi_block2" style="display:none">
-            <img src="images/popup/col_img_muji_1.png" alt=""/>
+          <div class="img_block" id="neo_block2" style="display:none">
+            <img src="images/popup/col_img_muzi_2.png" alt=""/>
           </div>
-          <div class="img_block" id="muzi_block3" style="display:none">
-            <img src="images/popup/col_img_muji_1.png" alt=""/>
+          <div class="img_block" id="neo_block3" style="display:none">
+            <img src="images/popup/col_img_muzi_3.png" alt=""/>
+          </div>
+          <div class="img_block" id="neo_block3" style="display:none">
+            <img src="images/popup/col_img_muzi_4.png" alt=""/>
           </div>
           <div class="arrow_right">
             <a href="#" onclick="next_collection('muzi');"><img src="images/popup/btn_arrow_right.png" alt=""/></a>
           </div>
         </div>
-        <div class="block_thumb muji">
-          <ul class="clearfix">
-            <li><a href="#" id="thumb_muzi1" class="selected"><img src="images/popup/thumb_muji_1.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_muzi2"><img src="images/popup/thumb_muji_1.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_muzi3"><img src="images/popup/thumb_muji_1.png" alt=""/></a></li>
-          </ul>
-        </div>
-        <div class="txt_col">
-          <img src="images/popup/col_img_muji_1_txt.png" alt=""/>
-        </div>
+
       </div><!--inner-->
     </div>
     <div class="bg_chrc">
@@ -228,30 +232,37 @@
         <div class="title">
           <img src="images/popup/title_peach.png" />
         </div>
-        <div class="block_thumb peach">
+        
+        <div class="block_thumb neo">
           <ul class="clearfix">
-            <li><a href="#" id="thumb_apeach1" class="selected"><img src="images/popup/thumb_peach_1.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_apeach2"><img src="images/popup/thumb_peach_2.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_apeach3"><img src="images/popup/thumb_peach_3.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_peach1" class="selected"><img src="images/popup/thumb_peach_1.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_peach2"><img src="images/popup/thumb_peach_2.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_peach3"><img src="images/popup/thumb_peach_3.png" alt=""/></a></li>
+            <li class="last"><a href="#" id="thumb_neo4"><img src="images/popup/thumb_peach_4.png" alt=""/></a></li>
           </ul>
         </div>
+                
         <div class="content clearfix">
           <div class="arrow_left">
             <a href="#" onclick="prev_collection('apeach');"><img src="images/popup/btn_arrow_left.png" alt=""/></a>
           </div>
-          <div class="img_block" id="apeach_block1">
+          <div class="img_block" id="neo_block1">
             <img src="images/popup/col_img_peach_1.png" alt=""/>
           </div>
-          <div class="img_block" id="apeach_block2" style="display:none">
+          <div class="img_block" id="neo_block2" style="display:none">
             <img src="images/popup/col_img_peach_2.png" alt=""/>
           </div>
-          <div class="img_block" id="apeach_block3" style="display:none">
+          <div class="img_block" id="neo_block3" style="display:none">
             <img src="images/popup/col_img_peach_3.png" alt=""/>
+          </div>
+          <div class="img_block" id="neo_block3" style="display:none">
+            <img src="images/popup/col_img_peach_4.png" alt=""/>
           </div>
           <div class="arrow_right">
             <a href="#" onclick="next_collection('apeach');"><img src="images/popup/btn_arrow_right.png" alt=""/></a>
           </div>
         </div>
+
       </div><!--inner-->
     </div>
     <div class="bg_chrc">
@@ -278,7 +289,7 @@
             <li><a href="#" id="thumb_neo1" class="selected"><img src="images/popup/thumb_neo_1.png" alt=""/></a></li>
             <li><a href="#" id="thumb_neo2"><img src="images/popup/thumb_neo_2.png" alt=""/></a></li>
             <li><a href="#" id="thumb_neo3"><img src="images/popup/thumb_neo_3.png" alt=""/></a></li>
-            <li class="last"><a href="#" id="thumb_neo3"><img src="images/popup/thumb_neo_4.png" alt=""/></a></li>
+            <li class="last"><a href="#" id="thumb_neo4"><img src="images/popup/thumb_neo_4.png" alt=""/></a></li>
           </ul>
         </div>
                 

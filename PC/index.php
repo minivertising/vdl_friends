@@ -99,7 +99,7 @@ $(document).ready(function() {
 		removalDelay: 300,
 		mainClass: 'my-mfp-zoom-in',
 		showCloseBtn : false,
-		closeOnBgClick: true,
+		closeOnBgClick: false,
 		callbacks: {
 			open: function() {
 			},

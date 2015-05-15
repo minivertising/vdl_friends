@@ -125,3 +125,11 @@
 .my-mfp-slide-bottom.mfp-removing.mfp-bg {
 	opacity: 0;
 }
+
+#pop_event_input { width:606px;height:706px;top:50%;left:50%;margin-left:-303px }
+
+#muzi_div { width:656px;height:746px;margin-left:-328px;top:50%;left:50%; }
+
+#apeach_div { width:656px;height:746px;margin-left:-328px;top:50%;left:50%; }
+
+#neo_div { width:656px;height:746px;margin-left:-328px;top:50%;left:50%; }

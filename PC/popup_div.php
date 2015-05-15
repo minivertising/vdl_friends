@@ -1,5 +1,5 @@
 <!--------------------- 이벤트 메세지 입력 팝업 --------------------->
-<div id="pop_event_input" class="popup_wrap zoom-anim-dialog mfp-hide" style="top:50%;left:50%;margin-left:-303px">
+<div id="pop_event_input" class="popup_wrap zoom-anim-dialog mfp-hide">
   <div class="p_mid p_position">
     <div class="block_close clearfix" onclick="$.magnificPopup.close();">
       <a href="#" class="btn_close"><img src="images/popup/btn_close.png" /></a>
@@ -162,7 +162,7 @@
 <!--------------------- 이벤트 참여 완료 팝업 --------------------->
 
 <!--------------------- 무지 안내 팝업 --------------------->
-<div id="muzi_div" class="popup_wrap zoom-anim-dialog mfp-hide" style="margin-left:-328px;top:50%;left:50%;">
+<div id="muzi_div" class="popup_wrap zoom-anim-dialog mfp-hide" style="">
   <div class="p_mid_col p_position">
     <div class="block_close clearfix">
       <a href="#" onclick="$.magnificPopup.close();" class="btn_close"><img src="images/popup/btn_close.png" /></a>

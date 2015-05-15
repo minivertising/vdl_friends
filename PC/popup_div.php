@@ -72,11 +72,20 @@
               <img src="images/popup/label_phone.png" alt=""/>
             </div>
             <div class="input_phone clearfix">
-              <div class="phone_ip"><input type="tel" name="mb_phone1" id="mb_phone1"></div>
+              <div class="phone_ip">
+                <select name="mb_phone1" id="mb_phone1" style="height:33px;width:67px;border:1px solid #000;font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight:bold;padding:6px 3px;">
+                  <option value="010">010</option>
+                  <option value="011">011</option>
+                  <option value="016">016</option>
+                  <option value="017">017</option>
+                  <option value="018">018</option>
+                  <option value="019">019</option>
+                </select>
+              </div>
               <div class="phone_ip_dash">-</div>
-              <div class="phone_ip"><input type="tel" name="mb_phone2" id="mb_phone2"></div>
+              <div class="phone_ip"><input type="tel" name="mb_phone2" id="mb_phone2" onkeyup="only_num(this);chk_len(this.value)"></div>
               <div class="phone_ip_dash">-</div>
-              <div class="phone_ip"><input type="tel" name="mb_phone3" id="mb_phone3"></div>
+              <div class="phone_ip"><input type="tel" name="mb_phone3" id="mb_phone3" onkeyup="only_num(this);chk_len2(this.value)"></div>
             </div>
           </div>
         </div>

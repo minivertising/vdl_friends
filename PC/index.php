@@ -78,7 +78,6 @@ $(window).scroll(function() {
 });
 
 $(document).ready(function() {
-
 	// 체크박스 스타일 설정
 	$('.zoom-anim-dialog input').on('ifChecked ifUnchecked', function(event){
 		//alert(this.id);

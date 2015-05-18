@@ -5,7 +5,7 @@
 <div id="pop_event_input" class="popup_wrap">
   <div class="p_mid p_wide p_position">
     <div class="block_close clearfix">
-      <a href="index.php" class="btn_close"><img src="images/popup/btn_close.png" /></a>
+      <a href="#pop_close_confirm1" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>
     </div>
     <div class="block_content">
       <div class="inner">

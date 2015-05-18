@@ -858,30 +858,36 @@ function m_sel_thumb(chac, num)
 			var sel_muzi_num	= col_muzi_cnt + 1;
 			$("#" + chac + "_block" + sel_muzi_num).fadeOut("fast", function(){
 				$("#thumb_" + chac + sel_muzi_num).removeClass("selected");
+				$("#muzi_txt_block" + sel_muzi_num).fadeOut("fast");
 				$("#thumb_" + chac + num).addClass("selected");
 				$("#" + chac + "_block" + num).fadeIn("fast", function(){
+					$("#muzi_txt_block" + num).fadeIn("fast");
 					col_muzi_cnt = num - 1;
-					chk_sel_thumb = 0;
+					m_chk_sel_thumb = 0;
 				});
 			});
 		}else if (chac == "apeach"){
 			var sel_apeach_num	= col_apeach_cnt + 1;
 			$("#" + chac + "_block" + sel_apeach_num).fadeOut("fast", function(){
 				$("#thumb_" + chac + sel_apeach_num).removeClass("selected");
+				$("#apeach_txt_block" + sel_apeach_num).fadeOut("fast");
 				$("#thumb_" + chac + num).addClass("selected");
 				$("#" + chac + "_block" + num).fadeIn("fast", function(){
+					$("#apeach_txt_block" + num).fadeIn("fast");
 					col_apeach_cnt = num - 1;
-					chk_sel_thumb = 0;
+					m_chk_sel_thumb = 0;
 				});
 			});
 		}else{
 			var sel_neo_num	= col_neo_cnt + 1;
 			$("#" + chac + "_block" + sel_neo_num).fadeOut("fast", function(){
 				$("#thumb_" + chac + sel_neo_num).removeClass("selected");
+				$("#neo_txt_block" + sel_neo_num).fadeOut("fast");
 				$("#thumb_" + chac + num).addClass("selected");
 				$("#" + chac + "_block" + num).fadeIn("fast", function(){
+					$("#neo_txt_block" + num).fadeIn("fast");
 					col_neo_cnt = num - 1;
-					chk_sel_thumb = 0;
+					m_chk_sel_thumb = 0;
 				});
 			});
 		}

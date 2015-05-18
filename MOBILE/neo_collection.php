@@ -36,72 +36,58 @@
 
   </head>
   <body class="bg_col_neo">
-<?
-	if (stripos($_SERVER['REQUEST_URI'], "index.php"))
-	{
-?>
-    <div class="menu clearfix">
-      <a href="http://www.vdlcosmetic.com/m/index.jsp" class="logo" target="_blank"><img src="images/logo.png" width="170" alt=""/></a>
-      <a href="#" class="menu_ham"  onclick="show_menu()"><img src="images/menu_ham.png" width="26" alt=""/></a>
-    </div>
-    <div id="mobile_menu" class="mobile_menu">
-      <ul>
-        <li><a href="#" onclick="screen_move('summer')"><img src="images/btn_summer.jpg"  alt=""/></a></li>
-        <li><a href="#" onclick="screen_move('kit')"><img src="images/btn_vdl_kit.jpg"  alt=""/></a></li>
-      </ul>
-      <div class="btn_sns">
-        <div class="inner_sns clearfix">
-          <a href="#" onclick="sns_share('twitter');"><img src="images/btn_tw.jpg"  alt=""/></a>
-          <a href="#" onclick="sns_share('facebook');"><img src="images/btn_fb.jpg"  alt=""/></a>
-          <a href="#" onclick="sns_share('kakao');" id="kakao-link-btn"><img src="images/btn_kt.jpg"  alt=""/></a>
-          <a href="#" onclick="sns_share('story');"><img src="images/btn_ks.jpg"  alt=""/></a>
-        </div>
-      </div>
-    </div>
-    <div class="mask"></div>
-
-<?
-	}
-?>
-
-
-
-<!--------------------- 이벤트 메세지 입력 팝업 --------------------->
 <div id="pop_event_input" class="popup_wrap">
   <div class="p_mid p_wide p_position">
     <div class="block_close clearfix">
       <a href="index.php" class="btn_close"><img src="images/popup/btn_close.png" /></a>
     </div>
     <div class="block_content">
-    	<div class="c_menu clearfix">
-            <div class="m_1"><a href="muzi_collection.php"><img src="images/popup/btn_menu_muji.png" /></a></div>
-            <div class="m_2"><a href="apeach_collection.php"><img src="images/popup/btn_menu_peach.png" /></a></div>
-            <div class="m_3 on"><a href="neo_collection.php"><img src="images/popup/btn_menu_neo.png" /></a></div>
-        </div>
-        <div class="p_content">
-        	<div class="inner_p">
-                <div class="thumb neo">
-                	<div class="inner_thumb clearfix">
-                    	<div class="one"><a href="#" class="selected"><img src="images/popup/thumb_neo_1.png" alt=""/></a></div>
-                        <div class="one"><a href="#"><img src="images/popup/thumb_neo_2.png" alt=""/></a></div>
-                        <div class="one on"><a href="#"><img src="images/popup/thumb_neo_3.png" alt=""/></a></div>
-                        <div class="one"><a href="#"><img src="images/popup/thumb_neo_4.png" alt=""/></a></div>
-                    </div>
-                </div>
-                <div class="p_img">
-                	<img src="images/popup/img_neo_3.png" alt=""/>
-                </div>
+      <div class="c_menu clearfix">
+        <div class="m_1"><a href="muzi_collection.php"><img src="images/popup/btn_menu_muji.png" /></a></div>
+        <div class="m_2"><a href="apeach_collection.php"><img src="images/popup/btn_menu_peach.png" /></a></div>
+        <div class="m_3 on"><a href="neo_collection.php"><img src="images/popup/btn_menu_neo.png" /></a></div>
+      </div>
+      <div class="p_content">
+        <div class="inner_p">
+          <div class="thumb neo">
+            <div class="inner_thumb clearfix">
+              <div class="one"><a href="#" id="thumb_neo1" onclick="m_sel_thumb('neo','1');" class="selected"><img src="images/popup/thumb_neo_1.png" alt=""/></a></div>
+              <div class="one"><a href="#" id="thumb_neo2" onclick="m_sel_thumb('neo','2');"><img src="images/popup/thumb_neo_2.png" alt=""/></a></div>
+              <div class="one on"><a href="#" id="thumb_neo3" onclick="m_sel_thumb('neo','3');"><img src="images/popup/thumb_neo_3.png" alt=""/></a></div>
+              <div class="one"><a href="#" id="thumb_neo4" onclick="m_sel_thumb('neo','4');"><img src="images/popup/thumb_neo_4.png" alt=""/></a></div>
             </div>
+          </div>
+          <div class="p_img" id="neo_block1">
+            <img src="images/popup/img_neo_1.png" alt=""/>
+          </div>
+          <div class="p_img" id="neo_block2" style="display:none">
+            <img src="images/popup/img_neo_2.png" alt=""/>
+          </div>
+          <div class="p_img" id="neo_block3" style="display:none">
+            <img src="images/popup/img_neo_3.png" alt=""/>
+          </div>
+          <div class="p_img" id="neo_block4" style="display:none">
+            <img src="images/popup/img_neo_4.png" alt=""/>
+          </div>
         </div>
-        <div class="p_txt">
-        	<img src="images/popup/txt_neo_1.png" alt=""/>
-        </div>
+      </div>
+      <div class="p_txt" id="neo_txt_block1">
+        <img src="images/popup/txt_neo_1.png" alt=""/>
+      </div>
+      <div class="p_txt" id="neo_txt_block2" style="display:none">
+        <img src="images/popup/txt_neo_2.png" alt=""/>
+      </div>
+      <div class="p_txt" id="neo_txt_block3" style="display:none">
+        <img src="images/popup/txt_neo_3.png" alt=""/>
+      </div>
+      <div class="p_txt" id="neo_txt_block4" style="display:none">
+        <img src="images/popup/txt_neo_4.png" alt=""/>
+      </div>
     </div>
   </div>
   <div class="p_mid_bg_chrc" style="display:none;">
     <img src="images/popup/bg_chrc.png"  width="160" alt=""/>
   </div>
 </div>
-<!--------------------- 이벤트 메세지 입력 팝업 --------------------->
 </body>
 </html>

@@ -202,6 +202,28 @@
 <!--------------------- 광고성 정보 전송 동의 약관 팝업 --------------------->
 
 <!--------------------- 창 닫을때 선택 팝업 --------------------->
+<div id="pop_close_confirm1" class="popup_wrap">
+  <div class="p_mid p_position">
+    <div class="block_close clearfix">
+      <a href="#" onclick="$.magnificPopup.close();" class="btn_close"><img src="images/popup/btn_close.png" /></a>
+    </div>
+    <div class="block_content">
+      <div class="inner">
+        <div class="title"><img src="images/popup/title_close.png" /></div>
+        <div class="block_btn clearfix">
+          <a href="index.php" class="left"><img src="images/popup/btn_out.png" /></a>
+          <a href="#" onclick="$.magnificPopup.close();" class="right"><img src="images/popup/btn_keep.png" /></a>
+        </div>
+      </div><!--inner-->
+    </div>
+  </div>
+  <div class="p_mid_bg_chrc">
+    <img src="images/popup/bg_chrc.png"  width="160" alt=""/>
+  </div>
+</div>
+<!--------------------- 창 닫을때 선택 팝업 --------------------->
+
+<!--------------------- 창 닫을때 선택 팝업 --------------------->
 <div id="pop_close_confirm" class="popup_wrap zoom-anim-dialog mfp-hide">
   <div class="p_mid p_position">
     <div class="block_close clearfix">

@@ -18,9 +18,9 @@ function sns_share(media)
 		// 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
 		Kakao.Link.createTalkLinkButton({
 		  container: '#kakao-link-btn',
-		  label: "재기 발랄한 카카오 프렌즈와 감각적인 브이디엘이 만나 선보이는 키치 꾸뛰르 감성의 써머 컬렉션",
+		  label: "VDL MEETS KAKAO FRIENDS\r\nVDL FRIENDS KIT를 받아라!\r\n\r\n친구에게 메시지를 보내고 5천원 할인 쿠폰과 VDL 프렌즈 키트를 받자! 친구에게 메시지만 보내도 VDL 한정 컬렉션 제품을 받을 수 있는 기회가 온다!",
 		  image: {
-			src: 'http://www.mnv.kr/MOBILE/images/img_sns_share.jpg',
+			src: 'http://www.mnv.kr/MOBILE/images/img_sns_share_new.jpg',
 			width: '1200',
 			height: '630'
 		  },
@@ -39,7 +39,7 @@ function sns_share(media)
 			}
 		});
 	}else if (media == "twitter"){
-		var newWindow = window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent("재기 발랄한 카카오 프렌즈와 감각적인 브이디엘이 만나 선보이는 키치 꾸뛰르 감성의 써머 컬렉션") + '&url='+ encodeURIComponent('http://bit.ly/1E9UlZ3'),'sharer','toolbar=0,status=0,width=600,height=325');
+		var newWindow = window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent("VDL MEETS KAKAO FRIENDS 친구에게 메세지를 보내고 5천원 할인쿠폰과 VDL 프렌즈 키트를 받자! 친구에게 메시지만 보내도 VDL 한정 컬렉션 제품 받을 수 있는 기회가 온다 http://bit.ly/1Hcfun2") + '&url='+ encodeURIComponent('http://bit.ly/1E9UlZ3'),'sharer','toolbar=0,status=0,width=600,height=325');
 		$.ajax({
 			type   : "POST",
 			async  : false,
@@ -67,7 +67,7 @@ function sns_share(media)
 						url : '/v1/api/story/post/link',
 						data : {
 						link_info : res,
-							content:"재기 발랄한 카카오 프렌즈와 감각적인 브이디엘이 만나 선보이는 키치 꾸뛰르 감성의 써머 컬렉션"
+							content:"나눠갖는 VDL FRIENDS KIT! 친구에게 메시지를 보내고 5천원 할인쿠폰과 VDL 프렌즈 키트를 받자!"
 						}
 					});
 				}).then(function(res) {
@@ -107,7 +107,7 @@ function send_kakao()
 	  container: '#kakao-link-btn',
 	  label: "VDL 플러스 친구 맺고 카카오프렌즈 KIT 받자!!\r\n아래 링크 클릭해서 플러스 친구 가입\r\n" + k_url,
 	  image: {
-		src: 'http://www.mnv.kr/MOBILE/images/img_sns_share.png',
+		src: 'http://www.mnv.kr/MOBILE/images/img_sns_share_new.jpg',
 		width: '1200',
 		height: '630'
 	  },

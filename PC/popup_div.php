@@ -15,7 +15,7 @@
               <img src="images/popup/label_to.png" alt=""/>
             </div>
             <div class="txt_input">
-              <input type="text" name="mb_receive" id="mb_receive" onkeyup="check_message('receive')">
+              <input type="text" name="mb_receive" id="mb_receive" placeholder="사랑하는 내 친구, 정은아! (20자 이내)" onkeyup="check_message('receive');">
             </div>
           </div>
           <div class="input_txtarea clearfix">
@@ -23,7 +23,7 @@
               <img src="images/popup/label_txt.png" alt=""/>
             </div>
             <div class="txt_input">
-              <textarea name="mb_message" id="mb_message" onkeyup="check_message('message');"></textarea>
+              <textarea name="mb_message" id="mb_message" placeholder="친구에게 보낼 메세지를 입력해주세요. (250자 이내)" onkeyup="check_message('message');"></textarea>
             </div>
           </div>
           <div class="input_from clearfix">
@@ -31,7 +31,7 @@
               <img src="images/popup/label_from.png" alt=""/>
             </div>
             <div class="txt_input">
-              <input type="text" name="mb_send" id="mb_send" onkeyup="check_message('send')">
+              <input type="text" name="mb_send" id="mb_send" placeholder="너의 단짝, 친구 우주! (20자 이내)" onkeyup="check_message('send')">
             </div>
           </div>
         </div>
@@ -184,9 +184,16 @@
         
         <div class="block_thumb muji">
           <ul class="clearfix">
+<<<<<<< HEAD
             <li><a href="#" id="thumb_muzi1" class="selected"><img src="images/popup/thumb_muji_1.png" alt=""/></a></li>
             <li><a href="#" id="thumb_muzi2"><img src="images/popup/thumb_muji_2.png" alt=""/></a></li>
             <li class="last"><a href="#" id="thumb_muzi3"><img src="images/popup/thumb_muji_3.png" alt=""/></a></li>
+=======
+            <li><a href="#" id="thumb_muzi1" onclick="sel_thumb('muzi','1');" class="selected"><img src="images/popup/thumb_mui_1.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_muzi2" onclick="sel_thumb('muzi','2');"><img src="images/popup/thumb_muzi_2.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_muzi3" onclick="sel_thumb('muzi','3');"><img src="images/popup/thumb_muzi_3.png" alt=""/></a></li>
+            <li class="last"><a href="#" id="thumb_muzi4" onclick="sel_thumb('muzi','4');"><img src="images/popup/thumb_muzi_4.png" alt=""/></a></li>
+>>>>>>> 25030f7416cedb631faf30646020a0b38362ffc4
           </ul>
         </div>
                 
@@ -196,12 +203,24 @@
           </div>
           <div class="img_block" id="muzi_block1">
             <img src="images/popup/col_img_muji_1.png" alt=""/>
+<<<<<<< HEAD
           </div>
           <div class="img_block" id="muzi_block2" style="display:none">
             <img src="images/popup/col_img_muji_2.png" alt=""/>
           </div>
           <div class="img_block" id="muzi_block3" style="display:none">
             <img src="images/popup/col_img_muji_3.png" alt=""/>
+=======
+          </div>
+          <div class="img_block" id="muzi_block2" style="display:none">
+            <img src="images/popup/col_img_muji_2.png" alt=""/>
+          </div>
+          <div class="img_block" id="muzi_block3" style="display:none">
+            <img src="images/popup/col_img_muji_3.png" alt=""/>
+          </div>
+          <div class="img_block" id="muzi_block4" style="display:none">
+            <img src="images/popup/col_img_muji_4.png" alt=""/>
+>>>>>>> 25030f7416cedb631faf30646020a0b38362ffc4
           </div>
           <div clas
           <div class="arrow_right">
@@ -232,11 +251,18 @@
         
         <div class="block_thumb peach">
           <ul class="clearfix">
+<<<<<<< HEAD
             <li><a href="#" id="thumb_apeach1" class="selected"><img src="images/popup/thumb_peach_1.png" alt=""/></a></li>
             <li><a href="#" id="thumb_apeach2"><img src="images/popup/thumb_peach_2.png" alt=""/></a></li>
             <li><a href="#" id="thumb_apeach3"><img src="images/popup/thumb_peach_3.png" alt=""/></a></li>
             <li><a href="#" id="thumb_apeach4"><img src="images/popup/thumb_peach_4.png" alt=""/></a></li>
             <li class="last"><a href="#" id="thumb_apeach5"><img src="images/popup/thumb_peach_5.png" alt=""/></a></li>
+=======
+            <li><a href="#" id="thumb_apeach1" onclick="sel_thumb('apeach','1');" class="selected"><img src="images/popup/thumb_peach_1.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_apeach2" onclick="sel_thumb('apeach','2');"><img src="images/popup/thumb_peach_2.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_apeach3" onclick="sel_thumb('apeach','3');"><img src="images/popup/thumb_peach_3.png" alt=""/></a></li>
+            <li class="last"><a href="#" id="thumb_apeach4" onclick="sel_thumb('apeach','4');"><img src="images/popup/thumb_peach_4.png" alt=""/></a></li>
+>>>>>>> 25030f7416cedb631faf30646020a0b38362ffc4
           </ul>
         </div>
                 
@@ -287,10 +313,10 @@
         
         <div class="block_thumb neo">
           <ul class="clearfix">
-            <li><a href="#" id="thumb_neo1" class="selected"><img src="images/popup/thumb_neo_1.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_neo2"><img src="images/popup/thumb_neo_2.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_neo3"><img src="images/popup/thumb_neo_3.png" alt=""/></a></li>
-            <li class="last"><a href="#" id="thumb_neo4"><img src="images/popup/thumb_neo_4.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_neo1" onclick="sel_thumb('neo','1');" class="selected"><img src="images/popup/thumb_neo_1.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_neo2" onclick="sel_thumb('neo','2');"><img src="images/popup/thumb_neo_2.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_neo3" onclick="sel_thumb('neo','3');"><img src="images/popup/thumb_neo_3.png" alt=""/></a></li>
+            <li class="last"><a href="#" id="thumb_neo4" onclick="sel_thumb('neo','4');"><img src="images/popup/thumb_neo_4.png" alt=""/></a></li>
           </ul>
         </div>
                 
@@ -307,7 +333,7 @@
           <div class="img_block" id="neo_block3" style="display:none">
             <img src="images/popup/col_img_neo_3.png" alt=""/>
           </div>
-          <div class="img_block" id="neo_block3" style="display:none">
+          <div class="img_block" id="neo_block4" style="display:none">
             <img src="images/popup/col_img_neo_4.png" alt=""/>
           </div>
           <div class="arrow_right">

@@ -95,7 +95,7 @@
 <div id="pop_event_thank" class="popup_wrap zoom-anim-dialog mfp-hide">
   <div class="p_mid bg_gray p_position">
     <div class="block_close clearfix">
-      <a href="#" onclick="$.magnificPopup.close();" class="btn_close"><img src="images/popup/btn_close.png" /></a>
+      <a href="index.php" class="btn_close"><img src="images/popup/btn_close.png" /></a>
     </div>
     <div class="block_content">
       <div class="inner">
@@ -110,7 +110,7 @@
         </div>
         <div class="block_btn clearfix">
           <a href="#" class="left" onclick="send_kakao();" id="kakao-link-btn"><img src="images/popup/btn_kt_send.png" /></a>
-          <a href="#" class="right" onclick="copy_url();"><img src="images/popup/btn_url_send.png" /></a>
+          <a href="#" class="right" onclick="m_copy_url();"><img src="images/popup/btn_url_send.png" /></a>
         </div>
         <div class="img_gift">
           <img src="images/popup/img_gift.png" />

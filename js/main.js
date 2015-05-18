@@ -469,6 +469,21 @@ function copy_url(ss_url)
 	}
 }
 
+function m_copy_url(ss_url)
+{
+	//window.clipboardData.setData('text',"11<?=$_SESSION['ss_url']?>");
+    //alert("클립보드에 복사되었습니다.");
+	var text = $("#c_url").text();
+	if(window.clipboardData){
+		// IE처리
+		// 클립보드에 문자열 복사
+		window.clipboardData.setData('text', text);
+	} else {
+		// 비IE 처리    
+		window.prompt ("URL을 복사해주세요!", text);  
+	}
+}
+
 function stop_cha(param)
 {
 	if (param == "1")
@@ -779,12 +794,37 @@ function next_collection(param)
 					col_neo_cnt = 3;
 				});
 			});
-		}else if (col_neo_cnt == 2){
+		}else if (col_neo_cnt == 3){
 			$("#neo_block4").fadeOut("fast", function(){
 				$("#thumb_neo4").removeClass("selected");
 				$("#thumb_neo1").addClass("selected");
 				$("#neo_block1").fadeIn("slow", function(){
 					col_neo_cnt = 0;
+				});
+			});
+		}
+	}
+}
+
+var chk_sel_thumb = 0;
+function sel_thumb(chac, num)
+{
+	if (chk_sel_thumb == 0)
+	{
+		chk_sel_thumb = 1;
+		var sel_neo_num	= col_neo_cnt + 1;
+		if (chac == "muzi")
+		{
+			alert(chac);
+		}else if (chac == "apeach"){
+			alert(chac);
+		}else{
+			$("#" + chac + "_block" + sel_neo_num).fadeOut("fast", function(){
+				$("#thumb_" + chac + sel_neo_num).removeClass("selected");
+				$("#thumb_" + chac + num).addClass("selected");
+				$("#" + chac + "_block" + num).fadeIn("slow", function(){
+					col_neo_cnt = num - 1;
+					chk_sel_thumb = 0;
 				});
 			});
 		}

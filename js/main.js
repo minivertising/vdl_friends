@@ -806,6 +806,31 @@ function next_collection(param)
 	}
 }
 
+var chk_sel_thumb = 0;
+function sel_thumb(chac, num)
+{
+	if (chk_sel_thumb == 0)
+	{
+		chk_sel_thumb = 1;
+		var sel_neo_num	= col_neo_cnt + 1;
+		if (chac == "muzi")
+		{
+			alert(chac);
+		}else if (chac == "apeach"){
+			alert(chac);
+		}else{
+			$("#" + chac + "_block" + sel_neo_num).fadeOut("fast", function(){
+				$("#thumb_" + chac + sel_neo_num).removeClass("selected");
+				$("#thumb_" + chac + num).addClass("selected");
+				$("#" + chac + "_block" + num).fadeIn("slow", function(){
+					col_neo_cnt = num - 1;
+					chk_sel_thumb = 0;
+				});
+			});
+		}
+	}
+}
+
 function show_menu()
 {
 	if ($("#mobile_menu").css("display") == "block")

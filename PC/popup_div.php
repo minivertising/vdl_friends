@@ -184,10 +184,10 @@
         
         <div class="block_thumb neo">
           <ul class="clearfix">
-            <li><a href="#" id="thumb_muzi1" class="selected"><img src="images/popup/thumb_mui_1.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_muzi2"><img src="images/popup/thumb_muzi_2.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_muzi3"><img src="images/popup/thumb_muzi_3.png" alt=""/></a></li>
-            <li class="last"><a href="#" id="thumb_muzi4"><img src="images/popup/thumb_muzi_4.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_muzi1" onclick="sel_thumb('muzi','1');" class="selected"><img src="images/popup/thumb_mui_1.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_muzi2" onclick="sel_thumb('muzi','2');"><img src="images/popup/thumb_muzi_2.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_muzi3" onclick="sel_thumb('muzi','3');"><img src="images/popup/thumb_muzi_3.png" alt=""/></a></li>
+            <li class="last"><a href="#" id="thumb_muzi4" onclick="sel_thumb('muzi','4');"><img src="images/popup/thumb_muzi_4.png" alt=""/></a></li>
           </ul>
         </div>
                 
@@ -235,10 +235,10 @@
         
         <div class="block_thumb neo">
           <ul class="clearfix">
-            <li><a href="#" id="thumb_apeach1" class="selected"><img src="images/popup/thumb_peach_1.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_apeach2"><img src="images/popup/thumb_peach_2.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_apeach3"><img src="images/popup/thumb_peach_3.png" alt=""/></a></li>
-            <li class="last"><a href="#" id="thumb_apeach4"><img src="images/popup/thumb_peach_4.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_apeach1" onclick="sel_thumb('apeach','1');" class="selected"><img src="images/popup/thumb_peach_1.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_apeach2" onclick="sel_thumb('apeach','2');"><img src="images/popup/thumb_peach_2.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_apeach3" onclick="sel_thumb('apeach','3');"><img src="images/popup/thumb_peach_3.png" alt=""/></a></li>
+            <li class="last"><a href="#" id="thumb_apeach4" onclick="sel_thumb('apeach','4');"><img src="images/popup/thumb_peach_4.png" alt=""/></a></li>
           </ul>
         </div>
                 
@@ -286,10 +286,10 @@
         
         <div class="block_thumb neo">
           <ul class="clearfix">
-            <li><a href="#" id="thumb_neo1" class="selected"><img src="images/popup/thumb_neo_1.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_neo2"><img src="images/popup/thumb_neo_2.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_neo3"><img src="images/popup/thumb_neo_3.png" alt=""/></a></li>
-            <li class="last"><a href="#" id="thumb_neo4"><img src="images/popup/thumb_neo_4.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_neo1" onclick="sel_thumb('neo','1');" class="selected"><img src="images/popup/thumb_neo_1.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_neo2" onclick="sel_thumb('neo','2');"><img src="images/popup/thumb_neo_2.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_neo3" onclick="sel_thumb('neo','3');"><img src="images/popup/thumb_neo_3.png" alt=""/></a></li>
+            <li class="last"><a href="#" id="thumb_neo4" onclick="sel_thumb('neo','4');"><img src="images/popup/thumb_neo_4.png" alt=""/></a></li>
           </ul>
         </div>
                 

@@ -398,13 +398,19 @@ body{
 	list-style:none;
 	display:block;
 	float:left;
+	font-size:14px;
+}
+.block_coupon .info_txt ul li a{
+	display:inline-block;
+	padding-left:5px;
+	color:#41baeb;
 }
 .block_coupon .info_txt ul li.txt_1{
 	width:24%;
-	color:#41baeb;
+	color:#666;
 }
 .block_coupon .info_txt ul li.txt_2{
-	width:76%;
+	width:66%;
 }
 .block_coupon .img_coupon_bg,
 .block_coupon .img_coupon_bg img{

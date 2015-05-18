@@ -9,6 +9,7 @@
 	$result 	= mysqli_query($my_db, $query);
 	$member_info	= mysqli_fetch_array($result);
 
+	$member_info['mb_message'] =  str_replace("\n","<br>", $member_info['mb_message']);
 	//$query 		= "UPDATE ".$_gl['member_info_table']." SET mb_join='Y', mb_joindate='".date('Y-m-d H:i:s')."' WHERE mb_serial='".$serial."'";
 	//$result 	= mysqli_query($my_db, $query);
 

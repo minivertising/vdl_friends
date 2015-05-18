@@ -113,7 +113,7 @@ function send_kakao()
 	  },
 	  webButton: {
 		text: 'VDL x KAKAO',
-		url: 'http://www.mnv.kr/?media=kakao' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
+		url: 'http://www.mnv.kr/?media=sendkakao' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
 	  }
 	});
 }

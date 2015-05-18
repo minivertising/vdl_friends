@@ -1,5 +1,12 @@
 <?
 	include_once "./header.php";
+
+	// 주소 바로 입력시 index로 이동
+	if ( !isset($_SERVER['HTTP_REFERER']) && $_SERVER['REMOTE_ADDR'] != "127.0.0.1" ) { 
+		echo "<script>location.href='index.php'</script>"; 
+		exit; 
+	} 
+
 ?>
 <!--------------------- 이벤트 메세지 입력 팝업 --------------------->
 <div id="pop_event_input" class="popup_wrap">

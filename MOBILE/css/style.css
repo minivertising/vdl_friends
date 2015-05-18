@@ -762,6 +762,144 @@ body{
 }
 
 
+
+
+
+
+.bg_col_muji,
+.bg_col_muji .popup_wrap .p_mid.p_position.p_wide .block_content{
+	background:#ffe700;
+}
+.bg_col_peach,
+.bg_col_peach .popup_wrap .p_mid.p_position.p_wide .block_content{
+	background:#fcd6d9;
+}
+.bg_col_neo,
+.bg_col_neo .popup_wrap .p_mid.p_position.p_wide .block_content{
+	background:#6f93b6;
+}
+
+
+.c_menu {
+	width:94%;
+	padding-left:5%;
+	position:relative;
+}
+.c_menu div{
+	float:left;
+	width:32.5%;
+	position:relative;
+	padding-top:60px;
+}
+.c_menu div.m_1.on{
+	background:url(../images/popup/bg_col_muji.png) no-repeat center 0;
+	background-size:contain;
+}
+.c_menu div.m_2.on{
+	background:url(../images/popup/bg_col_peach.png) no-repeat center 0;
+	background-size:contain;
+}
+.c_menu div.m_3.on{
+	background:url(../images/popup/bg_col_neo.png) no-repeat center 0;
+	background-size:contain;
+}
+.c_menu div a{
+	width:97%;
+	display:block;
+	text-align:center;
+	background:#000;
+	padding:7px 0;
+}
+
+.c_menu div a img{
+	width:85%;
+}
+
+.p_content{
+	width:90.5%;
+	padding-left:5%;	
+	
+}
+.p_content .inner_p{
+	width:100%;
+	background:#fff;
+	text-align:center;
+	margin-bottom:20px;
+}
+.p_content .inner_p .thumb{
+	padding-bottom:20px;
+	padding-top:20px;
+}
+.p_content .inner_p .thumb.muji{
+	padding-left:31%;
+}
+.p_content .inner_p .thumb.neo{
+	padding-left:21%;
+}
+.p_content .inner_p .thumb.peach{
+	padding-left:8%;
+}
+.p_content .inner_p .thumb .one{
+	float:left;
+	width:16%;
+	padding-right:10px;
+}
+
+.p_content .inner_p .thumb .one a{
+	display:block;
+	background:#fafafa;
+	border:1px solid #ccc;
+	padding:3px;
+	text-align:center;
+	width:95%;
+}
+.p_content .inner_p .thumb .one a.selected{
+	display:block;
+	background:#fafafa;
+	border:3px solid #fee800;
+	padding:1px 1px 2px;
+	text-align:center;
+	width:95%;
+}
+.p_content .inner_p .thumb.neo .one a.selected{
+	display:block;
+	background:#fafafa;
+	border:3px solid #6f93b6;
+	padding:1px 1px 2px;
+	text-align:center;
+	width:95%;
+}
+.p_content .inner_p .thumb.peach .one a.selected{
+	display:block;
+	background:#fafafa;
+	border:3px solid #facacc;
+	padding:1px 1px 2px;
+	text-align:center;
+	width:95%;
+}
+
+
+
+.p_content .inner_p .thumb .one a img{
+	width:100%;
+}
+.p_content .inner_p .p_img,
+.p_content .inner_p .p_img img{
+	text-align:center;
+	width:100%;
+}
+
+.p_content .inner_p .p_img img{
+	margin-bottom:-3px;
+}
+
+.p_txt,
+.p_txt img{
+	width:100%;
+	text-align:center;
+}
+
+
 /*clearfix*/
 .clearfix:after {
 	content: ".";

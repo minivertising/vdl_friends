@@ -39,7 +39,7 @@ function sns_share(media)
 			}
 		});
 	}else if (media == "twitter"){
-		var newWindow = window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent("VDL MEETS KAKAO FRIENDS 친구에게 메세지를 보내고 5천원 할인쿠폰과 VDL 프렌즈 키트를 받자! 친구에게 메시지만 보내도 VDL 한정 컬렉션 제품 받을 수 있는 기회가 온다 http://bit.ly/1Hcfun2") + '&url='+ encodeURIComponent('http://bit.ly/1E9UlZ3'),'sharer','toolbar=0,status=0,width=600,height=325');
+		var newWindow = window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent("VDL MEETS KAKAO FRIENDS 친구에게 메세지를 보내고 5천원 할인쿠폰과 VDL 프렌즈 키트를 받자! 친구에게 메시지만 보내도 VDL 한정 컬렉션 제품 받을 수 있는 기회가 온다") + '&url='+ encodeURIComponent('http://bit.ly/1Hcfun2'),'sharer','toolbar=0,status=0,width=600,height=325');
 		$.ajax({
 			type   : "POST",
 			async  : false,

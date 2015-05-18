@@ -202,7 +202,7 @@
 <!--------------------- 광고성 정보 전송 동의 약관 팝업 --------------------->
 
 <!--------------------- 창 닫을때 선택 팝업 --------------------->
-<div id="pop_close_confirm1" class="popup_wrap">
+<div id="pop_close_confirm1" class="popup_wrap zoom-anim-dialog mfp-hide">
   <div class="p_mid p_position">
     <div class="block_close clearfix">
       <a href="#" onclick="$.magnificPopup.close();" class="btn_close"><img src="images/popup/btn_close.png" /></a>

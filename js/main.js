@@ -794,7 +794,7 @@ function next_collection(param)
 					col_neo_cnt = 3;
 				});
 			});
-		}else if (col_neo_cnt == 2){
+		}else if (col_neo_cnt == 3){
 			$("#neo_block4").fadeOut("fast", function(){
 				$("#thumb_neo4").removeClass("selected");
 				$("#thumb_neo1").addClass("selected");

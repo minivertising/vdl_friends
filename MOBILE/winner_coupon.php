@@ -63,7 +63,7 @@
         	<div class="inner_info">
                 <ul class="clearfix">
                     <li class="txt_1">사용 가능 매장</li>
-                    <li class="txt_2">: 강남점, 홍대점</li>
+                    <li class="txt_2">: 전국 VDL 매장 <a href="http://www.vdlcosmetics.com/m/story/store/offline.jsp" target="_blank">STORE INFO</a></li>
                 </ul>
                 <ul class="clearfix">
                     <li class="txt_1 ts">쿠폰 사용 기간</li>

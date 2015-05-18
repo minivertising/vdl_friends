@@ -78,7 +78,6 @@ $(window).scroll(function() {
 });
 
 $(document).ready(function() {
-
 	// 체크박스 스타일 설정
 	$('.zoom-anim-dialog input').on('ifChecked ifUnchecked', function(event){
 		//alert(this.id);
@@ -100,7 +99,7 @@ $(document).ready(function() {
 		removalDelay: 300,
 		mainClass: 'my-mfp-zoom-in',
 		showCloseBtn : false,
-		closeOnBgClick: true,
+		closeOnBgClick: false,
 		callbacks: {
 			open: function() {
 			},
@@ -109,6 +108,11 @@ $(document).ready(function() {
 				$("#mb_receive").val("");
 				$("#mb_send").val("");
 				$("#mb_message").val("");
+				$("#mb_name").val("");
+				$("#mb_phone1").val("010");
+				$("#mb_phone2").val("");
+				$("#mb_phone3").val("");
+				$('input').iCheck('uncheck');
 			}
 		}
 	});

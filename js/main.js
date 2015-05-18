@@ -116,7 +116,6 @@ function send_kakao()
 		url: 'http://www.mnv.kr/?media=kakao' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
 	  }
 	});
-	alert("친구에게 메세지가 전송되었습니다.");
 }
 
 function chk_len(val)
@@ -389,7 +388,7 @@ function popup_desc(param)
 		removalDelay: 300,
 		mainClass: 'my-mfp-zoom-in',
 		showCloseBtn : false,
-		closeOnBgClick: true,
+		closeOnBgClick: false,
 		callbacks: {
 			open: function() {
 			},
@@ -578,9 +577,9 @@ function prev_collection(param)
 		{
 			$("#muzi_block1").fadeOut("fast", function(){
 				$("#thumb_muzi1").removeClass("selected");
-				$("#thumb_muzi3").addClass("selected");
-				$("#muzi_block3").fadeIn("slow", function(){
-					col_muzi_cnt = 2;
+				$("#thumb_muzi4").addClass("selected");
+				$("#muzi_block4").fadeIn("slow", function(){
+					col_muzi_cnt = 3;
 				});
 			});
 		}else if (col_muzi_cnt == 1){
@@ -599,15 +598,23 @@ function prev_collection(param)
 					col_muzi_cnt = 1;
 				});
 			});
+		}else if (col_muzi_cnt == 3){
+			$("#muzi_block4").fadeOut("fast", function(){
+				$("#thumb_muzi4").removeClass("selected");
+				$("#thumb_muzi3").addClass("selected");
+				$("#muzi_block3").fadeIn("slow", function(){
+					col_muzi_cnt = 2;
+				});
+			});
 		}
 	}else if (param == "apeach"){
 		if (col_apeach_cnt == 0)
 		{
 			$("#apeach_block1").fadeOut("fast", function(){
 				$("#thumb_apeach1").removeClass("selected");
-				$("#thumb_apeach3").addClass("selected");
-				$("#apeach_block3").fadeIn("slow", function(){
-					col_apeach_cnt = 2;
+				$("#thumb_apeach4").addClass("selected");
+				$("#apeach_block4").fadeIn("slow", function(){
+					col_apeach_cnt = 3;
 				});
 			});
 		}else if (col_apeach_cnt == 1){
@@ -626,15 +633,23 @@ function prev_collection(param)
 					col_apeach_cnt = 1;
 				});
 			});
+		}else if (col_apeach_cnt == 3){
+			$("#apeach_block4").fadeOut("fast", function(){
+				$("#thumb_apeach4").removeClass("selected");
+				$("#thumb_apeach3").addClass("selected");
+				$("#apeach_block3").fadeIn("slow", function(){
+					col_apeach_cnt = 2;
+				});
+			});
 		}
 	}else{
 		if (col_neo_cnt == 0)
 		{
 			$("#neo_block1").fadeOut("fast", function(){
 				$("#thumb_neo1").removeClass("selected");
-				$("#thumb_neo3").addClass("selected");
-				$("#neo_block3").fadeIn("slow", function(){
-					col_neo_cnt = 2;
+				$("#thumb_neo4").addClass("selected");
+				$("#neo_block4").fadeIn("slow", function(){
+					col_neo_cnt = 3;
 				});
 			});
 		}else if (col_neo_cnt == 1){
@@ -651,6 +666,14 @@ function prev_collection(param)
 				$("#thumb_neo2").addClass("selected");
 				$("#neo_block2").fadeIn("slow", function(){
 					col_neo_cnt = 1;
+				});
+			});
+		}else if (col_neo_cnt == 3){
+			$("#neo_block4").fadeOut("fast", function(){
+				$("#thumb_neo4").removeClass("selected");
+				$("#thumb_neo3").addClass("selected");
+				$("#neo_block3").fadeIn("slow", function(){
+					col_neo_cnt = 2;
 				});
 			});
 		}
@@ -681,6 +704,14 @@ function next_collection(param)
 		}else if (col_muzi_cnt == 2){
 			$("#muzi_block3").fadeOut("fast", function(){
 				$("#thumb_muzi3").removeClass("selected");
+				$("#thumb_muzi4").addClass("selected");
+				$("#muzi_block4").fadeIn("slow", function(){
+					col_muzi_cnt = 3;
+				});
+			});
+		}else if (col_muzi_cnt == 3){
+			$("#muzi_block4").fadeOut("fast", function(){
+				$("#thumb_muzi4").removeClass("selected");
 				$("#thumb_muzi1").addClass("selected");
 				$("#muzi_block1").fadeIn("slow", function(){
 					col_muzi_cnt = 0;
@@ -708,6 +739,14 @@ function next_collection(param)
 		}else if (col_apeach_cnt == 2){
 			$("#apeach_block3").fadeOut("fast", function(){
 				$("#thumb_apeach3").removeClass("selected");
+				$("#thumb_apeach4").addClass("selected");
+				$("#apeach_block4").fadeIn("slow", function(){
+					col_apeach_cnt = 3;
+				});
+			});
+		}else if (col_apeach_cnt == 3){
+			$("#apeach_block4").fadeOut("fast", function(){
+				$("#thumb_apeach4").removeClass("selected");
 				$("#thumb_apeach1").addClass("selected");
 				$("#apeach_block1").fadeIn("slow", function(){
 					col_apeach_cnt = 0;
@@ -735,6 +774,14 @@ function next_collection(param)
 		}else if (col_neo_cnt == 2){
 			$("#neo_block3").fadeOut("fast", function(){
 				$("#thumb_neo3").removeClass("selected");
+				$("#thumb_neo4").addClass("selected");
+				$("#neo_block4").fadeIn("slow", function(){
+					col_neo_cnt = 3;
+				});
+			});
+		}else if (col_neo_cnt == 2){
+			$("#neo_block4").fadeOut("fast", function(){
+				$("#thumb_neo4").removeClass("selected");
 				$("#thumb_neo1").addClass("selected");
 				$("#neo_block1").fadeIn("slow", function(){
 					col_neo_cnt = 0;
@@ -751,6 +798,7 @@ function show_menu()
 		$('#mobile_menu').animate({right:-200},300,'linear',function(){
 			$("#mobile_menu").hide();
 			$(".mask").fadeOut(300);
+			$(window).off(".disableScroll");
 		});
 	}else{
 		$(".mask").width($(window).width());
@@ -761,6 +809,11 @@ function show_menu()
 		// 이동위치값 지정
 		var position = 0;
 		$('#mobile_menu').show().animate({right:position},300,'linear');
+
+		$(window).on("mousewheel.disableScroll DOMMouseScroll.disableScroll touchmove.disableScroll", function(e) {
+			e.preventDefault();
+			return;
+		});
 	}
 }
 
@@ -846,3 +899,33 @@ function use_coupon(serial)
 		});
 	}
 }
+
+function only_num(obj)
+{
+	var inText = obj.value;
+	var outText = "";
+	var flag = true;
+	var ret;
+	for(var i = 0; i < inText.length; i++)
+	{
+		ret = inText.charCodeAt(i);
+		if((ret < 48) || (ret > 57))
+		{
+			flag = false;
+		}
+		else
+		{
+			outText += inText.charAt(i);
+		}
+	}
+ 
+	if(flag == false)
+	{
+		alert("전화번호란에 숫자입력만 가능합니다.");
+		obj.value = outText;
+		obj.focus();
+		return false;
+	} 
+	return true;
+}
+

@@ -19,11 +19,20 @@
           <div class="label"><img src="images/popup/label_phone.png" /></div>
           <div class="input_txt">
             <div class="inner_phone clearfix">
-              <div class="in_phone"><input type="text" name="mb_phone1" id="mb_phone1"></div>
+              <div class="in_phone">
+                <select  name="mb_phone1" id="mb_phone1">
+                  <option value="010">010</option>
+                  <option value="011">011</option>
+                  <option value="016">016</option>
+                  <option value="017">017</option>
+                  <option value="018">018</option>
+                  <option value="019">019</option>
+                </select>
+              </div>
               <div class="in_dash">-</div>
-              <div class="in_phone"><input type="text" name="mb_phone2" id="mb_phone2"></div>
+              <div class="in_phone"><input type="tel" name="mb_phone2" id="mb_phone2" onkeyup="only_num(this);chk_len(this.value)"></div>
               <div class="in_dash">-</div>
-              <div class="in_phone"><input type="text" name="mb_phone3" id="mb_phone3"></div>
+              <div class="in_phone"><input type="tel" name="mb_phone3" id="mb_phone3" onkeyup="only_num(this);chk_len2(this.value)"></div>
             </div>
           </div>
         </div>
@@ -32,17 +41,17 @@
           <div class="inner_check clearfix">
             <div class="in_check"><input type="checkbox" name="use_agree" id="use_agree"></div>
             <div class="label_check">개인정보활용</div>
-            <div class="btn_check"><a href="#pop_use_agree" class="popup-with-zoom-anim"><img src="images/popup/btn_detail.png" /></a></div>
+            <div class="btn_check"><a href="#pop_use_agree" class="popup-with-zoom-anim" style="outline: none;"><img src="images/popup/btn_detail.png" /></a></div>
           </div>
           <div class="inner_check clearfix">
             <div class="in_check"><input type="checkbox" name="privacy_agree" id="privacy_agree"></div>
             <div class="label_check">개인 정보 취급 위탁 동의</div>
-            <div class="btn_check"><a href="#pop_privacy_agree" class="popup-with-zoom-anim"><img src="images/popup/btn_detail.png" /></a></div>
+            <div class="btn_check"><a href="#pop_privacy_agree" class="popup-with-zoom-anim" style="outline: none;"><img src="images/popup/btn_detail.png" /></a></div>
           </div>
           <div class="inner_check clearfix">
             <div class="in_check"><input type="checkbox" name="adver_agree" id="adver_agree"></div>
             <div class="label_check">광고성 정보 전송 동의  </div>
-            <div class="btn_check"><a href="#pop_adver_agree" class="popup-with-zoom-anim"><img src="images/popup/btn_detail.png" /></a></div>
+            <div class="btn_check"><a href="#pop_adver_agree" class="popup-with-zoom-anim" style="outline: none;"><img src="images/popup/btn_detail.png" /></a></div>
           </div>
         </div>
         <div class="txt_notice">
@@ -80,8 +89,8 @@ $(document).ready(function() {
 	$('.block_ckeck input').on('ifChecked ifUnchecked', function(event){
 		//alert(this.id);
 	}).iCheck({
-		checkboxClass: 'icheckbox_flat-yellow',
-		radioClass: 'iradio_square-yellow',
+		checkboxClass: 'icheckbox_flat',
+		radioClass: 'iradio_square',
 		increaseArea: '0%'
 	});
 

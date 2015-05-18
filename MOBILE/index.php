@@ -141,6 +141,7 @@ $(document).ready(function() {
 		$('#mobile_menu').animate({right:-200},300,'linear',function(){
 			$("#mobile_menu").hide();
 			$(".mask").fadeOut(300);
+			$(window).off(".disableScroll");
 		});
 	});
 });

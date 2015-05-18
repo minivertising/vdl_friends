@@ -469,6 +469,21 @@ function copy_url(ss_url)
 	}
 }
 
+function m_copy_url(ss_url)
+{
+	//window.clipboardData.setData('text',"11<?=$_SESSION['ss_url']?>");
+    //alert("클립보드에 복사되었습니다.");
+	var text = $("#c_url").text();
+	if(window.clipboardData){
+		// IE처리
+		// 클립보드에 문자열 복사
+		window.clipboardData.setData('text', text);
+	} else {
+		// 비IE 처리    
+		window.prompt ("URL을 복사해주세요!", text);  
+	}
+}
+
 function stop_cha(param)
 {
 	if (param == "1")

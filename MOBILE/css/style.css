@@ -162,8 +162,7 @@ body{
 .block_top .title{
 	width:100%;
 	position:absolute;
-	top:50%;
-	margin-top:-23%;
+	top:20%;
 }
 .block_top .title img{
 	width:100%;
@@ -174,6 +173,28 @@ body{
 .block_top .top_bg img{
 	width:100%;
 }
+.block_top .btn_main_block{
+	width:100%;
+	position:absolute;
+	bottom:0;
+	padding-bottom:7%;
+}
+.block_top .btn_main_block .inner{
+	padding-top:5%;
+	padding-left:11%;
+	width:85%;
+}
+.block_top .btn_main_block .inner a{
+	display:block;
+	float:left;
+	width:45%;
+	padding-right:5px;
+}
+.block_top .btn_main_block .inner a img{
+	width:100%;
+}
+
+
 .block_chrc{
 	margin:0 3%;
 	margin-top:30px;

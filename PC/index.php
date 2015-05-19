@@ -5,6 +5,12 @@
   <input type="hidden" name="mb_idx" id="mb_idx" value="">
   <div class="sec_summer">
     <div class="title"><img src="images/title.png" alt=""/></div>
+    <div class="btn_main">
+    	<div class="inner clearfix">
+        	<a href="#"><img src="images/btn_summer.png" alt=""/></a>
+            <a href="#"><img src="images/btn_event_go.png" alt=""/></a>
+        </div>
+    </div>
   </div>
 
   <div class="sec_movie">

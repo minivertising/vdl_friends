@@ -5,6 +5,12 @@
   <div class="title">
     <img src="images/title_vdl.png"  alt=""/>
   </div>
+  <div class="btn_main_block">
+  	<div class="inner clearfix">
+    	<a href="#"><img src="images/btn_summer.png"  alt="" /></a>
+        <a href="#"><img src="images/btn_event_go.png"  alt="" /></a>
+    </div>
+  </div>
   <div class="top_bg">
     <img src="images/top_bg.jpg"  alt=""/>
   </div>
@@ -17,13 +23,13 @@
 <div class="block_chrc">
   <div class="inner_chrc clearfix">
     <div class="ch_cm ch_1">
-      <a href="muzi_collection.php"><img src="images/img_ch_1.png"  alt="" id="muzi_cha"/></a>
+      <a href="muzi_collection.php"><img src="images/img_ch_1_1.png"  alt="" id="muzi_cha"/></a>
     </div>
     <div class="ch_cm ch_2">
-      <a href="apeach_collection.php"><img src="images/img_ch_2.png"  alt="" id="peach_cha"/></a>
+      <a href="apeach_collection.php"><img src="images/img_ch_2_1.png"  alt="" id="peach_cha"/></a>
     </div>
     <div class="ch_cm ch_3">
-      <a href="neo_collection.php"><img src="images/img_ch_3.png"  alt="" id="neo_cha"/></a>
+      <a href="neo_collection.php"><img src="images/img_ch_3_1.png"  alt="" id="neo_cha"/></a>
     </div>
   </div>
 </div>
@@ -126,14 +132,14 @@ $(document).ready(function() {
 	interval_id	= setInterval(function(){
 		if (cha_gubun == 0)
 		{
-			$('#muzi_cha').attr("src","images/img_ch_1_1.png");
+			$('#muzi_cha').attr("src","images/img_ch_1_2.png");
 			$('#peach_cha').attr("src","images/img_ch_2_2.png");
 			$('#neo_cha').attr("src","images/img_ch_3_2.png");
 			cha_gubun = 1;
 		}else{
-			$('#muzi_cha').attr("src","images/img_ch_1.png");
-			$('#peach_cha').attr("src","images/img_ch_2.png");
-			$('#neo_cha').attr("src","images/img_ch_3.png");
+			$('#muzi_cha').attr("src","images/img_ch_1_1.png");
+			$('#peach_cha').attr("src","images/img_ch_2_2.png");
+			$('#neo_cha').attr("src","images/img_ch_3_2.png");
 			cha_gubun = 0;
 		}
 	},800);

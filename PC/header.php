@@ -48,6 +48,7 @@
             </div>
           </div>
           <div class="sns">
+          	<a href="#" target="_blank"><img src="images/btn_go_home.png" alt=""/></a>
             <a href="#" onclick="sns_share('twitter');"><img src="images/btn_tw.png" alt=""/></a>
             <a href="#" onclick="sns_share('facebook');"><img src="images/btn_fb.png" alt=""/></a>
             <a href="#" onclick="sns_share('story');"><img src="images/btn_ks.png" alt=""/></a>

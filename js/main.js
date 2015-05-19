@@ -14,7 +14,6 @@ function sns_share(media)
 			}
 		});
 	}else if (media == "kakao"){
-		Kakao.init('b3ed5b7dca4e906387247f6a86d982e5');
 		// 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
 		Kakao.Link.createTalkLinkButton({
 		  container: '#kakao-link-btn',
@@ -39,7 +38,7 @@ function sns_share(media)
 			}
 		});
 	}else if (media == "twitter"){
-		var newWindow = window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent("VDL MEETS KAKAO FRIENDS 친구에게 메세지를 보내고 5천원 할인쿠폰과 VDL 프렌즈 키트를 받자! 친구에게 메시지만 보내도 VDL 한정 컬렉션 제품 받을 수 있는 기회가 온다") + '&url='+ encodeURIComponent('http://bit.ly/1Hcfun2'),'sharer','toolbar=0,status=0,width=600,height=325');
+		var newWindow = window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent("VDL MEETS KAKAO FRIENDS 친구에게 메세지를 보내고 5천원 할인쿠폰과 VDL 프렌즈 키트를 받자! 친구에게 메시지만 보내도 VDL 한정 컬렉션 제품 받을 수 있는 기회가 온다") + '&url='+ encodeURIComponent('http://bit.ly/1Egma1r'),'sharer','toolbar=0,status=0,width=600,height=325');
 		$.ajax({
 			type   : "POST",
 			async  : false,
@@ -50,7 +49,6 @@ function sns_share(media)
 			}
 		});
 	}else{
-		Kakao.init('b3ed5b7dca4e906387247f6a86d982e5');
 		// 로그인 창을 띄웁니다.
 		Kakao.Auth.login({
 			success: function() {
@@ -101,7 +99,6 @@ function sns_share(media)
 function send_kakao()
 {
 	var k_url = $("#c_url").text();
-	Kakao.init('b3ed5b7dca4e906387247f6a86d982e5');
 	// 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
 	Kakao.Link.createTalkLinkButton({
 	  container: '#kakao-link-btn',

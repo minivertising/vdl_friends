@@ -184,15 +184,15 @@
         
         <div class="block_thumb muji">
           <ul class="clearfix">
-            <li><a href="#" id="thumb_muzi1" onclick="sel_thumb('muzi','1');" class="selected"><img src="images/popup/thumb_muji_1.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_muzi2" onclick="sel_thumb('muzi','2');"><img src="images/popup/thumb_muji_2.png" alt=""/></a></li>
-            <li class="last"><a href="#" id="thumb_muzi3" onclick="sel_thumb('muzi','3');"><img src="images/popup/thumb_muji_3.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_muzi1" onclick="sel_thumb('muzi','1');return false;" class="selected"><img src="images/popup/thumb_muji_1.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_muzi2" onclick="sel_thumb('muzi','2');return false;"><img src="images/popup/thumb_muji_2.png" alt=""/></a></li>
+            <li class="last"><a href="#" id="thumb_muzi3" onclick="sel_thumb('muzi','3');return false;"><img src="images/popup/thumb_muji_3.png" alt=""/></a></li>
           </ul>
         </div>
                 
         <div class="content clearfix">
           <div class="arrow_left">
-            <a href="#" onclick="prev_collection('muzi');"><img src="images/popup/btn_arrow_left.png" alt=""/></a>
+            <a href="#" onclick="prev_collection('muzi');return false;"><img src="images/popup/btn_arrow_left.png" alt=""/></a>
           </div>
           <div class="img_block" id="muzi_block1">
             <img src="images/popup/col_img_muji_1.png" alt=""/>
@@ -204,7 +204,7 @@
             <img src="images/popup/col_img_muji_3.png" alt=""/>
           </div>
           <div class="arrow_right">
-            <a href="#" onclick="next_collection('muzi');"><img src="images/popup/btn_arrow_right.png" alt=""/></a>
+            <a href="#" onclick="next_collection('muzi');return false;"><img src="images/popup/btn_arrow_right.png" alt=""/></a>
           </div>
         </div>
 
@@ -231,17 +231,17 @@
         
         <div class="block_thumb peach">
           <ul class="clearfix">
-            <li><a href="#" id="thumb_apeach1" onclick="sel_thumb('apeach','1');" class="selected"><img src="images/popup/thumb_peach_1.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_apeach2" onclick="sel_thumb('apeach','2');"><img src="images/popup/thumb_peach_2.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_apeach3" onclick="sel_thumb('apeach','3');"><img src="images/popup/thumb_peach_3.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_apeach4" onclick="sel_thumb('apeach','4');"><img src="images/popup/thumb_peach_4.png" alt=""/></a></li>
-            <li class="last"><a href="#" id="thumb_apeach5" onclick="sel_thumb('apeach','5');"><img src="images/popup/thumb_peach_5.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_apeach1" onclick="sel_thumb('apeach','1');return false;" class="selected"><img src="images/popup/thumb_peach_1.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_apeach2" onclick="sel_thumb('apeach','2');return false;"><img src="images/popup/thumb_peach_2.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_apeach3" onclick="sel_thumb('apeach','3');return false;"><img src="images/popup/thumb_peach_3.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_apeach4" onclick="sel_thumb('apeach','4');return false;"><img src="images/popup/thumb_peach_4.png" alt=""/></a></li>
+            <li class="last"><a href="#" id="thumb_apeach5" onclick="sel_thumb('apeach','5');return false;"><img src="images/popup/thumb_peach_5.png" alt=""/></a></li>
           </ul>
         </div>
                 
         <div class="content clearfix">
           <div class="arrow_left">
-            <a href="#" onclick="prev_collection('apeach');"><img src="images/popup/btn_arrow_left.png" alt=""/></a>
+            <a href="#" onclick="prev_collection('apeach');return false;"><img src="images/popup/btn_arrow_left.png" alt=""/></a>
           </div>
           <div class="img_block" id="apeach_block1">
             <img src="images/popup/col_img_peach_1.png" alt=""/>
@@ -259,7 +259,7 @@
             <img src="images/popup/col_img_peach_5.png" alt=""/>
           </div>
           <div class="arrow_right">
-            <a href="#" onclick="next_collection('apeach');"><img src="images/popup/btn_arrow_right.png" alt=""/></a>
+            <a href="#" onclick="next_collection('apeach');return false;"><img src="images/popup/btn_arrow_right.png" alt=""/></a>
           </div>
         </div>
 
@@ -286,16 +286,16 @@
         
         <div class="block_thumb neo">
           <ul class="clearfix">
-            <li><a href="#" id="thumb_neo1" onclick="sel_thumb('neo','1');" class="selected"><img src="images/popup/thumb_neo_1.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_neo2" onclick="sel_thumb('neo','2');"><img src="images/popup/thumb_neo_2.png" alt=""/></a></li>
-            <li><a href="#" id="thumb_neo3" onclick="sel_thumb('neo','3');"><img src="images/popup/thumb_neo_3.png" alt=""/></a></li>
-            <li class="last"><a href="#" id="thumb_neo4" onclick="sel_thumb('neo','4');"><img src="images/popup/thumb_neo_4.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_neo1" onclick="sel_thumb('neo','1');return false;" class="selected"><img src="images/popup/thumb_neo_1.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_neo2" onclick="sel_thumb('neo','2');return false;"><img src="images/popup/thumb_neo_2.png" alt=""/></a></li>
+            <li><a href="#" id="thumb_neo3" onclick="sel_thumb('neo','3');return false;"><img src="images/popup/thumb_neo_3.png" alt=""/></a></li>
+            <li class="last"><a href="#" id="thumb_neo4" onclick="sel_thumb('neo','4');return false;"><img src="images/popup/thumb_neo_4.png" alt=""/></a></li>
           </ul>
         </div>
                 
         <div class="content clearfix">
           <div class="arrow_left">
-            <a href="#" onclick="prev_collection('neo');"><img src="images/popup/btn_arrow_left.png" alt=""/></a>
+            <a href="#" onclick="prev_collection('neo');return false;"><img src="images/popup/btn_arrow_left.png" alt=""/></a>
           </div>
           <div class="img_block" id="neo_block1">
             <img src="images/popup/col_img_neo_1.png" alt=""/>
@@ -310,7 +310,7 @@
             <img src="images/popup/col_img_neo_4.png" alt=""/>
           </div>
           <div class="arrow_right">
-            <a href="#" onclick="next_collection('neo');"><img src="images/popup/btn_arrow_right.png" alt=""/></a>
+            <a href="#" onclick="next_collection('neo');return false;"><img src="images/popup/btn_arrow_right.png" alt=""/></a>
           </div>
         </div>
 

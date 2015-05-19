@@ -155,7 +155,7 @@ function screen_move(param)
 			$("#mobile_menu").hide();
 			$(".mask").fadeOut(100);
 			$( 'html, body' ).animate({ scrollTop: 0},500);
-			$("body").unbind('touchmove');
+			$(window).off(".disableScroll");
 		});
 		
 	}else{
@@ -163,7 +163,7 @@ function screen_move(param)
 			$("#mobile_menu").hide();
 			$(".mask").fadeOut(100);
 			$( 'html, body' ).animate({ scrollTop: $(".block_top").height() + $(".block_movie").height() + $(".block_chrc").height() + 8},500);
-			$("body").unbind('touchmove');
+			$(window).off(".disableScroll");
 		});
 	}
 }

@@ -174,7 +174,7 @@ function screen_move(param)
 		$('#mobile_menu').animate({right:-200},300,'linear',function(){
 			$("#mobile_menu").hide();
 			$(".mask").fadeOut(100);
-			$( 'html, body' ).animate({ scrollTop: $(".block_movie").height()},500);
+			$( 'html, body' ).animate({ scrollTop: $(".block_top").height()},500);
 			$(window).off(".disableScroll");
 		});
 		
@@ -192,7 +192,7 @@ function screen_move2(param)
 {
 	if (param == "summer")
 	{
-		$( 'html, body' ).animate({ scrollTop: $(".block_movie").height()},500);
+		$( 'html, body' ).animate({ scrollTop: $(".block_top").height()},500);
 	}else{
 		$( 'html, body' ).animate({ scrollTop: $(".block_top").height() + $(".block_movie").height() + $(".block_chrc").height() + 8},500);
 	}

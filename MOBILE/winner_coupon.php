@@ -36,6 +36,7 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <script type='text/javascript' src="../js/jquery-1.11.2.min.js"></script>
     <script type='text/javascript' src="../js/analytics.js"></script>
     <script type='text/javascript' src="../js/main.js"></script>
 

@@ -43,8 +43,8 @@
         <div class="right_wrap">
           <div class="menu">
             <div class="inner clearfix">
-              <a href="#" onclick="move_area('collection')"><img src="images/btn_menu_summer_off.png" alt="" id="summer_header_menu" onmouseover="$(this).attr('src','images/btn_menu_summer.png')" onmouseout="$(this).attr('src','images/btn_menu_summer_off.png')"/></a>
-              <a href="#" onclick="move_area('kit')"><img src="images/btn_menu_kit_off.png" alt=""  id="kit_header_menu" onmouseover="$(this).attr('src','images/btn_menu_kit.png')" onmouseout="$(this).attr('src','images/btn_menu_kit_off.png')"/></a>
+              <a href="#" onclick="move_area('collection')"><img src="images/btn_menu_summer_off.png" alt="" id="summer_header_menu"/></a>
+              <a href="#" onclick="move_area('kit')"><img src="images/btn_menu_kit_off.png" alt=""  id="kit_header_menu"/></a>
             </div>
           </div>
           <div class="sns">

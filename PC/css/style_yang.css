@@ -129,20 +129,20 @@ body{
 }
 .navi .right{
 	float:right;
-	width:500px;
+	width:630px;
 	padding-right:60px;
 }
 .navi .right .right_wrap{
-	width:500px;
+	
 }
 .navi .right .menu{
 	float:left;
-	padding-top:10px;
+	padding-top:8px;
 }
 .navi .right .menu .inner a{
 	display:block;
 	float:left;
-	padding-right:15px;
+	padding-right:25px;
 }
 .navi .right .sns{
 	float:right;

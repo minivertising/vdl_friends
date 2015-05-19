@@ -91,6 +91,7 @@ var interval_id1;
 var interval_id2;
 var interval_id3;
 $(document).ready(function() {
+	Kakao.init('b3ed5b7dca4e906387247f6a86d982e5');
 
 	// 체크박스 스타일 설정
 	$('.block_ckeck input').on('ifChecked ifUnchecked', function(event){

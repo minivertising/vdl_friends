@@ -507,15 +507,25 @@ function move_cha(param)
 	interval_id	= setInterval(function(){
 		if (cha_gubun == 0)
 		{
-			$('#muzi_cha').attr("src","images/chra_1_2.png");
-			$('#peach_cha').attr("src","images/chra_2_2.png");
-			$('#neo_cha').attr("src","images/chra_3_2.png");
-			cha_gubun = 1;
-		}else{
 			$('#muzi_cha').attr("src","images/chra_1_1.png");
 			$('#peach_cha').attr("src","images/chra_2_1.png");
 			$('#neo_cha').attr("src","images/chra_3_1.png");
-			cha_gubun = 0;
+			cha_gubun = 1;
+			cha_back_gubun = 0;
+		}else if (cha_gubun == 1){
+			$('#muzi_cha').attr("src","images/chra_1_2.png");
+			$('#peach_cha').attr("src","images/chra_2_2.png");
+			$('#neo_cha').attr("src","images/chra_3_2.png");
+			if (cha_back_gubun == 0)
+				cha_gubun = 2;
+			else
+				cha_gubun = 0;
+		}else{
+			$('#muzi_cha').attr("src","images/chra_1_3.png");
+			$('#peach_cha').attr("src","images/chra_2_3.png");
+			$('#neo_cha').attr("src","images/chra_3_3.png");
+			cha_gubun = 1;
+			cha_back_gubun = 1;
 		}
 	},800);
 }

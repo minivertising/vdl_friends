@@ -151,15 +151,12 @@
         <div class="title">
           <img src="images/popup/title_alert_comp.png" />
         </div>
-        <div class="block_url" id="c_url"></div>
-        <div class="txt_notice">
-          <img src="images/popup/txt_url_notice_2.png" alt=""/>
-        </div>
+        <div class="block_url" id="c_url">ddd</div>
         <div class="btn_block">
           <a href="#" onclick="copy_url();"><img src="images/popup/btn_url.png" alt=""/></a>
         </div>
-        <div class="txt_notice">
-          <img src="images/popup/txt_url_notice.png" alt=""/>
+        <div class="btn_close_block">
+          <a href="#" onclick="$.magnificPopup.close();" class="btn_close"><img src="images/popup/btn_close_event.png" /></a>
         </div>
       </div><!--inner-->
     </div>

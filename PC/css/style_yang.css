@@ -253,7 +253,7 @@ body{
 .sec_message .title{
 	background:#000;
 	text-align:center;
-	padding:30px 0 40px;
+	padding:35px 0 40px;
 }
 .sec_message .event{
 	height:560px;
@@ -264,7 +264,7 @@ body{
 	margin:0 auto;
 }
 .sec_message .event .inner .btn_block{
-	padding-top:400px;
+	padding-top:430px;
 }
 .sec_message .howto{
 	text-align:center;

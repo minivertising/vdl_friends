@@ -65,7 +65,7 @@ function sns_share(media)
 						url : '/v1/api/story/post/link',
 						data : {
 						link_info : res,
-							content:"KAKAO FRIENDS 친구에게 메시지를 보내고 컬렉션 제품이 담긴 VDL FRIENDS KIT를 받아가세요! 참여만해도 5천원 할인"
+							content:"VDL MEETS KAKAO FRIENDS 친구에게 메시지를 보내고 컬렉션 제품이 담긴 VDL FRIENDS KIT를 받아가세요! 참여만해도 5천원 할인 쿠폰을 드려요."
 						}
 					});
 				}).then(function(res) {

@@ -7,8 +7,8 @@
   </div>
   <div class="btn_main_block">
   	<div class="inner clearfix">
-    	<a href="#"><img src="images/btn_summer.png"  alt="" /></a>
-        <a href="#"><img src="images/btn_event_go.png"  alt="" /></a>
+    	<a href="#" onclick="screen_move2('summer')"><img src="images/btn_summer.png"  alt="" /></a>
+        <a href="#" onclick="screen_move2('kit')"><img src="images/btn_event_go.png"  alt="" /></a>
     </div>
   </div>
   <div class="top_bg">
@@ -73,6 +73,7 @@
 var chk_ins	= 0;
 var chk_ins2	= 0;
 var cha_gubun = 0;
+var cha_back_gubun = 0;
 var cha_gubun1 = 0;
 var cha_gubun2 = 0;
 var cha_gubun3 = 0;
@@ -80,6 +81,7 @@ var interval_id1;
 var interval_id2;
 var interval_id3;
 $(document).ready(function() {
+	Kakao.init('b3ed5b7dca4e906387247f6a86d982e5');
 	var width = $(window).width();
 	var youtube_height = (width / 16) * 9;
 	$("#ytplayer").width(width);
@@ -131,17 +133,30 @@ $(document).ready(function() {
 	interval_id	= setInterval(function(){
 		if (cha_gubun == 0)
 		{
+			$('#muzi_cha').attr("src","images/img_ch_1_1.png");
+			$('#peach_cha').attr("src","images/img_ch_2_1.png");
+			$('#neo_cha').attr("src","images/img_ch_3_1.png");
+			cha_gubun = 1;
+			cha_back_gubun = 0;
+		}else if (cha_gubun == 1){
 			$('#muzi_cha').attr("src","images/img_ch_1_2.png");
 			$('#peach_cha').attr("src","images/img_ch_2_2.png");
 			$('#neo_cha').attr("src","images/img_ch_3_2.png");
-			cha_gubun = 1;
+			if (cha_back_gubun == 0)
+				cha_gubun = 2;
+			else
+				cha_gubun = 0;
 		}else{
-			$('#muzi_cha').attr("src","images/img_ch_1_1.png");
-			$('#peach_cha').attr("src","images/img_ch_2_2.png");
-			$('#neo_cha').attr("src","images/img_ch_3_2.png");
-			cha_gubun = 0;
+			$('#muzi_cha').attr("src","images/img_ch_1_3.png");
+			$('#peach_cha').attr("src","images/img_ch_2_3.png");
+			$('#neo_cha').attr("src","images/img_ch_3_3.png");
+			cha_gubun = 1;
+			cha_back_gubun = 1;
 		}
 	},800);
+
+
+
 
 	$(".mask").click(function(){
 		$('#mobile_menu').animate({right:-200},300,'linear',function(){
@@ -159,7 +174,8 @@ function screen_move(param)
 		$('#mobile_menu').animate({right:-200},300,'linear',function(){
 			$("#mobile_menu").hide();
 			$(".mask").fadeOut(100);
-			$( 'html, body' ).animate({ scrollTop: 0},500);
+			$( 'html, body' ).animate({ scrollTop: 150},500);
+			$(window).off(".disableScroll");
 		});
 		
 	}else{
@@ -167,7 +183,18 @@ function screen_move(param)
 			$("#mobile_menu").hide();
 			$(".mask").fadeOut(100);
 			$( 'html, body' ).animate({ scrollTop: $(".block_top").height() + $(".block_movie").height() + $(".block_chrc").height() + 8},500);
+			$(window).off(".disableScroll");
 		});
+	}
+}
+
+function screen_move2(param)
+{
+	if (param == "summer")
+	{
+		$( 'html, body' ).animate({ scrollTop: 150},500);
+	}else{
+		$( 'html, body' ).animate({ scrollTop: $(".block_top").height() + $(".block_movie").height() + $(".block_chrc").height() + 8},500);
 	}
 }
 

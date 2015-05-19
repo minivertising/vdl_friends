@@ -14,7 +14,6 @@ function sns_share(media)
 			}
 		});
 	}else if (media == "kakao"){
-		Kakao.init('b3ed5b7dca4e906387247f6a86d982e5');
 		// 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
 		Kakao.Link.createTalkLinkButton({
 		  container: '#kakao-link-btn',
@@ -39,7 +38,7 @@ function sns_share(media)
 			}
 		});
 	}else if (media == "twitter"){
-		var newWindow = window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent("VDL MEETS KAKAO FRIENDS 친구에게 메세지를 보내고 5천원 할인쿠폰과 VDL 프렌즈 키트를 받자! 친구에게 메시지만 보내도 VDL 한정 컬렉션 제품 받을 수 있는 기회가 온다") + '&url='+ encodeURIComponent('http://bit.ly/1Hcfun2'),'sharer','toolbar=0,status=0,width=600,height=325');
+		var newWindow = window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent("VDL MEETS KAKAO FRIENDS 친구에게 메시지를 보내고 컬렉션 제품이 담긴 VDL FRIENDS KIT를 받아가세요! 참여만해도 5천원 할인 쿠폰을 드려요.") + '&url='+ encodeURIComponent('http://bit.ly/1Egma1r'),'sharer','toolbar=0,status=0,width=600,height=325');
 		$.ajax({
 			type   : "POST",
 			async  : false,
@@ -50,7 +49,6 @@ function sns_share(media)
 			}
 		});
 	}else{
-		Kakao.init('b3ed5b7dca4e906387247f6a86d982e5');
 		// 로그인 창을 띄웁니다.
 		Kakao.Auth.login({
 			success: function() {
@@ -67,7 +65,7 @@ function sns_share(media)
 						url : '/v1/api/story/post/link',
 						data : {
 						link_info : res,
-							content:"나눠갖는 VDL FRIENDS KIT! 친구에게 메시지를 보내고 5천원 할인쿠폰과 VDL 프렌즈 키트를 받자!"
+							content:"VDL MEETS KAKAO FRIENDS 친구에게 메시지를 보내고 컬렉션 제품이 담긴 VDL FRIENDS KIT를 받아가세요! 참여만해도 5천원 할인 쿠폰을 드려요."
 						}
 					});
 				}).then(function(res) {
@@ -101,7 +99,6 @@ function sns_share(media)
 function send_kakao()
 {
 	var k_url = $("#c_url").text();
-	Kakao.init('b3ed5b7dca4e906387247f6a86d982e5');
 	// 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
 	Kakao.Link.createTalkLinkButton({
 	  container: '#kakao-link-btn',
@@ -409,7 +406,7 @@ function move_area(area)
 	{
 		$( 'html, body' ).animate({ scrollTop: $(".sec_summer").height() + $(".sec_movie").height() + 75},500);
 	}else if (area == "collection"){
-		$( 'html, body' ).animate({ scrollTop: 0},500);
+		$( 'html, body' ).animate({ scrollTop: $(".sec_summer").height() - 75},500);
 	}
 }
 
@@ -510,15 +507,25 @@ function move_cha(param)
 	interval_id	= setInterval(function(){
 		if (cha_gubun == 0)
 		{
-			$('#muzi_cha').attr("src","images/chra_1_2.png");
-			$('#peach_cha').attr("src","images/chra_2_2.png");
-			$('#neo_cha').attr("src","images/chra_3_2.png");
-			cha_gubun = 1;
-		}else{
 			$('#muzi_cha').attr("src","images/chra_1_1.png");
 			$('#peach_cha').attr("src","images/chra_2_1.png");
 			$('#neo_cha').attr("src","images/chra_3_1.png");
-			cha_gubun = 0;
+			cha_gubun = 1;
+			cha_back_gubun = 0;
+		}else if (cha_gubun == 1){
+			$('#muzi_cha').attr("src","images/chra_1_2.png");
+			$('#peach_cha').attr("src","images/chra_2_2.png");
+			$('#neo_cha').attr("src","images/chra_3_2.png");
+			if (cha_back_gubun == 0)
+				cha_gubun = 2;
+			else
+				cha_gubun = 0;
+		}else{
+			$('#muzi_cha').attr("src","images/chra_1_3.png");
+			$('#peach_cha').attr("src","images/chra_2_3.png");
+			$('#neo_cha').attr("src","images/chra_3_3.png");
+			cha_gubun = 1;
+			cha_back_gubun = 1;
 		}
 	},800);
 }

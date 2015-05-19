@@ -38,23 +38,27 @@ switch ($_REQUEST['exec'])
 			$orgUrl = $xml->result->orgUrl;
 			$qr = $xml->result->url.".qr";
 			$_SESSION['ss_url'] = $transUrl;
-		}
 
-		$url2 = sprintf("%s?url=%s&key=%s", "http://openapi.naver.com/shorturl.xml", $longurl2, $key);
-		$data2 =file_get_contents($url2);
-		$xml2 = simplexml_load_string($data2, 'SimpleXMLElement', LIBXML_NOCDATA);
+			$url2 = sprintf("%s?url=%s&key=%s", "http://openapi.naver.com/shorturl.xml", $longurl2, $key);
+			$data2 =file_get_contents($url2);
+			$xml2 = simplexml_load_string($data2, 'SimpleXMLElement', LIBXML_NOCDATA);
 
-		if($xml2->code == 200){
-			$transUrl2 = $xml2->result->url;
-			$orgUrl2 = $xml2->result->orgUrl;
-			$qr2 = $xml2->result->url.".qr";
-		}
+			if($xml2->code == 200){
+				$transUrl2 = $xml2->result->url;
+				$orgUrl2 = $xml2->result->orgUrl;
+				$qr2 = $xml2->result->url.".qr";
 
-		$query 		= "UPDATE ".$_gl['member_info_table']." SET mb_name='".$mb_name."', mb_phone='".$mb_phone."', mb_url='".$transUrl."', mb_winner_url='".$transUrl2."', mb_qr='".$qr."', mb_serial='".$serial."' WHERE idx='".$mb_idx."'";
-		$result 	= mysqli_query($my_db, $query);
-		
-		if ($result){
-			$flag = $_SESSION['ss_url'];
+				$query 		= "UPDATE ".$_gl['member_info_table']." SET mb_name='".$mb_name."', mb_phone='".$mb_phone."', mb_url='".$transUrl."', mb_winner_url='".$transUrl2."', mb_qr='".$qr."', mb_serial='".$serial."' WHERE idx='".$mb_idx."'";
+				$result 	= mysqli_query($my_db, $query);
+				
+				if ($result){
+					$flag = $_SESSION['ss_url'];
+				}else{
+					$flag = "N";
+				}
+			}else{
+				$flag = "N";
+			}
 		}else{
 			$flag = "N";
 		}

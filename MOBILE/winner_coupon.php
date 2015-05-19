@@ -27,9 +27,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=3.0" />
     <meta property="og:title" content="VDL MEETS KAKAO FRIENDS">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://www.mnv.kr/MOBILE/index.php" />
@@ -38,38 +36,16 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <link rel="stylesheet" href="../lib/iCheck/skins/all.css">
-    <link rel="stylesheet" href="../lib/Magnific-Popup/magnific-popup.css"> 
-	<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
     <script type='text/javascript' src="../js/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
-	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <script type='text/javascript' src="../js/analytics.js"></script>
-    <script type='text/javascript' src='../lib/iCheck/icheck.js'></script>
-    <script type="text/javascript" src="http://www.youtube.com/player_api"></script>
-    <script type="text/javascript" src="../lib/Magnific-Popup/jquery.magnific-popup.js"></script>
-    <script type="text/javascript" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
     <script type='text/javascript' src="../js/main.js"></script>
-    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-    <style>
-	html,body { height: 100%; margin: 0; padding: 0;}
-    </style>
 
   </head>
 
 <body class="bg_coupon_body">
 	<div class="block_coupon">
     	<div class="info_txt">
-        	<div class="inner_info">
-                <ul class="clearfix">
-                    <li class="txt_1">사용 가능 매장</li>
-                    <li class="txt_2">: 전국 VDL 매장 <a href="http://www.vdlcosmetics.com/m/story/store/offline.jsp" target="_blank"><img src="images/btn_store.png" width="65"/></a></li>
-                </ul>
-                <ul class="clearfix">
-                    <li class="txt_1 ts">쿠폰 사용 기간</li>
-                    <li class="txt_2">: 2015/5/22 ~ 6/14</li>
-                </ul>
-            </div>
+          <a class="btn_store" href="http://www.vdlcosmetics.com/m/story/store/offline.jsp" target="_blank"><img src="images/btn_store.png" /></a>
         </div>
 <?
 	if ($flag == "Y")
@@ -85,5 +61,6 @@
 ?>
     	<div class="img_coupon_bg"><img src="images/bg_coupon.jpg" /></div>
     </div>
+
 </body>
 </html>

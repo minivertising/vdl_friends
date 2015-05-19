@@ -7,8 +7,8 @@
     <div class="title"><img src="images/title.png" alt=""/></div>
     <div class="btn_main">
     	<div class="inner clearfix">
-        	<a href="#"><img src="images/btn_summer.png" alt=""/></a>
-            <a href="#"><img src="images/btn_event_go.png" alt=""/></a>
+        	<a href="#" onclick="move_area('collection')"><img src="images/btn_summer.png" alt=""/></a>
+            <a href="#" onclick="move_area('kit')"><img src="images/btn_event_go.png" alt=""/></a>
         </div>
     </div>
   </div>
@@ -69,6 +69,7 @@
 var chk_ins	= 0;
 var chk_ins2	= 0;
 var cha_gubun = 0;
+var cha_back_gubun = 0;
 var cha_gubun1 = 0;
 var cha_gubun2 = 0;
 var cha_gubun3 = 0;
@@ -81,9 +82,28 @@ $(window).scroll(function() {
 	quickTop = ($(window).height()-$('.quickmenu').height()) /2;
 	$('.quickmenu').stop().animate({top:$(window).scrollTop()+quickTop},400,'easeOutExpo');
 	
+	if ($(window).scrollTop() < 1640)
+	{
+		$("#summer_header_menu").attr('src','images/btn_menu_summer.png')
+		$("#kit_header_menu").attr('src','images/btn_menu_kit_off.png')
+	}else{
+		$("#summer_header_menu").attr('src','images/btn_menu_summer_off.png')
+		$("#kit_header_menu").attr('src','images/btn_menu_kit.png')
+	}
 });
 
 $(document).ready(function() {
+	Kakao.init('b3ed5b7dca4e906387247f6a86d982e5');
+
+	if ($(window).scrollTop() < 1640)
+	{
+		$("#summer_header_menu").attr('src','images/btn_menu_summer.png')
+		$("#kit_header_menu").attr('src','images/btn_menu_kit_off.png')
+	}else{
+		$("#summer_header_menu").attr('src','images/btn_menu_summer_off.png')
+		$("#kit_header_menu").attr('src','images/btn_menu_kit.png')
+	}
+
 	// 체크박스 스타일 설정
 	$('.zoom-anim-dialog input').on('ifChecked ifUnchecked', function(event){
 		//alert(this.id);
@@ -132,6 +152,7 @@ $(document).ready(function() {
 	var quick_height	= $(window).height()/2;
 	$('.quickmenu').css("top",quick_height);
 
+	/*
 	interval_id	= setInterval(function(){
 		if (cha_gubun == 0)
 		{
@@ -144,6 +165,32 @@ $(document).ready(function() {
 			$('#peach_cha').attr("src","images/chra_2_1.png");
 			$('#neo_cha').attr("src","images/chra_3_1.png");
 			cha_gubun = 0;
+		}
+	},800);
+	*/
+
+	interval_id	= setInterval(function(){
+		if (cha_gubun == 0)
+		{
+			$('#muzi_cha').attr("src","images/chra_1_1.png");
+			$('#peach_cha').attr("src","images/chra_2_1.png");
+			$('#neo_cha').attr("src","images/chra_3_1.png");
+			cha_gubun = 1;
+			cha_back_gubun = 0;
+		}else if (cha_gubun == 1){
+			$('#muzi_cha').attr("src","images/chra_1_2.png");
+			$('#peach_cha').attr("src","images/chra_2_2.png");
+			$('#neo_cha').attr("src","images/chra_3_2.png");
+			if (cha_back_gubun == 0)
+				cha_gubun = 2;
+			else
+				cha_gubun = 0;
+		}else{
+			$('#muzi_cha').attr("src","images/chra_1_3.png");
+			$('#peach_cha').attr("src","images/chra_2_3.png");
+			$('#neo_cha').attr("src","images/chra_3_3.png");
+			cha_gubun = 1;
+			cha_back_gubun = 1;
 		}
 	},800);
 

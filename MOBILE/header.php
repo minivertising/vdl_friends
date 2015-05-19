@@ -6,14 +6,13 @@
   <head>
     <title>VDL KAKAO FRIENDS</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
     <meta property="og:title" content="VDL MEETS KAKAO FRIENDS">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://www.mnv.kr/MOBILE/index.php" />
     <meta property="og:image" content="http://www.mnv.kr/MOBILE/images/img_sns_share_new.jpg" />
-    <meta property="og:description" content="VDL MEETS KAKAO FRIENDS, VDL FRIENDS KIT를 받아라! 친구에게 메시지를 보내고 5천원 할인 쿠폰과 VDL 프렌즈 키트를 받자! 친구에게 메시지만 보내도 VDL 한정 컬렉션 제품을 받을 수 있는 기회가 온다!">
+    <meta property="og:description" content="VDL MEETS KAKAO FRIENDS 친구에게 메시지를 보내고 컬렉션 제품이 담긴 VDL FRIENDS KIT를 받아가세요! 참여만해도 5천원 할인 쿠폰을 드려요.">
 
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
@@ -41,7 +40,7 @@
 	{
 ?>
     <div class="menu clearfix">
-      <a href="http://www.vdlcosmetic.com/m/index.jsp" class="logo" target="_blank"><img src="images/logo.png" width="170" alt=""/></a>
+      <a href="index.php" class="logo"><img src="images/logo.png" width="170" alt=""/></a>
       <a href="#" class="menu_ham"  onclick="show_menu()"><img src="images/menu_ham.png" width="26" alt=""/></a>
     </div>
     <div id="mobile_menu" class="mobile_menu">
@@ -58,7 +57,6 @@
         </div>
       </div>
     </div>
-    <div class="mask"></div>
 
 <?
 	}

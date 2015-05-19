@@ -9,7 +9,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://www.mnv.kr/MOBILE/index.php" />
     <meta property="og:image" content="http://www.mnv.kr/MOBILE/images/img_sns_share_new.jpg" />
-    <meta property="og:description" content="VDL MEETS KAKAO FRIENDS, VDL FRIENDS KIT를 받아라! 친구에게 메시지를 보내고 5천원 할인 쿠폰과 VDL 프렌즈 키트를 받자! 친구에게 메시지만 보내도 VDL 한정 컬렉션 제품을 받을 수 있는 기회가 온다!">
+    <meta property="og:description" content="VDL MEETS KAKAO FRIENDS 친구에게 메시지를 보내고 컬렉션 제품이 담긴 VDL FRIENDS KIT를 받아가세요! 참여만해도 5천원 할인 쿠폰을 드려요.">
     
     <link rel="shortcut icon" type="image/x-icon" href="./images/pavicon.ico" />
     <link rel="stylesheet" type="text/css" href="../lib/fullpage/jquery.fullPage.css" />
@@ -37,14 +37,14 @@
     <!------------------------ 헤더 타이틀 영역 ------------------------>
     <div class="navi clearfix" id="navi_menu">
       <div class="left">
-        <a href="http://www.vdlcosmetics.com/index.jsp" target="_blank"><img src="images/logo.png" alt=""/></a>
+        <a href="index.php"><img src="images/logo.png" alt=""/></a>
       </div>
       <div class="right">
         <div class="right_wrap">
           <div class="menu">
             <div class="inner clearfix">
-              <a href="#" onclick="move_area('collection')"><img src="images/btn_menu_summer_off.png" alt="" onmouseover="$(this).attr('src','images/btn_menu_summer.png')" onmouseout="$(this).attr('src','images/btn_menu_summer_off.png')"/></a>
-              <a href="#" onclick="move_area('kit')"><img src="images/btn_menu_kit_off.png" alt="" onmouseover="$(this).attr('src','images/btn_menu_kit.png')" onmouseout="$(this).attr('src','images/btn_menu_kit_off.png')"/></a>
+              <a href="#" onclick="move_area('collection')"><img src="images/btn_menu_summer_off.png" alt="" id="summer_header_menu"/></a>
+              <a href="#" onclick="move_area('kit')"><img src="images/btn_menu_kit_off.png" alt=""  id="kit_header_menu"/></a>
             </div>
           </div>
           <div class="sns">

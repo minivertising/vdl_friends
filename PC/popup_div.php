@@ -141,7 +141,7 @@
 <!--------------------- 이벤트 메세지 입력 팝업 --------------------->
 
 <!--------------------- 이벤트 참여 완료 팝업 --------------------->
-<div id="pop_event_thank" class="popup_wrap zoom-anim-dialog mfp-hide" style="margin-left:-268px;top:50%;left:50%;">
+<div id="pop_event_thank" class="popup_wrap zoom-anim-dialog mfp-hide" style="width:536px;height:606px;margin-left:-268px;top:50%;left:50%;">
   <div class="p_mid_comp p_position">
     <div class="block_close clearfix">
       <a href="#" onclick="$.magnificPopup.close();" class="btn_close"><img src="images/popup/btn_close.png" /></a>

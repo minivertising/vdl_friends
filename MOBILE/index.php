@@ -154,7 +154,7 @@ function screen_move(param)
 		$('#mobile_menu').animate({right:-200},300,'linear',function(){
 			$("#mobile_menu").hide();
 			$(".mask").fadeOut(100);
-			$( 'html, body' ).animate({ scrollTop: 0},500);
+			$( 'html, body' ).animate({ scrollTop: 120},500);
 			$(window).off(".disableScroll");
 		});
 		

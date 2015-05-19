@@ -9,7 +9,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://www.mnv.kr/MOBILE/index.php" />
     <meta property="og:image" content="http://www.mnv.kr/MOBILE/images/img_sns_share_new.jpg" />
-    <meta property="og:description" content="VDL MEETS KAKAO FRIENDS, VDL FRIENDS KIT를 받아라! 친구에게 메시지를 보내고 5천원 할인 쿠폰과 VDL 프렌즈 키트를 받자! 친구에게 메시지만 보내도 VDL 한정 컬렉션 제품을 받을 수 있는 기회가 온다!">
+    <meta property="og:description" content="VDL MEETS KAKAO FRIENDS 친구에게 메시지를 보내고 컬렉션 제품이 담긴 VDL FRIENDS KIT를 받아가세요! 참여만해도 5천원 할인 쿠폰을 드려요.">
     
     <link rel="shortcut icon" type="image/x-icon" href="./images/pavicon.ico" />
     <link rel="stylesheet" type="text/css" href="../lib/fullpage/jquery.fullPage.css" />

@@ -58,7 +58,6 @@
         </div>
       </div>
     </div>
-    <div class="mask"></div>
 
 <?
 	}

@@ -159,11 +159,26 @@ body{
 	position:absolute;
 	text-align:center;
 	top:50%;
-	margin-top:-140px;
+	margin-top:-180px;
 	left:50%;
 	margin-left:-250px;
 }
-
+.sec_summer .btn_main{
+	position:absolute;
+	text-align:center;
+	top:50%;
+	margin-top:170px;
+	left:50%;
+	margin-left:-250px;
+}
+.sec_summer .btn_main .inner{
+	width:100%;
+}
+.sec_summer .btn_main .inner a{
+	display:block;
+	float:left;
+	padding-right:10px;
+}
 
 .sec_summer_coupon{
 	background:#ffd503;

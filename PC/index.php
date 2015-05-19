@@ -87,6 +87,7 @@ $(window).scroll(function() {
 });
 
 $(document).ready(function() {
+	Kakao.init('b3ed5b7dca4e906387247f6a86d982e5');
 
 	if ($(window).scrollTop() < 1640)
 	{

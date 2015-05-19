@@ -790,6 +790,11 @@ body{
 	background:#7ea6ce;
 }
 
+.bg_col_muji .popup_wrap .p_mid.p_position.p_wide .block_content,
+.bg_col_peach .popup_wrap .p_mid.p_position.p_wide .block_content,
+.bg_col_neo .popup_wrap .p_mid.p_position.p_wide .block_content{
+	padding-bottom:30px;
+}
 
 .c_menu {
 	width:94%;
@@ -819,7 +824,7 @@ body{
 	display:block;
 	text-align:center;
 	background:#000;
-	padding:7px 0;
+	padding:7px 0 5px;
 }
 
 .c_menu div a img{
@@ -860,35 +865,34 @@ body{
 	display:block;
 	background:#fafafa;
 	border:1px solid #ccc;
-	padding:3px;
+	padding:2px 3px;
 	text-align:center;
 	width:95%;
 }
-.p_content .inner_p .thumb .one a.selected{
+.p_content .inner_p .thumb.muji .one a.selected{
 	display:block;
 	background:#fafafa;
-	border:3px solid #fee800;
-	padding:1px 1px 2px;
-	text-align:center;
-	width:95%;
-}
-.p_content .inner_p .thumb.neo .one a.selected{
-	display:block;
-	background:#fafafa;
-	border:3px solid #6f93b6;
-	padding:1px 1px 2px;
+	border:2px solid #fee800;
+	padding:1px 2px 2px;
 	text-align:center;
 	width:95%;
 }
 .p_content .inner_p .thumb.peach .one a.selected{
 	display:block;
 	background:#fafafa;
-	border:3px solid #facacc;
-	padding:1px 1px 2px;
+	border:2px solid #facacc;
+	padding:1px 2px 2px;
 	text-align:center;
 	width:95%;
 }
-
+.p_content .inner_p .thumb.neo .one a.selected{
+	display:block;
+	background:#fafafa;
+	border:2px solid #7ea6ce;
+	padding:1px 2px 2px;
+	text-align:center;
+	width:95%;
+}
 
 
 .p_content .inner_p .thumb .one a img{

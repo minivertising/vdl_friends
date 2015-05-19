@@ -1,8 +1,8 @@
 <!--------------------- 이벤트 메세지 입력 팝업 --------------------->
 <div id="pop_event_input" class="popup_wrap zoom-anim-dialog mfp-hide">
   <div class="p_mid p_position">
-    <div class="block_close clearfix" onclick="$.magnificPopup.close();">
-      <a href="#" class="btn_close"><img src="images/popup/btn_close.png" /></a>
+    <div class="block_close clearfix">
+      <a href="#pop_close_confirm1" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>
     </div>
     <div class="block_content">
       <div class="inner">
@@ -320,8 +320,32 @@
 </div>
 <!--------------------- 네오 안내 팝업 --------------------->
 
+<!--------------------- 창 닫을때 선택 팝업1 --------------------->
+	<div id="pop_close_confirm1" class="popup_wrap zoom-anim-dialog mfp-hide" style="width:466px;height:329px;margin-left:-230px;margin-top:-165px;top:50%;left:50%;">
+   	  <div class="p_alert_big p_position">
+            <div class="block_close clearfix">
+                <a href="#pop_event_input" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>
+            </div>
+            <div class="block_content">
+            	<div class="inner">
+                	<div class="title">
+       	    	    	<img src="images/popup/title_alert_close.png" />
+                    </div>
+                    <div class="btn_block">
+                        <a href="#" onclick="$.magnificPopup.close();"><img src="images/popup/btn_out.png" alt=""/></a>
+                        <a href="#pop_event_input" class="popup-with-zoom-anim"><img src="images/popup/btn_keepgoing.png" alt=""/></a>
+                    </div>
+                </div><!--inner-->
+            </div>
+            <div class="bg_chrc">
+            	<img src="images/popup/bg_chrc.png" alt=""/>
+            </div>
+        </div>
+	</div>
+<!--------------------- 창 닫을때 선택 팝업1 --------------------->
+
 <!--------------------- 창 닫을때 선택 팝업 --------------------->
-<div id="pop_close_confirm" class="popup_wrap zoom-anim-dialog mfp-hide" style="margin-left:-230px;top:50%;left:50%;">
+<div id="pop_close_confirm" class="popup_wrap zoom-anim-dialog mfp-hide" style="width:466px;height:329px;margin-left:-230px;margin-top:-165px;top:50%;left:50%;">
   <div class="p_alert_big p_position">
     <div class="block_close clearfix">
       <a href="#pop_event_input2" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>

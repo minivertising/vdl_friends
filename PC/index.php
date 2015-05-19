@@ -7,8 +7,8 @@
     <div class="title"><img src="images/title.png" alt=""/></div>
     <div class="btn_main">
     	<div class="inner clearfix">
-        	<a href="#"><img src="images/btn_summer.png" alt=""/></a>
-            <a href="#"><img src="images/btn_event_go.png" alt=""/></a>
+        	<a href="#" onclick="move_area('collection')"><img src="images/btn_summer.png" alt=""/></a>
+            <a href="#" onclick="move_area('kit')"><img src="images/btn_event_go.png" alt=""/></a>
         </div>
     </div>
   </div>

@@ -7,8 +7,8 @@
   </div>
   <div class="btn_main_block">
   	<div class="inner clearfix">
-    	<a href="#"><img src="images/btn_summer.png"  alt="" /></a>
-        <a href="#"><img src="images/btn_event_go.png"  alt="" /></a>
+    	<a href="#" onclick="screen_move2('summer')"><img src="images/btn_summer.png"  alt="" /></a>
+        <a href="#" onclick="screen_move2('kit')"><img src="images/btn_event_go.png"  alt="" /></a>
     </div>
   </div>
   <div class="top_bg">
@@ -174,7 +174,7 @@ function screen_move(param)
 		$('#mobile_menu').animate({right:-200},300,'linear',function(){
 			$("#mobile_menu").hide();
 			$(".mask").fadeOut(100);
-			$( 'html, body' ).animate({ scrollTop: 120},500);
+			$( 'html, body' ).animate({ scrollTop: 150},500);
 			$(window).off(".disableScroll");
 		});
 		
@@ -185,6 +185,16 @@ function screen_move(param)
 			$( 'html, body' ).animate({ scrollTop: $(".block_top").height() + $(".block_movie").height() + $(".block_chrc").height() + 8},500);
 			$(window).off(".disableScroll");
 		});
+	}
+}
+
+function screen_move2(param)
+{
+	if (param == "summer")
+	{
+		$( 'html, body' ).animate({ scrollTop: 150},500);
+	}else{
+		$( 'html, body' ).animate({ scrollTop: $(".block_top").height() + $(".block_movie").height() + $(".block_chrc").height() + 8},500);
 	}
 }
 

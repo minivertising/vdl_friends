@@ -378,11 +378,12 @@ body{
 .popup_wrap .p_position.p_mid_comp{
 	position:relative;
 	width:530px;
-	height:580px;
+	height:680px;
 }
 .popup_wrap .p_position.p_mid_comp .block_content{
 	width:530px;
-	height:500px;
+	height:600px;
+	background:#fff url(../images/popup/bg_event_comp.png) no-repeat 40px 160px;
 	
 }
 .popup_wrap .p_position.p_mid_agree{
@@ -465,17 +466,23 @@ body{
 }
 .popup_wrap .p_position.p_mid_comp .btn_block{
 	text-align:center;
-	padding-top:30px;
+	padding-top:40px;
 }
-
+.popup_wrap .p_position.p_mid_comp .btn_close_block{
+	text-align:center;
+	padding-top:170px;
+}
 
 /*****팝업별 노티스 텍스트 위치 조정*****/
 .popup_wrap .p_position .txt_notice{
 	text-align:center;
 }
 .popup_wrap .p_position.p_mid_comp .block_content .block_url{
-	padding:30px 0;
+	padding:30px 0 30px;
 	text-align:center;
+	color:#000;
+	font-weight:bold;
+	margin-top:20px;
 }
 
 .popup_wrap .p_position.p_mid_agree .block_content .inner{

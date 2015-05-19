@@ -75,9 +75,27 @@ $(window).scroll(function() {
 	quickTop = ($(window).height()-$('.quickmenu').height()) /2;
 	$('.quickmenu').stop().animate({top:$(window).scrollTop()+quickTop},400,'easeOutExpo');
 	
+	if ($(window).scrollTop() < 1640)
+	{
+		$("#summer_header_menu").attr('src','images/btn_menu_summer.png')
+		$("#kit_header_menu").attr('src','images/btn_menu_kit_off.png')
+	}else{
+		$("#summer_header_menu").attr('src','images/btn_menu_summer_off.png')
+		$("#kit_header_menu").attr('src','images/btn_menu_kit.png')
+	}
 });
 
 $(document).ready(function() {
+
+	if ($(window).scrollTop() < 1640)
+	{
+		$("#summer_header_menu").attr('src','images/btn_menu_summer.png')
+		$("#kit_header_menu").attr('src','images/btn_menu_kit_off.png')
+	}else{
+		$("#summer_header_menu").attr('src','images/btn_menu_summer_off.png')
+		$("#kit_header_menu").attr('src','images/btn_menu_kit.png')
+	}
+
 	// 체크박스 스타일 설정
 	$('.zoom-anim-dialog input').on('ifChecked ifUnchecked', function(event){
 		//alert(this.id);

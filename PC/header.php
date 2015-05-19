@@ -37,7 +37,7 @@
     <!------------------------ 헤더 타이틀 영역 ------------------------>
     <div class="navi clearfix" id="navi_menu">
       <div class="left">
-        <a href="http://www.vdlcosmetics.com/index.jsp" target="_blank"><img src="images/logo.png" alt=""/></a>
+        <a href="index.php"><img src="images/logo.png" alt=""/></a>
       </div>
       <div class="right">
         <div class="right_wrap">

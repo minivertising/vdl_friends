@@ -40,7 +40,7 @@
 	{
 ?>
     <div class="menu clearfix">
-      <a href="http://www.vdlcosmetics.com/m/index.jsp" class="logo" target="_blank"><img src="images/logo.png" width="170" alt=""/></a>
+      <a href="index.php" class="logo"><img src="images/logo.png" width="170" alt=""/></a>
       <a href="#" class="menu_ham"  onclick="show_menu()"><img src="images/menu_ham.png" width="26" alt=""/></a>
     </div>
     <div id="mobile_menu" class="mobile_menu">

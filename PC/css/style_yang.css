@@ -687,6 +687,14 @@ body{
 }
 
 
+
+
+.popup_wrap .p_position.p_mid_agree .bold{
+	font-weight:bold;
+}
+
+
+
 .wrap_page{
 	width:100%;
 }

@@ -151,7 +151,7 @@
         <div class="title">
           <img src="images/popup/title_alert_comp.png" />
         </div>
-        <div class="block_url" id="c_url">ddd</div>
+        <div class="block_url" id="c_url"></div>
         <div class="btn_block">
           <a href="#" onclick="copy_url();"><img src="images/popup/btn_url.png" alt=""/></a>
         </div>

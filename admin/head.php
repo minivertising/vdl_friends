@@ -90,7 +90,7 @@ if (isset($_SESSION['ss_mb_name']) == false)
               <li>
                 <a href="entry_list.php"><i class="fa fa-fw fa-table"></i> 이벤트 당첨자 목록</a>
               </li>
-              <li>
+              <!-- <li>
                 <a href="shop_list.php"><i class="fa fa-fw fa-table"></i> 매장 정보</a>
               </li>
                <li>
@@ -101,7 +101,7 @@ if (isset($_SESSION['ss_mb_name']) == false)
               </li>
               <li>
                 <a href="share_media_count.php"><i class="fa fa-fw fa-bar-chart-o"></i> 공유 정보</a>
-              </li>
+              </li> -->
             </ul>
           </div>
         <!-- /.navbar-collapse -->

@@ -10,10 +10,10 @@
 
 	if($gubun == "MOBILE")
 	{
-		Header("Location:http://www.mnv.kr/MOBILE/index.php");
+		Header("Location:http://www.vdlxkakao.com/MOBILE/index.php");
 		exit;
 	}else{
-		Header("Location:http://www.mnv.kr/PC/index.php");
+		Header("Location:http://www.vdlxkakao.com/PC/index.php");
 		exit;
 	}
 

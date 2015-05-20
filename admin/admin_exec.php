@@ -8,7 +8,7 @@
 			$mb_id = $_REQUEST['mb_id'];
 			$mb_pw = $_REQUEST['mb_pw'];
 
-			$query = "SELECT * FROM ".$_gl['winner_info_table']." WHERE mb_name='".$mb_id."' AND mb_phone='".$mb_pw."'";
+			$query = "SELECT * FROM ".$_gl['member_info_table']." WHERE mb_name='".$mb_id."' AND mb_phone='".$mb_pw."'";
 			$result 		= mysqli_query($my_db, $query);
 			$member_info	= mysqli_fetch_array($result);
 			if ($member_info)
@@ -17,7 +17,7 @@
 				$_SESSION['ss_mb_name'] = $member_info['mb_ipaddr'];
 				echo "<script>location.href='./entry_list.php';</script>";
 			}else{
-				echo "<script>alert('로그인에 실패하였습니다.');</script>";
+				echo "<script>alert('".$query."');</script>";
 				echo "<script>history.back();</script>";
 			}
 		break;

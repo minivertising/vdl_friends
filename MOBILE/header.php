@@ -47,7 +47,7 @@
       <ul>
         <li><a href="#" onclick="screen_move('summer')"><img src="images/btn_summer.jpg"  alt=""/></a></li>
         <li><a href="#" onclick="screen_move('kit')"><img src="images/btn_vdl_kit.jpg"  alt=""/></a></li>
-        <li><a href="#" target="_blank"><img src="images/btn_home.jpg"  alt=""/></a></li>
+        <li><a href="http://www.vdlcosmetics.com/m/index.jsp" target="_blank"><img src="images/btn_home.jpg"  alt=""/></a></li>
       </ul>
       <div class="btn_sns">
         <div class="inner_sns clearfix">

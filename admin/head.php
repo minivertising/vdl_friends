@@ -73,9 +73,9 @@ if (isset($_SESSION['ss_mb_name']) == false)
                   <li>
                     <a href="daily_influx_count.php">일자별 매체 유입자 수</a>
                   </li>
-                  <li>
+                  <!-- <li>
                     <a href="daily_tracking_count.php">일자별 트래킹 정보</a>
-                  </li>
+                  </li> -->
                   <li>
                     <a href="daily_share_count.php">일자별 SNS 공유 수</a>
                   </li>
@@ -83,7 +83,7 @@ if (isset($_SESSION['ss_mb_name']) == false)
                     <a href="daily_event_count.php">일자별 이벤트 참여자 수</a>
                   </li>
                     <li>
-                    <a href="daily_winner_count.php">일자별 이벤트 당첨자 수</a>
+                    <a href="daily_plus_count.php">일자별 플러스친구 추가한 수</a>
                   </li>
                 </ul>
               </li>

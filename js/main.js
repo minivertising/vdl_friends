@@ -17,7 +17,7 @@ function sns_share(media)
 		// 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
 		Kakao.Link.createTalkLinkButton({
 		  container: '#kakao-link-btn',
-		  label: "VDL MEETS KAKAO FRIENDS\r\nVDL FRIENDS KIT를 받아라!\r\n\r\n친구에게 메시지를 보내고 5천원 할인 쿠폰과 VDL 프렌즈 키트를 받자! 친구에게 메시지만 보내도 VDL 한정 컬렉션 제품을 받을 수 있는 기회가 온다!",
+		  label: "VDL MEETS KAKAO FRIENDS!\r\nVDL FRIENDS KIT를 받아라!\r\n\r\n친구에게 메시지를 보내고 5천원 할인 쿠폰과 VDL FRIENDS KIT을 받으세요! 참여만 해도 5천원 할인 쿠폰을 드려요",
 		  image: {
 			src: 'http://www.mnv.kr/MOBILE/images/img_sns_share_new.jpg',
 			width: '1200',
@@ -38,7 +38,7 @@ function sns_share(media)
 			}
 		});
 	}else if (media == "twitter"){
-		var newWindow = window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent("VDL MEETS KAKAO FRIENDS 친구에게 메시지를 보내고 컬렉션 제품이 담긴 VDL FRIENDS KIT를 받아가세요! 참여만해도 5천원 할인 쿠폰을 드려요.") + '&url='+ encodeURIComponent('http://bit.ly/1Egma1r'),'sharer','toolbar=0,status=0,width=600,height=325');
+		var newWindow = window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent("VDL MEETS KAKAO FRIENDS! 친구에게 메시지를 보내고 컬렉션 제품이 담긴 VDL FRIENDS KIT를 받으세요! 참여만 해도 5천원 할인 쿠폰을 드려요.") + '&url='+ encodeURIComponent('http://bit.ly/1Egma1r'),'sharer','toolbar=0,status=0,width=600,height=325');
 		$.ajax({
 			type   : "POST",
 			async  : false,
@@ -65,7 +65,7 @@ function sns_share(media)
 						url : '/v1/api/story/post/link',
 						data : {
 						link_info : res,
-							content:"VDL MEETS KAKAO FRIENDS 친구에게 메시지를 보내고 컬렉션 제품이 담긴 VDL FRIENDS KIT를 받아가세요! 참여만해도 5천원 할인 쿠폰을 드려요."
+							content:"VDL MEETS KAKAO FRIENDS! 친구에게 메시지를 보내고 컬렉션 제품이 담긴 VDL FRIENDS KIT를 받으세요! 참여만 해도 5천원 할인 쿠폰을 드려요."
 						}
 					});
 				}).then(function(res) {
@@ -102,7 +102,7 @@ function send_kakao()
 	// 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
 	Kakao.Link.createTalkLinkButton({
 	  container: '#kakao-link-btn',
-	  label: "VDL 플러스 친구 맺고 카카오프렌즈 KIT 받자!!\r\n아래 링크 클릭해서 플러스 친구 가입\r\n" + k_url,
+	  label: "사랑하는 친구야! VDL FRIENDS KIT 같이 받자!\r\n메시지를 확인해죠!\r\n" + k_url,
 	  image: {
 		src: 'http://www.mnv.kr/MOBILE/images/img_sns_share_new.jpg',
 		width: '1200',

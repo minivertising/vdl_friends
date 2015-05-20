@@ -192,7 +192,7 @@ body{
 	background:url(../images/bg_mms_page.png) no-repeat center;
 	text-align:center;
 	width:575px;
-	height:519px;
+	height:550px;
 	top:45%;
 	margin-top:-259px;
 	left:50%;
@@ -208,19 +208,19 @@ body{
 .sec_summer_coupon .title .qr .frame{
 	position:absolute;
 	z-index:1000;
-	top:227px;
+	top:276px;
 	left:50%;
 	margin-left:-89px;
 }
 .sec_summer_coupon .title .qr .img{
 	position:absolute;
 	z-index:999;
-	top:248px;
+	top:293px;
 	left:50%;
 	margin-left:-70px;
 }
 .sec_summer_coupon .title .url{
-	padding-top:50px;
+	padding-top:100px;
 	font-weight:bold;
 	font-size:16px;
 	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -229,7 +229,7 @@ body{
 	position:absolute;
 	width:100%;
 	text-align:center;
-	bottom:10%;
+	bottom:13%;
 }
 
 .sec_movie{

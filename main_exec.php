@@ -24,7 +24,12 @@ switch ($_REQUEST['exec'])
 	case "insert_message2" :
 		$mb_name		= $_REQUEST['mb_name'];
 		$mb_phone		= $_REQUEST['mb_phone'];
-		$mb_idx			= $_SESSION['ss_idx'];
+		//$mb_idx			= $_SESSION['ss_idx'];
+		if ($_REQUEST['mb_idx'])
+			$mb_idx			= $_REQUEST['mb_idx'];
+		else
+			$mb_idx			= $_SESSION['ss_idx'];
+		
 		$key				= "f875ecbd21fa4214075c6645635c769c"; // 사용자가 발급받은 단축 URL KEY를 입력 하세요
 		$serial				= VK_SerialNumber();
 		$longurl				= "http://www.mnv.kr/PC/message.php?serial=".$serial;

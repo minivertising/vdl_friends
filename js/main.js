@@ -266,7 +266,7 @@ function m_input_message()
 				//alert(response);
 				//$("#mb_idx").val(response);
 				//setTimeout("ins2_data('" + response + "');",500);
-				location.href = "./popup_input2.php";
+				location.href = "./popup_input2.php?idx=" + response;
 			}
 		});
 	}
@@ -277,12 +277,19 @@ function input_message2()
 	if (chk_ins2 == 0)
 	{
 		chk_ins = 1;
+		var mb_idx			= $("#mb_idx").val();
 		var mb_name		= $("#mb_name").val();
 		var mb_phone1		= $("#mb_phone1").val();
 		var mb_phone2		= $("#mb_phone2").val();
 		var mb_phone3		= $("#mb_phone3").val();
 		var mb_phone		= mb_phone1 + "-" + mb_phone2 + "-" + mb_phone3;
 		//var mb_idx			= $("#mb_idx").val();
+
+		if (!mb_idx)
+		{
+			mb_idx = "";
+		}
+		
 		if (mb_name == "")
 		{
 
@@ -349,7 +356,8 @@ function input_message2()
 			data:{
 				"exec"					: "insert_message2",
 				"mb_name"		: mb_name,
-				"mb_phone"		: mb_phone
+				"mb_phone"		: mb_phone,
+				"mb_idx"			: mb_idx
 			},
 			url: "../main_exec.php",
 			success: function(response){

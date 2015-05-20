@@ -20,7 +20,7 @@
 ?>
     <div class="sec_summer_coupon">
       <div class="title">
-        <div class="inner_title" style="margin-top:34px;margin-left:-1px">
+        <div class="inner_title">
           <div class="qr">
             <div class="frame"><img src="images/qr_frame.png" alt=""/></div>
             <div class="img"><img src="<?=$member_info['mb_qr']?>" alt="" width="140" height="140"/></div>

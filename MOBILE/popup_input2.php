@@ -10,6 +10,7 @@
 ?>
 <!--------------------- 이벤트 메세지 입력(이름, 전화번호) 팝업 --------------------->
 <div id="pop_event_input2" class="popup_wrap">
+  <input type="hidden" name="mb_idx" id="mb_idx" value="<?=$_REQUEST['idx']?>">
   <div class="p_mid p_wide p_position">
     <div class="block_close clearfix">
       <a href="#pop_close_confirm" class="btn_close popup-with-zoom-anim"><img src="images/popup/btn_close.png" /></a>

@@ -105,7 +105,7 @@
             <div class="label">
               <img src="images/popup/label_url.png" width="70" />
             </div>
-            <div class="url" id="c_url"></div>
+            <div class="url" id="c_url" onclick="m_copy_url();"></div>
           </div>
         </div>
         <div class="block_btn clearfix">

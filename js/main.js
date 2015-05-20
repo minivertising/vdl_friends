@@ -102,7 +102,7 @@ function send_kakao()
 	// 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
 	Kakao.Link.createTalkLinkButton({
 	  container: '#kakao-link-btn',
-	  label: "사랑하는 친구야! VDL FRIENDS KIT 같이 받자!\r\n아래 링크 클릭해서 플러스 친구 가입\r\n" + k_url,
+	  label: "사랑하는 친구야! VDL FRIENDS KIT 같이 받자!\r\n메시지를 확인해죠!\r\n" + k_url,
 	  image: {
 		src: 'http://www.mnv.kr/MOBILE/images/img_sns_share_new.jpg',
 		width: '1200',

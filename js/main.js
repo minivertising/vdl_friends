@@ -3,7 +3,7 @@ function sns_share(media)
 {
 	if (media == "facebook")
 	{
-		var newWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('http://www.mnv.kr/?media=facebook'),'sharer','toolbar=0,status=0,width=600,height=325');
+		var newWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('http://www.vdlxkakao.com/?media=facebook'),'sharer','toolbar=0,status=0,width=600,height=325');
 		$.ajax({
 			type   : "POST",
 			async  : false,
@@ -19,13 +19,13 @@ function sns_share(media)
 		  container: '#kakao-link-btn',
 		  label: "VDL MEETS KAKAO FRIENDS!\r\nVDL FRIENDS KIT를 받아라!\r\n\r\n친구에게 메시지를 보내고 5천원 할인 쿠폰과 VDL FRIENDS KIT을 받으세요! 참여만 해도 5천원 할인 쿠폰을 드려요",
 		  image: {
-			src: 'http://www.mnv.kr/MOBILE/images/img_sns_share_new.jpg',
+			src: 'http://www.vdlxkakao.com/MOBILE/images/img_sns_share_new.jpg',
 			width: '1200',
 			height: '630'
 		  },
 		  webButton: {
 			text: 'VDL 써머 컬렉션',
-			url: 'http://www.mnv.kr/?media=kakao' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
+			url: 'http://www.vdlxkakao.com/?media=kakao' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
 		  }
 		});
 		$.ajax({
@@ -38,7 +38,7 @@ function sns_share(media)
 			}
 		});
 	}else if (media == "twitter"){
-		var newWindow = window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent("VDL MEETS KAKAO FRIENDS! 친구에게 메시지를 보내고 컬렉션 제품이 담긴 VDL FRIENDS KIT를 받으세요! 참여만 해도 5천원 할인 쿠폰을 드려요.") + '&url='+ encodeURIComponent('http://bit.ly/1Egma1r'),'sharer','toolbar=0,status=0,width=600,height=325');
+		var newWindow = window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent("VDL MEETS KAKAO FRIENDS! 친구에게 메시지를 보내고 컬렉션 제품이 담긴 VDL FRIENDS KIT를 받으세요! 참여만 해도 5천원 할인 쿠폰을 드려요.") + '&url='+ encodeURIComponent('http://bit.ly/1EiTYuF'),'sharer','toolbar=0,status=0,width=600,height=325');
 		$.ajax({
 			type   : "POST",
 			async  : false,
@@ -57,7 +57,7 @@ function sns_share(media)
 				Kakao.API.request( {
 					url : '/v1/api/story/linkinfo',
 					data : {
-						url : 'http://www.mnv.kr/?media=story'
+						url : 'http://www.vdlxkakao.com/?media=story'
 					}
 				}).then(function(res) {
 					// 이전 API 호출이 성공한 경우 다음 API를 호출합니다.
@@ -104,13 +104,13 @@ function send_kakao()
 	  container: '#kakao-link-btn',
 	  label: "사랑하는 친구야! VDL FRIENDS KIT 같이 받자!\r\n메시지를 확인해죠!\r\n" + k_url,
 	  image: {
-		src: 'http://www.mnv.kr/MOBILE/images/img_sns_share_new.jpg',
+		src: 'http://www.vdlxkakao.com/MOBILE/images/img_sns_share_new.jpg',
 		width: '1200',
 		height: '630'
 	  },
 	  webButton: {
 		text: 'VDL x KAKAO',
-		url: 'http://www.mnv.kr/?media=sendkakao' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
+		url: 'http://www.vdlxkakao.com/?media=sendkakao' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
 	  }
 	});
 }

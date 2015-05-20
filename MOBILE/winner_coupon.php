@@ -30,8 +30,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=3.0" />
     <meta property="og:title" content="VDL MEETS KAKAO FRIENDS">
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.mnv.kr/MOBILE/index.php" />
-    <meta property="og:image" content="http://www.mnv.kr/MOBILE/images/img_sns_share.jpg" />
+    <meta property="og:url" content="http://www.vdlxkakao.com/MOBILE/index.php" />
+    <meta property="og:image" content="http://www.vdlxkakao.com/MOBILE/images/img_sns_share.jpg" />
     <meta property="og:description" content="재기 발랄한 카카오 프렌즈와 감각적인 브이디엘이 만나 선보이는 키치 꾸뛰르 감성의 써머 컬렉션">
 
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
@@ -39,7 +39,16 @@
     <script type='text/javascript' src="../js/jquery-1.11.2.min.js"></script>
     <script type='text/javascript' src="../js/analytics.js"></script>
     <script type='text/javascript' src="../js/main.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-63183773-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
   </head>
 
 <body class="bg_coupon_body">

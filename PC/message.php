@@ -4,7 +4,7 @@
 	$serial		= $_REQUEST['serial'];
 
 	if ($gubun == "MOBILE")
-		echo "<script>location.href='http://www.mnv.kr/MOBILE/message.php?serial=".$serial."'</script>";
+		echo "<script>location.href='http://www.vdlxkakao.com/MOBILE/message.php?serial=".$serial."'</script>";
 
 	$query 		= "SELECT * FROM ".$_gl['member_info_table']." WHERE mb_serial='".$serial."'";
 	$result 	= mysqli_query($my_db, $query);
@@ -18,6 +18,16 @@
 	//if ($result)
 		//echo "<script>location.href='http://plus.kakao.com/home/@vdl';</script>";
 ?>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63183773-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
     <div class="sec_summer_coupon">
       <div class="title">
         <div class="inner_title">
@@ -29,7 +39,7 @@
         </div>
       </div>
       <div class="btn_block">
-        <a href="http://www.mnv.kr/?media=message" target="_blank"><img src="images/btn_go_event.png" alt=""/></a>
+        <a href="http://www.vdlxkakao.com/?media=message" target="_blank"><img src="images/btn_go_event.png" alt=""/></a>
       </div>
     </div>
 

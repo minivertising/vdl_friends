@@ -943,30 +943,6 @@ function chk_len2(val)
 	}
 }
 
-function check_message(param)
-{
-	if (param == "receive")
-	{
-		var string1 = $("#mb_receive").val();
-		if (getStringLength(string1) > 20)
-		{
-			alert("20자 이하로만 메세지를 작성하실 수 있습니다.");
-		}
-	}else if (param == "send"){
-		var string2 = $("#mb_send").val();
-		if (getStringLength(string2) > 20)
-		{
-			alert("20자 이하로만 메세지를 작성하실 수 있습니다.");
-		}
-	}else{
-		var string3 = $("#mb_message").val();
-		if (getStringLength(string3) > 200)
-		{
-			alert("200자 이하로만 메세지를 작성하실 수 있습니다.");
-		}
-	}
-}
-
 // 문자열 길이 체크 알파뉴메릭(1자리), 한글(2자리)
 function getStringLength (str)
 {
@@ -1039,3 +1015,123 @@ function only_num(obj)
 	return true;
 }
 
+function check_message(param, obj)
+{
+	var inText = obj.value;
+	var outText = "";
+	var flag = true;
+	var ret;
+	if (param == "receive")
+	{
+		/*
+		if (getStringLength(inText) > 20)
+		{
+			flag = false;
+		}else{
+			outText += inText.charAt(i);
+		}
+		*/
+		for(var i = 0; i < inText.length; i++)
+		{
+			ret = inText.charCodeAt(i);
+			if(inText.length > 20)
+			{
+				flag = false;
+				outText += inText.charAt(i-1);
+			}
+			else
+			{
+				outText += inText.charAt(i-1);
+			}
+		}
+
+		if(flag == false)
+		{
+			alert("20자 이하로만 메세지를 작성하실 수 있습니다.");
+			//$("#mb_receive").val(outText);
+			obj.value = outText;
+			obj.focus();
+			return false;
+		} 
+
+	}else if (param == "send"){
+		for(var i = 0; i < inText.length; i++)
+		{
+			ret = inText.charCodeAt(i);
+			if(inText.length > 20)
+			{
+				flag = false;
+				outText += inText.charAt(i-1);
+			}
+			else
+			{
+				outText += inText.charAt(i-1);
+			}
+		}
+		
+		if(flag == false)
+		{
+			alert("20자 이하로만 메세지를 작성하실 수 있습니다.");
+			//$("#mb_send").val(outText);
+			obj.value = outText;
+			obj.focus();
+			return false;
+		} 
+	}else{
+		for(var i = 0; i < inText.length; i++)
+		{
+			ret = inText.charCodeAt(i);
+			if(inText.length > 200)
+			{
+				flag = false;
+				outText += inText.charAt(i-1);
+			}
+			else
+			{
+				outText += inText.charAt(i-1);
+			}
+		}
+		
+		if(flag == false)
+		{
+			alert("200자 이하로만 메세지를 작성하실 수 있습니다.");
+			//$("#mb_message").val(outText);
+			obj.value = outText;
+			obj.focus();
+			return false;
+		} 
+	}
+	return true;
+
+}
+
+
+/*
+function check_message(param)
+{
+	var inText = obj.value;
+	var outText = "";
+	var flag = true;
+	var ret;
+	if (param == "receive")
+	{
+		var string1 = $("#mb_receive").val();
+		if (getStringLength(string1) > 20)
+		{
+			alert("20자 이하로만 메세지를 작성하실 수 있습니다.");
+		}
+	}else if (param == "send"){
+		var string2 = $("#mb_send").val();
+		if (getStringLength(string2) > 20)
+		{
+			alert("20자 이하로만 메세지를 작성하실 수 있습니다.");
+		}
+	}else{
+		var string3 = $("#mb_message").val();
+		if (getStringLength(string3) > 200)
+		{
+			alert("200자 이하로만 메세지를 작성하실 수 있습니다.");
+		}
+	}
+}
+*/

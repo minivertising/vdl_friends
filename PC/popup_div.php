@@ -15,7 +15,7 @@
               <img src="images/popup/label_to.png" alt=""/>
             </div>
             <div class="txt_input">
-              <input type="text" name="mb_receive" id="mb_receive" placeholder="사랑하는 내 친구, 정은아! (20자 이내)" onkeyup="check_message('receive');">
+              <input type="text" name="mb_receive" id="mb_receive" placeholder="사랑하는 내 친구, 정은아! (20자 이내)" onkeyup="check_message('receive',this);">
             </div>
           </div>
           <div class="input_txtarea clearfix">
@@ -23,7 +23,7 @@
               <img src="images/popup/label_txt.png" alt=""/>
             </div>
             <div class="txt_input">
-              <textarea name="mb_message" id="mb_message" placeholder="친구에게 보낼 메세지를 입력해주세요. (250자 이내)" onkeyup="check_message('message');"></textarea>
+              <textarea name="mb_message" id="mb_message" placeholder="친구에게 보낼 메세지를 입력해주세요. (250자 이내)" onkeyup="check_message('message',this);"></textarea>
             </div>
           </div>
           <div class="input_from clearfix">
@@ -31,7 +31,7 @@
               <img src="images/popup/label_from.png" alt=""/>
             </div>
             <div class="txt_input">
-              <input type="text" name="mb_send" id="mb_send" placeholder="너의 단짝, 친구 우주! (20자 이내)" onkeyup="check_message('send')">
+              <input type="text" name="mb_send" id="mb_send" placeholder="너의 단짝, 친구 우주! (20자 이내)" onkeyup="check_message('send',this)">
             </div>
           </div>
         </div>

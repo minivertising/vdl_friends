@@ -123,14 +123,13 @@ body{
 	padding-top:15px;
 }
 .navi .left{
-	float:left;
-	width:350px;
-	padding-left:60px;
+	position:absolute;
+	left:3%;
 }
 .navi .right{
-	float:right;
-	width:630px;
-	padding-right:60px;
+	position:absolute;
+	right:3%;
+	width:620px;
 }
 .navi .right .right_wrap{
 	

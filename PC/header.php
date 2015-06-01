@@ -65,6 +65,15 @@
           </div>
         </div>
       </div>
+      
+        <div class="metal">
+        	<div class="inner">
+            	<div class="close"><a href="#"><img src="images/btn_close_pop.png" alt=""/></a></div>
+        		<div class="img"><a href="http://www.vdl-metalcushion.com/?media=vdl_kakao" target="_blank"><img src="images/btn_metal.png" alt=""/></a></div>
+            </div>
+        </div> 
+      
+      
     </div>
     <!------------------------ 헤더 타이틀 영역 ------------------------>
 <?

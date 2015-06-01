@@ -147,6 +147,35 @@ body{
 	float:right;
 	padding-top:3px;
 }
+
+.navi .left{
+	position:absolute;
+	left:3%;
+}
+
+.navi .metal{
+	position:absolute;
+	right:25px;
+	top:70px;
+	width:200px;
+	height:200px;
+}
+.navi .metal .inner{
+	position:relative;
+}
+.navi .metal  .inner .close,
+.navi .metal .inner .img{
+	position:absolute;
+	top:45px;
+	right:18px;
+}
+.navi .metal .inner .close{
+	top:20px;
+	right:22px;
+}
+
+
+
 .sec_summer{
 	background:#ffd503;
 	background:url(../images/bg_page.jpg) no-repeat center;

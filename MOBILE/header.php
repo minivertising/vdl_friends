@@ -49,6 +49,12 @@
 	if (stripos($_SERVER['REQUEST_URI'], "index.php"))
 	{
 ?>
+    <div class="pop_icon">
+        <div class="inner">
+            <div class="close"><a href="#"><img src="images/btn_close_pop.png" width="23" alt=""/></a></div>
+            <div class="img"><a href="http://www.vdl-metalcushion.com/?media=vdl_kakao" target="_blank"><img src="images/btn_metal.png" width="110" alt=""/></a></div>
+        </div>
+    </div>
     <div class="menu clearfix">
       <a href="index.php" class="logo"><img src="images/logo.png" width="170" alt=""/></a>
       <a href="#" class="menu_ham"  onclick="show_menu()"><img src="images/menu_ham.png" width="26" alt=""/></a>
